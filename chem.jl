@@ -17,15 +17,22 @@ struct Element
 
 end
 
+"""
+    read_chemical_elements(filename::String)
+
+reads the information of the json file and returns a dictionary
+"""
 function read_chemical_elements(filename::String)
     _PSE_data = read(filename, String)
     _elemente_dict = JSON.parse(_PSE_data)
     return _elemente_dict["chem_elements"]
 end
 
+# sets up the structs for the elements
 element_dicts = read_chemical_elements("PeriodicTable.json")
 elements = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in element_dicts]
 
+# functions for getting the arrays of the elements to guess 
 mononuclidic_element = ["Beryllium", "Fluor", "Natrium", "Aluminium", "Phosphor", "Scandium", "Mangan", "Cobalt", "Arsen", "Yttrium", "Niob", "Rhodium", "Iod", "Caesium", "Praseodym", "Terbium", "Holmium", "Thulium", "Gold", "Bismut", "Thorium", "Plutonium"]
 
 function get_group_elements(group_name)
