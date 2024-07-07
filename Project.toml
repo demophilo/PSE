@@ -1,0 +1,4 @@
+name = "PSE"
+uuid = "ec9eadce-46dc-45c3-97bb-fff80af85467"
+authors = ["Karl Linek <karl@linek.at>"]
+version = "0.1.0"
