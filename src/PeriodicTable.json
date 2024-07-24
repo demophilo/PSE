@@ -1,4 +1,3 @@
-
 [
     {
         "name": "Hydrogen",
@@ -1769,6 +1768,7 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_029_copper/element_029_copper.glb",
         "spectral_img": null,
         "summary": "Copper is a chemical element with symbol Cu (from Latin:cuprum) and atomic number 29. It is a soft, malleable and ductile metal with very high thermal and electrical conductivity. A freshly exposed surface of pure copper has a reddish-orange color.",
+        "funfact": "The first mirrors were made out uf copper. They were polished and then coated with a thin layer of gold.",
         "symbol": "Cu",
         "xpos": 11,
         "ypos": 4,
@@ -6599,4 +6599,3 @@
         "synthetic": true
     }
 ]
-
