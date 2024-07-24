@@ -1,4 +1,6 @@
+module Elements
 using JSON
+export Element, read_chemical_elements
 
 struct Element
     name::String # English name of the element
@@ -29,9 +31,9 @@ end
 
 # sets up the structs for the elements
 elements = read_chemical_elements("PeriodicTable.json")
+println(elements)
 
-
-
+#=
 # functions to get elements::Vector{Element}
 mononuclidic_elements = ["Beryllium", "Fluor", "Natrium", "Aluminium", "Phosphor", "Scandium", "Mangan", "Cobalt", "Arsen", "Yttrium", "Niob", "Rhodium", "Iod", "Caesium", "Praseodym", "Terbium", "Holmium", "Thulium", "Gold", "Bismut", "Thorium", "Plutonium"]
 Tom_Lehrer_en_elements = ["Antimony", "Arsenic", "Aluminium", "Selenium", "Hydrogen", "Oxygen", "Nitrogen", "Rhenium", "Nickel", "Neodymium", "Neptunium", "Germanium", "Iron", "Americium", "Ruthenium", "Uranium", "Europium", "Zirconium", "Lutetium", "Vanadium", "Lanthanum", "Osmium", "Astatine", "Radium", "Gold", "Protactinium", "Indium", "Gallium", "Iodine", "Thorium", "Thulium", "Thallium", "Yttrium", "Ytterbium", "Actinium", "Rubidium", "Boron", "Gadolinium", "Niobium", "Iridium", "Strontium", "Silicon", "Silver", "Samarium", "Bismuth", "Bromine", "Lithium", "Beryllium", "Barium", "Holmium", "Helium", "Hafnium", "Erbium", "Phosphorus", "Francium", "Fluorine", "Terbium", "Manganese", "Mercury", "Molybdenum", "Magnesium", "Dysprosium", "Scandium", "Cerium", "Cesium", "Lead", "Praseodymium", "Platinum", "Plutonium", "Palladium", "Promethium", "Potassium", "Polonium", "Tantalum", "Technetium", "Titanium", "Tellurium", "Cadmium", "Calcium", "Chromium", "Curium", "Sulfur", "Californium", "Fermium", "Berkelium", "Mendelevium", "Einsteinium", "Nobelium", "Argon", "Krypton", "Neon", "Radon", "Xenon", "Zinc", "Rhodium", "Chlorine", "Carbon", "Cobalt", "Copper", "Tungsten", "Tin", "Sodium"]
@@ -180,3 +182,5 @@ function filter_periodic_table(PSE_matrix, symbols_to_show, element_sympols_to_g
     return _filtered_matrix
 end
 print_PSE(get_PSE_matrix(elements::Vector{Element}, true))
+=#
+end # module
