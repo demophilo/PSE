@@ -2646,7 +2646,7 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_043_technetium/element_043_technetium.glb",
         "spectral_img": null,
         "summary": "Technetium (/tɛkˈniːʃiəm/) is a chemical element with symbol Tc and atomic number 43. It is the element with the lowest atomic number in the periodic table that has no stable isotopes:every form of it is radioactive. Nearly all technetium is produced synthetically, and only minute amounts are found in nature.",
-        "funfact": "",
+        "funfact": "Es ist das leichteste Element ohne stabiles Isotop.",
         "symbol": "Tc",
         "xpos": 7,
         "ypos": 5,
