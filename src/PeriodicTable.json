@@ -5245,6 +5245,7 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_092_uranium/element_092_uranium.glb",
         "spectral_img": null,
         "summary": "Uranium is a chemical element with symbol U and atomic number 92. It is a silvery-white metal in the actinide series of the periodic table. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons.",
+        "funfact": "Uranium glass glows bright green under UV light. It was used in the 19th century to color glassware, but is now mostly used in the production of fluorescent glass.",
         "symbol": "U",
         "xpos": 6,
         "ypos": 10,
