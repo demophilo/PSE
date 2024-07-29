@@ -5350,6 +5350,7 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_094_plutonium/element_094_plutonium.glb",
         "spectral_img": null,
         "summary": "Plutonium is a transuranic radioactive chemical element with symbol Pu and atomic number 94. It is an actinide metal of silvery-gray appearance that tarnishes when exposed to air, and forms a dull coating when oxidized. The element normally exhibits six allotropes and four oxidation states.",
+        "funfact": "Formerly it was referred to as a synthetic element, but it is found in trace amounts in nature.",
         "symbol": "Pu",
         "xpos": 8,
         "ypos": 10,
