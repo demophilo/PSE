@@ -216,7 +216,9 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_005_boron/element_005_boron.glb",
         "spectral_img": null,
         "summary": "Boron is a metalloid chemical element with symbol B and atomic number 5. Produced entirely by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a low-abundance element in both the Solar system and the Earth's crust. Boron is concentrated on Earth by the water-solubility of its more common naturally occurring compounds, the borate minerals.",
-        "funfact": "Bor und Beryllium wurden nicht in einer Sonne erzeugt wie Kohlenstoff und die höheren Elemente, sondern durch die Kollision schwerer Atome durch kosmische Strahlung.",
+        "funfact": [
+            "Bor und Beryllium wurden nicht in einer Sonne erzeugt wie Kohlenstoff und die höheren Elemente, sondern durch die Kollision schwerer Atome durch kosmische Strahlung."
+        ],
         "symbol": "B",
         "xpos": 13,
         "ypos": 2,
@@ -2270,7 +2272,7 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_037_rubidium/element_037_rubidium.glb",
         "spectral_img": null,
         "summary": "Rubidium is a chemical element with symbol Rb and atomic number 37. Rubidium is a soft, silvery-white metallic element of the alkali metal group, with an atomic mass of 85.4678. Elemental rubidium is highly reactive, with properties similar to those of other alkali metals, such as very rapid oxidation in air.",
-        "funfact": "",
+        "funfact": "[Atomuhren mit Rubidium sind ungenauer als Caesiumuhren, aber 120000fach genauer als Quarzuhren, welche eine Sekunde pro Monat abweichen können. Aber da Rubidiumuhren wesentlich kompakter als Caesiumuhren hergestellt werden können, werden sie bevorzugt in Sateliten eingesetzt.]",
         "symbol": "Rb",
         "xpos": 1,
         "ypos": 5,
