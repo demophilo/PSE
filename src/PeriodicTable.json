@@ -474,7 +474,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_009_fluorine/element_009_fluorine.glb",
         "spectral_img": null,
         "summary": "Fluorine is a chemical element with symbol F and atomic number 9. It is the lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard conditions. As the most electronegative element, it is extremely reactive:almost all other elements, including some noble gases, form compounds with fluorine.",
-        "funfact": "Fluor ist das reaktivste Nichtmetall.",
+        "funfact": [
+            "Fluor ist das reaktivste Nichtmetall.",
+            "Fluor hat nur ein natürlich vorkommendes Isotop. Das wird ausgenutzt, um Uran anzureichern.",
+            "Bei dem Versuch Fluor herzustellen sind viele Chemiker gestorben, da Fluor und Fluorwasserstoff hochgiftig sind."
+        ],
         "symbol": "F",
         "xpos": 17,
         "ypos": 2,
