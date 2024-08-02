@@ -81,7 +81,8 @@
             "Moleküle oder Cluster, die in suprafluidem 4He gelöst sind, können de facto frei rotieren, als ob sie sich im Vakuum befänden.",
             "Sollte es gelingen Kernfusionsreaktoren für die Deuterium-Tritium-Fusion zu entwickeln, könnte die Gewinnung von Helium-3 vom Mond wirtschaftlich interessant werden.",
             "Erdgas mit einem Heliumanteil bis zu 7 % ist der größte und wirtschaftlich wichtigste Heliumlieferant.",
-            "3He und 4He weisen aufgrund der unterschiedlichen Symmetrieeigenschaften (3He-Atome sind Fermionen, 4He-Atome sind Bosonen) einige unterschiedliche physikalische Eigenschaften auf, die sich insbesondere bei tiefen Temperaturen zeigen. So trennen sich gleiche Anteile von flüssigem 3He und 4He unter 0,8 Kelvin aufgrund ihrer unterschiedlichen Quanteneigenschaften in zwei unmischbare Flüssigkeiten, ähnlich Öl und Wasser."
+            "3He und 4He weisen aufgrund der unterschiedlichen Symmetrieeigenschaften (3He-Atome sind Fermionen, 4He-Atome sind Bosonen) einige unterschiedliche physikalische Eigenschaften auf, die sich insbesondere bei tiefen Temperaturen zeigen. So trennen sich gleiche Anteile von flüssigem 3He und 4He unter 0,8 Kelvin aufgrund ihrer unterschiedlichen Quanteneigenschaften in zwei unmischbare Flüssigkeiten, ähnlich Öl und Wasser.",
+            "Bei Erreichen von nahezu 0 K und gleichzeitigem Zentrifugieren kann ein Zustand erreicht werden, den man suprafest nennt. Hierbei stoppt ein Teil des Feststoffes die eigene Rotation und durchdringt die restlichen Teile der Materie. Dazu gibt es noch keine bekannten Thesen oder Theorien."
         ],
         "symbol": "He",
         "xpos": 18,
@@ -130,7 +131,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_003_lithium/element_003_lithium.glb",
         "spectral_img": null,
         "summary": "Lithium (from Greek:λίθος lithos, \"stone\") is a chemical element with the symbol Li and atomic number 3. It is a soft, silver-white metal belonging to the alkali metal group of chemical elements. Under standard conditions it is the lightest metal and the least dense solid element.",
-        "funfact": "[Lithium ist das leichteste Metall und schwimmt sogar auf Benzin.], [Viele gesättigte Lösungen von Lithiumsalzen haben einen besonders niedrigen Wasserdampfpartialdruck und werden deshalb in Klimakammern zum Einstellen konstant halten auf diesen niederen Niveaus eingesetzt.]",
+        "funfact": [
+            "Lithium ist das leichteste Metall und schwimmt sogar auf Benzin.",
+            "Viele gesättigte Lösungen von Lithiumsalzen haben einen besonders niedrigen Wasserdampfpartialdruck und werden deshalb in Klimakammern zum Einstellen konstant halten auf diesen niederen Niveaus eingesetzt."
+            "Litium-6 zeigt wie Helium-4 und Helium-3 Suprafluidität, aber erst unter "
+        ],
         "symbol": "Li",
         "xpos": 1,
         "ypos": 2,
