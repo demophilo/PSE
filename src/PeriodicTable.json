@@ -185,7 +185,13 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_004_beryllium/element_004_beryllium.glb",
         "spectral_img": null,
         "summary": "Beryllium is a chemical element with symbol Be and atomic number 4. It is created through stellar nucleosynthesis and is a relatively rare element in the universe. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
-        "funfact": "Beryllium ist eines der giftigsten Elemente. Es ist das leichsteste Konstruktionsmetall. Wegen der Giftigkeit wird es fast ausschließlich im Weltraum verwendet. Die Edelsteine Smaragt und Aquamarin sind Verbindungen des Berylliums.",
+        "funfact": [
+            "Beryllium ist eines der giftigsten Elemente. Es ist das leichsteste Konstruktionsmetall. Wegen der Giftigkeit wird es jedoch fast ausschließlich im Weltraum verwendet, weil bei dieser Anwendung der Gewichtsvorteil zählt.",
+            "Die Edelsteine Smaragt und Aquamarin sind Verbindungen des Berylliums.",
+            "Beryllium kann nicht durch Kernfusion in der Sonne entstehen, sondern nur durch kosmische Strahlung. Daher ist es seltener als die umgebenden leichten Elemente.",
+            "Im Altertum und Mittelalter dienten durchsichtige Beryllstücke vielfach als Zauberglas. Vom Wort Beryll leitet sich auch die Bezeichnung Brille ab, ursprünglich für ein Augenglas aus Beryll.",
+            "Die schönsten und wertvollsten beryllhaltigen Mineralien sind die Schmuck- und Edelsteine Aquamarin, Smaragd, Roter Beryll, Euklas, Gadolinit, Chrysoberyll, Phenakit, und Alexandrit."
+        ],
         "symbol": "Be",
         "xpos": 2,
         "ypos": 2,
