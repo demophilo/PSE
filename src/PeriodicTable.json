@@ -355,7 +355,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_007_nitrogen/element_007_nitrogen.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Nitrogen_Spectra.jpg",
         "summary": "Nitrogen is a chemical element with symbol N and atomic number 7. It is the lightest pnictogen and at room temperature, it is a transparent, odorless diatomic gas. Nitrogen is a common element in the universe, estimated at about seventh in total abundance in the Milky Way and the Solar System.",
-        "funfact": "Der deutsche Chemiker Haber hat ermöglicht Stickstoffdünger zu erzeugen. Das brachte billige und große Ernten. Im ersten Weltkrieg erfand er Giftgase. Seine Frau, eine Pazifistin, konnte damit nicht leben und bracht sich um.",
+        "funfact": [
+            "Der deutsche Chemiker Haber hat ermöglicht Stickstoffdünger zu erzeugen. Das brachte billige und große Ernten. Im ersten Weltkrieg erfand er Giftgase. Seine Frau, eine Pazifistin, konnte damit nicht leben und brachte sich um.",
+            "Stickstoff wird zur Füllung von Flugzeugreifen großer Flugzeuge verwendet. Der reine Stickstoff verhindert, dass Flugzeugreifen durch die große Hitzeentwicklung beim Aufsetzen während der Landung, oder beim Startlauf, von innen in Brand geraten können.",
+            "Bei der Gewinnung von Stickstoff aus der Luft ist er oft noch durch Sauerstoff verunreinigt. Zur Entfernung des Restsauerstoffs kann man Reiskeimlinge benutzen."
+        ],
         "symbol": "N",
         "xpos": 15,
         "ypos": 2,
