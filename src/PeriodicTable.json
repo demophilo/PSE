@@ -534,7 +534,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_010_neon/element_010_neon.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Neon_spectra.jpg",
         "summary": "Neon is a chemical element with symbol Ne and atomic number 10. It is in group 18 (noble gases) of the periodic table. Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about two-thirds the density of air.",
-        "funfact": "Bei Neon haben der Schmelzpunkt - 24,56 K (−248,59 °C) - und der Siedepunkt - 27,15 K[9] (−246 °C) - den kleinsten Abstand zueinander - 2,59 °C",
+        "funfact": [
+            "Bei Neon haben der Schmelzpunkt - 24,56 K (−248,59 °C) - und der Siedepunkt - 27,15 K[9] (−246 °C) - den kleinsten Abstand zueinander - 2,59 °C",
+            "Neonröhren bestehen nicht aus Neon. Die weißen Leuchtstoffröhren werden fälschlicherweise als Neonröhren bezeichnet, sind aber keine.",
+            "Neon ist leichter als Luft und kommt daher auf der Erde nur in Spuren vor. Kosmisch ist es jedoch das sechsthäufigste Element."
+        ],
         "symbol": "Ne",
         "xpos": 18,
         "ypos": 2,
