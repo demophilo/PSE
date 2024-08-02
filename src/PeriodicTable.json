@@ -190,7 +190,8 @@
             "Die Edelsteine Smaragt und Aquamarin sind Verbindungen des Berylliums.",
             "Beryllium kann nicht durch Kernfusion in der Sonne entstehen, sondern nur durch kosmische Strahlung. Daher ist es seltener als die umgebenden leichten Elemente.",
             "Im Altertum und Mittelalter dienten durchsichtige Beryllstücke vielfach als Zauberglas. Vom Wort Beryll leitet sich auch die Bezeichnung Brille ab, ursprünglich für ein Augenglas aus Beryll.",
-            "Die schönsten und wertvollsten beryllhaltigen Mineralien sind die Schmuck- und Edelsteine Aquamarin, Smaragd, Roter Beryll, Euklas, Gadolinit, Chrysoberyll, Phenakit, und Alexandrit."
+            "Die schönsten und wertvollsten beryllhaltigen Mineralien sind die Schmuck- und Edelsteine Aquamarin, Smaragd, Roter Beryll, Euklas, Gadolinit, Chrysoberyll, Phenakit, und Alexandrit.",
+            "Beryllium ist ein Reinelement, das heißt es gibt nur ein natürlich vorkommentes Isotop."
         ],
         "symbol": "Be",
         "xpos": 2,
@@ -243,7 +244,7 @@
         "spectral_img": null,
         "summary": "Boron is a metalloid chemical element with symbol B and atomic number 5. Produced entirely by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a low-abundance element in both the Solar system and the Earth's crust. Boron is concentrated on Earth by the water-solubility of its more common naturally occurring compounds, the borate minerals.",
         "funfact": [
-            "Bor und Beryllium wurden nicht in einer Sonne erzeugt wie Kohlenstoff und die höheren Elemente, sondern durch die Kollision schwerer Atome durch kosmische Strahlung.",
+            "Lithium, Bor und Beryllium wurden nicht in einer Sonne erzeugt wie Kohlenstoff und die höheren Elemente, sondern durch Spallation also Kollision schwerer Atome durch kosmische Strahlung.",
             "Die größten Boratminen befinden sich in der Türkei (ca. 72 % des weltweiten Vorkommens).",
             "Die Umsetzung von B2H6 mit Sauerstoff zu B2O3 ist eine der stärksten exothermen Reaktionen, die bekannt ist.",
             "Bor besitzt die höchste Zugfestigkeit aller bekannten Elemente sowie die zweithöchste Härte, nur übertroffen von der Kohlenstoffmodifikation Diamant."
@@ -476,7 +477,7 @@
         "summary": "Fluorine is a chemical element with symbol F and atomic number 9. It is the lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard conditions. As the most electronegative element, it is extremely reactive:almost all other elements, including some noble gases, form compounds with fluorine.",
         "funfact": [
             "Fluor ist das reaktivste Nichtmetall.",
-            "Fluor hat nur ein natürlich vorkommendes Isotop. Das wird ausgenutzt, um Uran anzureichern.",
+            "Fluor ist ein Reinelement, das heißt es gibt nur ein natürlich vorkommentes Isotop. Das wird ausgenutzt, um Uran anzureichern.",
             "Bei dem Versuch Fluor herzustellen sind viele Chemiker gestorben, da Fluor und Fluorwasserstoff hochgiftig sind."
         ],
         "symbol": "F",
@@ -595,7 +596,12 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_011_sodium/element_011_sodium.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Sodium_Spectra.jpg",
         "summary": "Sodium /ˈsoʊdiəm/ is a chemical element with symbol Na (from Ancient Greek Νάτριο) and atomic number 11. It is a soft, silver-white, highly reactive metal. In the Periodic table it is in column 1 (alkali metals), and shares with the other six elements in that column that it has a single electron in its outer shell, which it readily donates, creating a positively charged atom - a cation.",
-        "funfact": "Dass Feuer gelb ist, kommt vom Natrium.",
+        "funfact": [
+            "Dass Feuer gelb ist, kommt nur vom Natrium.",
+            "Natrium ist ein Reinelement, das heißt es gibt nur ein natürlich vorkommentes Isotop",
+            "Obwohl sich der englische Name - Sodium - vom deutschen Namen deutlich unterscheidet, wird bei der Synchronisation englischer Filme ins Deutsche, der englische Name fast immmer bei behalten.",
+            "Eine Legierung mit Kalium (NaK) ist flüssig und wird in schnellen Brütern zum kühlen eingesetzt. Wasserstoff würde die Neutronen abbremsen. Außerdem haben Metalle generell gute Wärmeleiteigenschaften."
+        ],
         "symbol": "Na",
         "xpos": 1,
         "ypos": 3,
