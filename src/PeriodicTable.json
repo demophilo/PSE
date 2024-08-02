@@ -299,7 +299,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_006_carbon/element_006_carbon.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Carbon_Spectra.jpg",
         "summary": "Carbon (from Latin:carbo \"coal\") is a chemical element with symbol C and atomic number 6. On the periodic table, it is the first (row 2) of six elements in column (group) 14, which have in common the composition of their outer electron shell. It is nonmetallic and tetravalent—making four electrons available to form covalent chemical bonds.",
-        "funfact": "Es gibt mehr Verbindungen mit Kohlenstoff als alle Verbindungen zusammen der anderen Elemente.",
+        "funfact": [
+            "Es gibt mehr Verbindungen mit Kohlenstoff als alle Verbindungen zusammen der anderen Elemente.",
+            "Kohlenstoff hat mit 3800 K den höchsten Schmelzpunkt aller Elemente."
+        ],
         "symbol": "C",
         "xpos": 14,
         "ypos": 2,
