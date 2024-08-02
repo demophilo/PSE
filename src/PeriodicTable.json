@@ -413,7 +413,13 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_008_oxygen/element_008_oxygen.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Oxygen_spectre.jpg",
         "summary": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds (notably oxides) with most elements. By mass, oxygen is the third-most abundant element in the universe, after hydrogen and helium.",
-        "funfact": "Indem der französische Chemiker Lavoisier Wasserstoff und Sauerstoff miteinander reagieren ließ, stellte er Wasser her. Das war der Beweis, dass Wasser kein Element ist. Er hat damit der Alchemie ihre Grundlagen entzogen.",
+        "funfact": [
+            "Indem der französische Chemiker Lavoisier Wasserstoff und Sauerstoff miteinander reagieren ließ, stellte er Wasser her. Das war der Beweis, dass Wasser kein Element ist. Er hat damit der Alchemie ihre Grundlagen entzogen.",
+            "Sauerstoff ist paramagnetisch. Das heißt, er wird schwach von Magneten angezogen.",
+            "Anhand des Verhältnisses von O-16 zu O-18 in Eisbohrkernen kann man erkennen, ob es damals wärmer oder kälter war.",
+            "Sauerstoff hat einen diradikalen Charakter.",
+            "Für Sauerstoff kann keine Valenzstrichformel angegeben werden, die alle Eigenschaften hinreichend gut erklärt"
+        ],
         "symbol": "O",
         "xpos": 16,
         "ypos": 2,
