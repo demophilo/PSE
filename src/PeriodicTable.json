@@ -1423,7 +1423,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_023_vanadium/element_023_vanadium.glb",
         "spectral_img": null,
         "summary": "Vanadium is a chemical element with symbol V and atomic number 23. It is a hard, silvery grey, ductile and malleable transition metal. The element is found only in chemically combined form in nature, but once isolated artificially, the formation of an oxide layer stabilizes the free metal somewhat against further oxidation.",
-        "funfact": "In Seescheiden ist die Vanadiumkonzentration 10-Mio-mal höher als im umgebenden Meer. Es ist noch immer nicht bekannt, warum das so ist.",
+        "funfact": [
+            "In Seescheiden ist die Vanadiumkonzentration 10-Mio-mal höher als im umgebenden Meer. Die prosthetische Gruppe in den Sauerstofftransportmolekülen von Seescheiden weist Vanadium als Zentralatom auf.",
+            "Vanadiumverbindungen zeigen eine große und schöne Farbenvielfalt, was einzigartig unter den Elementen ist."
+        ],
         "symbol": "V",
         "xpos": 5,
         "ypos": 4,
