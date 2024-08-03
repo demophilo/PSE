@@ -1060,7 +1060,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_018_argon/element_018_argon.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Argon_Spectrum.png",
         "summary": "Argon is a chemical element with symbol Ar and atomic number 18. It is in group 18 of the periodic table and is a noble gas. Argon is the third most common gas in the Earth's atmosphere, at 0.934% (9,340 ppmv), making it over twice as abundant as the next most common atmospheric gas, water vapor (which averages about 4000 ppmv, but varies greatly), and 23 times as abundant as the next most common non-condensing atmospheric gas, carbon dioxide (400 ppmv), and more than 500 times as abundant as the next most common noble gas, neon (18 ppmv).",
-        "funfact": "Die Athmosphäre besteht zu ca. 1% aus Argon. Es ist damit das häufigste Edelgas auf der Erde. Die Argon spielt eine wichtige Rolle in der Datierung von Gesteinen und Fossilien. Kretionisten hassen Argon.",
+        "funfact": [
+            "Weil Helium und Neon leichter als Luft sind, verschwinden sie im Weltraum. Neo ist damit das häufigste Edelgas auf der Erde. Die Athmosphäre besteht zu ca. 1% aus Argon.",
+            "Mit der Kalium-Argon-Methode und der 39Ar-40Ar-Methode kann man das Alter von bis zu 4,6 Milliarden alten Gesteinen bestimmen. Kretionisten hassen Argon.",
+            "In Wasser ist Argon fast so gut löslich wie Sauerstoff."
+        ],
         "symbol": "Ar",
         "xpos": 18,
         "ypos": 3,
