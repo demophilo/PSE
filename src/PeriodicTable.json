@@ -723,7 +723,12 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_013_aluminum/element_013_aluminum.glb",
         "spectral_img": null,
         "summary": "Aluminium (or aluminum; see different endings) is a chemical element in the boron group with symbol Al and atomic number 13. It is a silvery-white, soft, nonmagnetic, ductile metal. Aluminium is the third most abundant element (after oxygen and silicon), and the most abundant metal, in the Earth's crust.",
-        "funfact": "Als das Washington Monument erbaut wurde, wollte man die Spitze aus einem Material vertigen, dass teuer ist und ausdrückt, dass die USA ein moderner Staat ist. Sie besteht aus Aluminium.",
+        "funfact": [
+            "Als das Washington Monument erbaut wurde, wollte man die Spitze aus einem Material vertigen, dass teuer ist und ausdrückt, dass die USA ein moderner Staat ist. Sie besteht aus Aluminium.",
+            "Der erste heute noch bekannte Aluminiumgegenstand ist die Gürtenschnalle des chinesischen Generals Chou-Chou (265-316) um 300.",
+            "Kaiser Tiberius ließ einen Metallarbeiter hinrichten, der ein leichtes Metall, möglicherweise Aluminium, hergestellt hatte. Er befürchtete, dass das Währungsmetall Silber an Wert verlieren würde, was die Wirtschaft hätte zusammen brechen lassen.",
+            "Aluminium war im 19. Jahrnundert teilweise teurer als Gold."
+        ],
         "symbol": "Al",
         "xpos": 13,
         "ypos": 3,
