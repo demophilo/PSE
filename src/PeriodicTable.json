@@ -1498,7 +1498,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_024_chromium/element_024_chromium.glb",
         "spectral_img": null,
         "summary": "Chromium is a chemical element with symbol Cr and atomic number 24. It is the first element in Group 6. It is a steely-gray, lustrous, hard and brittle metal which takes a high polish, resists tarnishing, and has a high melting point.",
-        "funfact": "Chrom(VI)-Verbindungen sind hochgiftig und cancerogen. Eines der Schüsslersalze - Kalium bichromicum D12 - ist eine solche Verbindung.",
+        "funfact": [
+            "Chrom(VI)-Verbindungen sind hochgiftig und cancerogen. Eines der Schüsslersalze - Kalium bichromicum D12 - ist eine solche Verbindung.",
+            "Der Film Erin Brockovich handelt von einer realen Vergiftung des Grundwassers mittels Chrom(VI)."
+        ],
         "symbol": "Cr",
         "xpos": 6,
         "ypos": 4,
