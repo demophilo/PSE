@@ -992,7 +992,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_017_chlorine/element_017_chlorine.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Chlorine_spectrum_visible.png",
         "summary": "Chlorine is a chemical element with symbol Cl and atomic number 17. It also has a relative atomic mass of 35.5. Chlorine is in the halogen group (17) and is the second lightest halogen following fluorine.",
-        "funfact": "Als Chlorgas im ersten Weltkrieg eingesetzt wurde, gab es noch keine Gasmasken. Den Soldaten wurde daher empfohlen, bei einem Giftgasangriff in die eigene Unterhose zu machen uns sie vor Mund und Nase zu pressen.",
+        "funfact": [
+            "Als Chlorgas im ersten Weltkrieg eingesetzt wurde, gab es noch keine Gasmasken. Den Soldaten wurde daher empfohlen, bei einem Giftgasangriff in die eigene Unterhose zu machen uns sie vor Mund und Nase zu pressen.",
+            "Salzsäure ist die wässrige Lösung des Chlorasserstoffgases. Die maximale Konzentration der Salzsäure ist 37 %. Bei Bränden enstehen aus 58 % des PVCs 100 %-Chlorwasserstoff."
+        ],
         "symbol": "Cl",
         "xpos": 17,
         "ypos": 3,
