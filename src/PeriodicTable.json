@@ -1270,7 +1270,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_021_scandium/element_021_scandium.glb",
         "spectral_img": null,
         "summary": "Scandium is a chemical element with symbol Sc and atomic number 21. A silvery-white metallic element, it has historically been sometimes classified as a rare earth element, together with yttrium and the lanthanoids. It was discovered in 1879 by spectral analysis of the minerals euxenite and gadolinite from Scandinavia.",
-        "funfact": "Nur wenige Prozent Scandium verstärken Aluminiumverbindungen derart, dass die Legierung für Panzer verwendet werden kann.",
+        "funfact": [
+            "Nur wenige Prozent Scandium verstärken Aluminiumverbindungen derart, dass die Legierung für Panzer verwendet werden kann.",
+            "Scandium wurde 1869 von Mendelejew vorausgesagt. 1879 entdeckte Lars Frederik Nilson ein Oxid mit unbekannten Eigenschaften, woraufhin er ein neues Element, das er Scandium nannte, vermutete. Aber erst 1937 wurde es erstmals hergestellt."
+        ],
         "symbol": "Sc",
         "xpos": 3,
         "ypos": 4,
