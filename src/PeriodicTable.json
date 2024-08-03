@@ -1130,7 +1130,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_019_potassium/element_019_potassium.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Potassium_Spectrum.jpg",
         "summary": "Potassium is a chemical element with symbol K (derived from Neo-Latin, kalium) and atomic number 19. It was first isolated from potash, the ashes of plants, from which its name is derived. In the Periodic table, potassium is one of seven elements in column (group) 1 (alkali metals):they all have a single valence electron in their outer electron shell, which they readily give up to create an atom with a positive charge - a cation, and combine with anions to form salts.",
-        "funfact": "Das radioaktive K-40-Isotop ist primordial und trägt wesentlich zur natürlichen Radioaktivität bei. Rund 10 % der Strahlenbelastung kommt von diesem Isotop.",
+        "funfact": [
+            "Das radioaktive K-40-Isotop ist primordial und trägt wesentlich zur natürlichen Radioaktivität bei. Rund 10 % der Strahlenbelastung kommt von diesem Isotop.",
+            "Sowohl Natrium als auch Kalium wurden vom Briten Humphry Davy erstmals hergestellt. Er nannte sie Sodium und Potassium. Trotzdem haben sich die Namen Natrium und Kalium international durchgesetzt, wie man an den Symbolen sieht."
+        ],
         "symbol": "K",
         "xpos": 1,
         "ypos": 4,
