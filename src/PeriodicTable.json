@@ -1343,7 +1343,14 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_022_titanium/element_022_titanium.glb",
         "spectral_img": null,
         "summary": "Titanium is a chemical element with symbol Ti and atomic number 22. It is a lustrous transition metal with a silver color, low density and high strength. It is highly resistant to corrosion in sea water, aqua regia and chlorine.",
-        "funfact": "Titan ist das schwerste Leichtmetall. Es hat eine Dichte von 4,6 kg/dm³. Die Grenze für Leichtmetalle wurd auf 5 kg/dm³ festgelegt.",
+        "funfact": [
+            "Titan ist das schwerste Leichtmetall. Es hat eine Dichte von 4,6 kg/dm³. Die Grenze für Leichtmetalle wurd auf 5 kg/dm³ festgelegt.",
+            "Auf vielen Wissenschaftsseiten selbst von namhaften Tageszeitungen wird immer wieder Titanium als deutscher Name angegeben.",
+            "Titandioxid ist ein besonders brilliantes Weißpigment und ist in vielen Produkten des täglichen Lebens enthalten. In Lebensmitteln hat es die Nummer E 171.",
+            "Titan kann wie Aluninium eloxiert werden und so verschiedene Farben annehmen.",
+            "Die Außenverkleidung des Guggenheimmuseums in Bilbao besteht aus Titanplatten. Mit der Zeit verdiickt sich die schützende Oxidschicht und ändert damit seine Farbe.",
+            "Die Nickel-Titan-Legierung Nitinol ist der älteste Vertreter der Formgedächtnislegierungen."
+        ],
         "symbol": "Ti",
         "xpos": 4,
         "ypos": 4,
