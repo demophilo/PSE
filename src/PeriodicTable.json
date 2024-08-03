@@ -923,7 +923,12 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_016_sulfur/element_016_sulfur.glb",
         "spectral_img": "https://en.wikipedia.org/wiki/File:Sulfur_Spectrum.jpg",
         "summary": "Sulfur or sulphur (see spelling differences) is a chemical element with symbol S and atomic number 16. It is an abundant, multivalent non-metal. Under normal conditions, sulfur atoms form cyclic octatomic molecules with chemical formula S8.",
-        "funfact": "Von Schwefelsäure werden mehr Tonnen hergestellt als irgendeine andere Chemikalie.",
+        "funfact": [
+            "Von Schwefelsäure werden mehr Tonnen hergestellt als irgendeine andere Chemikalie.",
+            "Die Stadt Yokkaichi in Japan erlangte in den 1960ern als Asthmacity traurige Berühmtheit. Das Asthma wurde vom Schwefeldioxid der Industrie verursacht. Erst als ein japanisches Gericht die Beweislastumkehr einführte und die Industrie für jede Tonne SO2 in den Emmissionen bezahlen ließ, wurde die Luft besser, da die Industrie dadurch Geld einsparen konnte.",
+            "Früher wurde Schwefel haubtsächlich durch Abbau natürlicher Vorkommen gewonnen. Heutzutage kommt der Hauptanteil aus der Entschwefelung von Erdöl und Erdgas.",
+            "Bei Dauerwellen werden Disulfidbrücken zuerst gelöst und dann wieder neu geknüpft, um die Haare in ihrer gewünschten Form zu halten."
+        ],
         "symbol": "S",
         "xpos": 16,
         "ypos": 3,
