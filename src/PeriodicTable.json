@@ -1812,7 +1812,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_028_nickel/element_028_nickel.glb",
         "spectral_img": null,
         "summary": "Nickel is a chemical element with symbol Ni and atomic number 28. It is a silvery-white lustrous metal with a slight golden tinge. Nickel belongs to the transition metals and is hard and ductile.",
-        "funfact": "",
+        "funfact": [
+            "So wie bei Cobalterzen dachten früher die Menschen über Nickelerze. Da diese Erze nicht aufbereitet werden konnten, mussten sie von Berggeistern (Nickeln) verwunschen worden sein.",
+            "Nickel lässt sich mit Dimethylglyoxim aus einer ammonikalischen Lösung fällen. Da diese Reaktion nicht nur quantitativ sondern auch spezifisch ist, gilt das als bester nasschemischer Nachweis aller Elemente."
+        ],
         "symbol": "Ni",
         "xpos": 10,
         "ypos": 4,
