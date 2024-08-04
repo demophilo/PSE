@@ -1977,7 +1977,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_030_zinc/element_030_zinc.glb",
         "spectral_img": null,
         "summary": "Zinc, in commerce also spelter, is a chemical element with symbol Zn and atomic number 30. It is the first element of group 12 of the periodic table. In some respects zinc is chemically similar to magnesium:its ion is of similar size and its only common oxidation state is +2.",
-        "funfact": "Die erste brauchbare koninuierliche Stromquelle war die Voltasche Säule bestehend aus den Elementen Zink und Kupfer. Da sie Elektrotechnik ermöglichte, war sie einer der wichtigsten Erfindungen der Menschheit.",
+        "funfact": [
+            "Die erste brauchbare koninuierliche Stromquelle war die Voltasche Säule bestehend aus den Elementen Zink und Kupfer. Da sie Elektrotechnik ermöglichte, war sie einer der wichtigsten Erfindungen der Menschheit.",
+            "Der Name Zink kommt von Zinke, Zind Zahn, Zacke, da Zink zackenförmig erstarrt.",
+            "Bereits im Altertum war Zink als Legierungsbestandteil von Messing in Gebrauch. Als eigenständiges Metall wurde es jedoch erst im 14. Jahrhundert in Indien entdeckt."
+        ],
         "symbol": "Zn",
         "xpos": 12,
         "ypos": 4,
