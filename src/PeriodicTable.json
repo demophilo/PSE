@@ -1733,7 +1733,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_027_cobalt/element_027_cobalt.glb",
         "spectral_img": null,
         "summary": "Cobalt is a chemical element with symbol Co and atomic number 27. Like nickel, cobalt in the Earth's crust is found only in chemically combined form, save for small deposits found in alloys of natural meteoric iron. The free element, produced by reductive smelting, is a hard, lustrous, silver-gray metal.",
-        "funfact": "Eine Besonderheit stellt die Atommasse des natürlich vorkommenden Cobalts dar. Sie ist mit 58,93 größer als die mittlere Atommasse von Nickel mit 58,69, dem nächsten Element im Periodensystem. Diese Besonderheit gibt es auch bei Argon und Kalium sowie bei Tellur und Iod.",
+        "funfact": [
+            "Eine Besonderheit stellt die Atommasse des natürlich vorkommenden Cobalts dar. Sie ist mit 58,93 größer als die mittlere Atommasse von Nickel mit 58,69, dem nächsten Element im Periodensystem. Diese Besonderheit gibt es auch bei Argon und Kalium sowie bei Tellur und Iod.",
+            "Cobalterze wurden wurden im Mittelalter häufig für wertvolle Silber- und Kupfererze gehalten. Da sie sich aber nicht verarbeiten ließen und wegen des Arsengehaltes beim Erhitzen schlechte Gerüche abgaben, wurden sie als verhext angesehen. Angeblich hätten Kobolde das kostbare Silber aufgefressen und an seiner Stelle wertlosere silberfarbene Erze ausgeschieden."
+        ],
         "symbol": "Co",
         "xpos": 9,
         "ypos": 4,
