@@ -1893,7 +1893,13 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_029_copper/element_029_copper.glb",
         "spectral_img": null,
         "summary": "Copper is a chemical element with symbol Cu (from Latin:cuprum) and atomic number 29. It is a soft, malleable and ductile metal with very high thermal and electrical conductivity. A freshly exposed surface of pure copper has a reddish-orange color.",
-        "funfact": "The first mirrors were made out uf copper. They were polished and then coated with a thin layer of gold.",
+        "funfact": [
+            "The first mirrors were made out uf copper. They were polished and then coated with a thin layer of gold.",
+            "Für Eisen wird durch Chlorid korrodiert. Was für Eisen das Chloridion ist, ist für Kupfer das Sulfation.",
+            "Aus der Bronzezeit gibt es mehr Artefakte als aus der Eisenzeit, weil Bronze weniger korrodiert.",
+            "Der Werkstoff Berylliumkupfer ist in vielen Bereichen besser als Stahl. Er leitet den Strom besser, ist elastischer, ist korrosionsbeständig und schlägt keine Funken.",
+            "Die Bingham Kennecott Copper Mine in Utah brüstet sich damit, eine größere Menge Material bewegt zu haben, als es beim Bau der chinesischen Mauer getan wurde."
+        ],
         "symbol": "Cu",
         "xpos": 11,
         "ypos": 4,
