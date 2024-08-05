@@ -2165,7 +2165,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_033_arsenic/element_033_arsenic.glb",
         "spectral_img": null,
         "summary": "Arsenic is a chemical element with symbol As and atomic number 33. Arsenic occurs in many minerals, usually in conjunction with sulfur and metals, and also as a pure elemental crystal. Arsenic is a metalloid.",
-        "funfact": "",
+        "funfact": [
+            "Napoleon ist wahrscheinlich durch Arsenvergiftung gestorben. Die Tapeten in seinem Exil auf St. Helena waren mit dem arsenhaltigen Pariser Grün gestrichen. Die Symptome seiner Krankheit passen zu einer chronischen Arsenvergiftung.",
+            "In den 1950er Jahren, auf dem Höhepunkt des Kalten Krieges, erkrankte die US-amerikanische Botschafterin, Clare Booth Luce, in Rom. Man kam drauf, dass sie an einer chronischen Arenvergiftung litt. Die Erkenntniss, dass die Krankheit auf Tapeten, die durch Schimmelpilzbefall gasförmige, giftige Arsenverbindungen freisetzten, und nicht auf gegnerische Geheimagenten zurückgeführt werden konnte, trug nicht nur zur Genesung der Botschafterin, sondern auch zum Erhalt des Friedens bei."
+        ],
         "symbol": "As",
         "xpos": 15,
         "ypos": 4,
