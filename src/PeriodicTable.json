@@ -2053,7 +2053,7 @@
         "summary": "Gallium is a chemical element with symbol Ga and atomic number 31. Elemental gallium does not occur in free form in nature, but as the gallium(III) compounds that are in trace amounts in zinc ores and in bauxite. Gallium is a soft, silvery metal, and elemental gallium is a brittle solid at low temperatures, and melts at 29.76 °C (85.57 °F) (slightly above room temperature).",
         "funfact": [
             "Gallium ist offiziell nach dem lateinischen Namen - Gallia - von Frankreich benannt wurden. Gallus war aber auch der Hahn auf lateinisch, sodass der Hahn zum Nationalsymbol für die Gallier und später for Frankrecih wurde. Der Entdecker hieß Lecoq - ebenfalls der Hahn. Somit ist Gallium inoffiziell das erste Element, das nach einer Person benannt wurde und sein Entdecker hat dies auch zu Lebzeiten erfahren. Nur zwei weitere Menschen erlebten später diese Ehre.",
-            "Gallium wird als Füllung in Hochtemperaturthermometernverwendet",
+            "Gallium wird als Füllung in Hochtemperaturthermometern verwendet",
             "Mit Hilfe von Gallium wurden Neutrinos nachgewiesen",
         ],
         "symbol": "Ga",
@@ -2108,7 +2108,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_032_germanium/element_032_germanium.glb",
         "spectral_img": null,
         "summary": "Germanium is a chemical element with symbol Ge and atomic number 32. It is a lustrous, hard, grayish-white metalloid in the carbon group, chemically similar to its group neighbors tin and silicon. Purified germanium is a semiconductor, with an appearance most similar to elemental silicon.",
-        "funfact": "Mendelejew hat 1871 drei Elemente mit speziellen Eigenschaften vorher gesagt. 1886 entdeckte Clemens Winkler das erste dieser Elemente und nannte es Germanium.",
+        "funfact": [
+            "Mendelejew hat 1871 drei Elemente mit speziellen Eigenschaften vorher gesagt. 1886 entdeckte Clemens Winkler das erste dieser Elemente und nannte es Germanium.",
+            "Als Halbleiter war es das führende Material in der Elektronik, bis es vom Silicium verdrängt wurde."
+        ],
         "symbol": "Ge",
         "xpos": 14,
         "ypos": 4,
