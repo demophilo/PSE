@@ -2051,7 +2051,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_031_gallium/element_031_gallium.glb",
         "spectral_img": null,
         "summary": "Gallium is a chemical element with symbol Ga and atomic number 31. Elemental gallium does not occur in free form in nature, but as the gallium(III) compounds that are in trace amounts in zinc ores and in bauxite. Gallium is a soft, silvery metal, and elemental gallium is a brittle solid at low temperatures, and melts at 29.76 °C (85.57 °F) (slightly above room temperature).",
-        "funfact": "Gallium ist offiziell nach dem lateinischen Namen - Gallia - von Frankreich benannt wurden. Gallus war aber auch der Hahn auf lateinisch, sodass der Hahn zum Nationalsymbol für die Gallier und später for Frankrecih wurde. Der Entdecker hieß Lecoq - ebenfalls der Hahn. Somit ist Gallium inoffiziell das erste Element, das nach einer Person benannt wurde und sein Entdecker hat dies auch zu Lebzeiten erfahren. Nur zwei weitere Menschen erlebten später diese Ehre.",
+        "funfact": [
+            "Gallium ist offiziell nach dem lateinischen Namen - Gallia - von Frankreich benannt wurden. Gallus war aber auch der Hahn auf lateinisch, sodass der Hahn zum Nationalsymbol für die Gallier und später for Frankrecih wurde. Der Entdecker hieß Lecoq - ebenfalls der Hahn. Somit ist Gallium inoffiziell das erste Element, das nach einer Person benannt wurde und sein Entdecker hat dies auch zu Lebzeiten erfahren. Nur zwei weitere Menschen erlebten später diese Ehre.",
+            "Gallium wird als Füllung in Hochtemperaturthermometernverwendet",
+            "Mit Hilfe von Gallium wurden Neutrinos nachgewiesen",
+        ],
         "symbol": "Ga",
         "xpos": 13,
         "ypos": 4,
