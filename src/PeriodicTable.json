@@ -2554,7 +2554,12 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_039_yttrium/element_039_yttrium.glb",
         "spectral_img": null,
         "summary": "Yttrium is a chemical element with symbol Y and atomic number 39. It is a silvery-metallic transition metal chemically similar to the lanthanides and it has often been classified as a \"rare earth element\". Yttrium is almost always found combined with the lanthanides in rare earth minerals and is never found in nature as a free element.",
-        "funfact": "Es ist das leichteste Metall, dass nach der Mine Ytterby in Schweden benannt wurde, in deren Erzen es entdeckt wurde. Die anderen Elemente sind Erbium, Terbium und Ytterbium.",
+        "funfact": [
+            "Es ist das leichteste Metall, dass nach der Mine Ytterby in Schweden benannt wurde, in deren Erzen es entdeckt wurde. Die anderen Elemente sind Erbium, Terbium und Ytterbium.",
+            "Yttrium hat einen niedrigen Einfangquerschnitt für Neutronen, deshalb wird es in der Reaktortechnik als Material für Rohre und Behälter verwendet.",
+            "Yttrium ist ein Reinelement",
+            "Yttrium ist ein wichtiger Bestandteil von Phosphoren in Bildschirmen und Leuchtstoffröhren."
+        ],
         "symbol": "Y",
         "xpos": 3,
         "ypos": 5,
@@ -2616,7 +2621,14 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_040_zirconium/element_040_zirconium.glb",
         "spectral_img": null,
         "summary": "Zirconium is a chemical element with symbol Zr and atomic number 40. The name of zirconium is taken from the name of the mineral zircon, the most important source of zirconium. The word zircon comes from the Persian word zargun زرگون, meaning \"gold-colored\".",
-        "funfact": "",
+        "funfact": [
+            "Obwohl Zirconium schon 1824 metallisch hergestellt wurde, konnte die korrekte Atommasse erst 1924 bestimmt werden, da nicht bekannt war, dass Zirconium stets geringe Mengen Hafnium enthält.",
+            "Das wichtige zirconiumhaltige Mineral Zirkon (Zr[SiO4]) ist als Schmuckstein bereits seit der Antike bekannt",
+            "Zirkon ist – auf Grund seines hohen Schmelzpunktes von 2550 °C, seiner großen Härte und geringen Reaktivität – das älteste auf der Erde auffindbare Mineral und kann auf Grund eingelagerter Uran- und Thoriumisotope für radiometrische Altersbestimmungen verwendet werden.",
+            "Zirconium und Hafnium sind wegen der Lanthanidenkontraktion Zwillingselemente. D.h. sie sind auf einfache chemische Art nicht zu trennen. Es braucht spezielle Verfahren um die beiden Elemente zu trennen.",
+            "Die größten Unterschiede zwischen Zirconium und dem Zwillinselement Hafnium sind die Dichte und der Neutroneneinfangsquerschnitt.",
+            "Wegen des geringen Neutroneneinfangsquerschnitts wird Zirconium in Kernreaktoren als Hüllmaterial verwendet."
+        ],
         "symbol": "Zr",
         "xpos": 4,
         "ypos": 5,
