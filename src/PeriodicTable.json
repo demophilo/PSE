@@ -2490,7 +2490,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_038_strontium/element_038_strontium.glb",
         "spectral_img": null,
         "summary": "Strontium is a chemical element with symbol Sr and atomic number 38. An alkaline earth metal, strontium is a soft silver-white or yellowish metallic element that is highly reactive chemically. The metal turns yellow when it is exposed to air.",
-        "funfact": "",
+        "funfact": [
+            "Strontiumranelat ist zur Behandlung von Osteoporose geeignet ist. Das neue Medikament senkt das Risiko, eine Fraktur zu erleiden.",
+            "Strontium-90 ist ein radioaktives Isotop, das bei Atombombenversuchen in die Umwelt gelangt ist. Es wird in den Knochen eingelagert und kann zu Knochenkrebs führen. Es ist immer noch nachweisbar."
+        ],
         "symbol": "Sr",
         "xpos": 2,
         "ypos": 5,
