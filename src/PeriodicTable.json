@@ -2282,7 +2282,13 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_035_bromine/element_035_bromine.glb",
         "spectral_img": null,
         "summary": "Bromine (from Ancient Greek:βρῶμος, brómos, meaning \"stench\") is a chemical element with symbol Br, and atomic number 35. It is a halogen. The element was isolated independently by two chemists, Carl Jacob Löwig and Antoine Jerome Balard, in 1825–1826.",
-        "funfact": "",
+        "funfact": [
+            "Um 1950 entdeckte Boris Pawlowitsch Beloussow die Belousov-Zhabotinsky-Reaktion eher zufällig. Er konnte bei der Oxidation von Zitronensäure mit schwefelsaurer Bromatlösung und Cer-Ionen als Katalysator einen periodisch auftretenden Wechsel der Farbe der Lösung zwischen gelb und farblos beobachten. Damals glaubte man, dass solche Reaktionen nicht existieren und deswegen glaubte, dass Beloussow einen Fehler gemacht hätte.",
+            "Brom ist außer Quecksilber das einzige Element, dass bei Raumtemperatur flüssig ist.",
+            "Brom ist nach seinem Geruch benannt. Es stammt aus dem Griechischen und bedeutet \"stinkend\".",
+            "Brom hat 2 Isotope, die stabil sind. Das häufigere ist Brom-79, das andere Brom-81. Die Häufigkeit von Brom-81 ist 49,3 %, die von Brom-79 50,7 %. Bei keinem anderen Element ist das häufigere Isotop so knapp in der Mehrheit.",
+            "Brom-81 ist das einzige stabile Isotop, das mehr Neutronen als Protonen hat."
+        ],
         "symbol": "Br",
         "xpos": 17,
         "ypos": 4,
