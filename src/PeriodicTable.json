@@ -2427,7 +2427,10 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_037_rubidium/element_037_rubidium.glb",
         "spectral_img": null,
         "summary": "Rubidium is a chemical element with symbol Rb and atomic number 37. Rubidium is a soft, silvery-white metallic element of the alkali metal group, with an atomic mass of 85.4678. Elemental rubidium is highly reactive, with properties similar to those of other alkali metals, such as very rapid oxidation in air.",
-        "funfact": "[Atomuhren mit Rubidium sind ungenauer als Caesiumuhren, aber 120000fach genauer als Quarzuhren, welche eine Sekunde pro Monat abweichen können. Aber da Rubidiumuhren wesentlich kompakter als Caesiumuhren hergestellt werden können, werden sie bevorzugt in Sateliten eingesetzt.]",
+        "funfact": [
+            "Atomuhren mit Rubidium sind ungenauer als Caesiumuhren, aber 120000fach genauer als Quarzuhren, welche eine Sekunde pro Monat abweichen können. Aber da Rubidiumuhren wesentlich kompakter als Caesiumuhren hergestellt werden können, werden sie bevorzugt in Sateliten eingesetzt.",
+            "Obwohl es von Rubidium nur ein stabiles Isotop gibt, ist es kein Reinelement. 27,8 % des Rubidiums auf der Erde bestehen ausdem Isotop Rb-87, welches eine Halbwertszeit von 48,8 Milliarden Jahren hat."
+        ],
         "symbol": "Rb",
         "xpos": 1,
         "ypos": 5,
