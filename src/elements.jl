@@ -1,6 +1,6 @@
 module Elements
 using JSON
-export Element, read_chemical_elements
+export Element, read_chemical_elements, get_group_elements
 
 struct Element
 	name::String # English name of the element
