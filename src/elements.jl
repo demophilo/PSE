@@ -303,6 +303,6 @@ function filter_periodic_table(PSE_matrix, symbols_to_show, element_sympols_to_g
 
 	return _filtered_matrix
 end
-print_PSE(get_PSE_matrix(elements::Vector{Element}, true))
+
 
 end # module

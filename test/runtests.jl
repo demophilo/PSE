@@ -1,12 +1,12 @@
 using Test
 include("../src/elements.jl") # Pfad zur Datei, die das Modul `Elements` enthält
-import .Elements as E
-p
-#=
+using .Elements # Zugriff auf das Modul `Elements`
+
+
 @testset "Element Struct Tests" begin
 	# Test der Instanziierung
 
-	elements = E.read_chemical_elements("C:/Users/sheng/git_projects/PSE/src/PeriodicTable.json")
+	elements = read_chemical_elements("../src/PeriodicTable.json")
 
 	@test elements[2].name == "Helium"
 	@test elements[2].name_de == "Helium"
@@ -19,4 +19,5 @@ p
 	@test elements[2].group == 18
 
 end
-=#
+
+
