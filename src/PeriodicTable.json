@@ -2346,8 +2346,9 @@
         "spectral_img": "https://en.wikipedia.org/wiki/File:Krypton_Spectrum.jpg",
         "summary": "Krypton (from Greek:κρυπτός kryptos \"the hidden one\") is a chemical element with symbol Kr and atomic number 36. It is a member of group 18 (noble gases) elements. A colorless, odorless, tasteless noble gas, krypton occurs in trace amounts in the atmosphere, is isolated by fractionally distilling liquefied air, and is often used with other rare gases in fluorescent lamps.",
         "funfact": [
-            "Mit dem stark elektronegativen Fluor konnte ein instabiles Kryptondifluorid KrF2 gebildet werden, welches das stärkste bisher bekannte Oxidationsmittel ist.",
-            "Das Radioaktive Isotop 78Kr hat eine Halbwertszeit von 2,0•10^21 Jahren und zerfällt durch Doppelten Elektroneneinfang."
+            "Mit dem stark elektronegativen Fluor konnte ein instabiles Kryptondifluorid KrF2 gebildet werden. Es ist nur bei tiefen Temperaturen stabil. Weil es das einzige Fluorid überhapt ist, dass endotherm hergestellt wird, ist es ein stärkeren Fuorierungsmittel als Fluor selbst.",
+            "Das Radioaktive Isotop Kr-78 hat eine Halbwertszeit von 2,0•10^21 Jahren und zerfällt durch Doppelten Elektroneneinfang.",
+            "Ein Kernkraftwerk produziert jedes Jahr etwa 1,1•10^13 Becquerel des Isotops Kr-85. Da Krypton chemisch nicht gebunden werden kann, reichert sich das Radionuklid in der Atmosphäre an."
         ],
         "symbol": "Kr",
         "xpos": 18,
