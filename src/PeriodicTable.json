@@ -3157,7 +3157,11 @@
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_049_indium/element_049_indium.glb",
         "spectral_img": null,
         "summary": "Indium is a chemical element with symbol In and atomic number 49. It is a post-transition metallic element that is rare in Earth's crust. The metal is very soft, malleable and easily fusible, with a melting point higher than sodium, but lower than lithium or tin.",
-        "funfact": "",
+        "funfact": [
+            "Indium besteht zu 95,71 % aus In-115, das eine Halbwertszeit von 4,4*10^14 Jahren hat. Der Rest besteht aus stabilem In-113.",
+            "Neben Rhenium ist Indium das zweite Element, welches natürlicherweise einen höheren Anteil radioaktiver Isotope als stabile Isotope in seiner Zusammensetzung aufweist.",
+            "Obwohl Indium zu 95,71 % aus einem radioaktiven Isotop besteht, ist es weniger radioaktiv als Kalium."
+        ],
         "symbol": "In",
         "xpos": 13,
         "ypos": 5,
