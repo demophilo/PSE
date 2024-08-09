@@ -224,3 +224,14 @@ end
 	@test length(block_elements3) == 30
 	@test block_elements3[30].name_de == "Radon"
 end
+
+@testset "sort_elements_chemically" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	sorted_elements = sort_elements_chemically(elements)
+	@test sorted_elements[1].name_de == "Wasserstoff"
+	@test sorted_elements[2].name_de == "Lithium"
+	@test sorted_elements[89].name_de == "Lanthan"
+	@test sorted_elements[104].name_de == "Actinium"
+	@test sorted_elements[118].name_de == "Lawrencium"
+	
+end
