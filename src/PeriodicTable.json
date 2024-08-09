@@ -47,7 +47,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Helium",
@@ -108,7 +109,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Lithium",
@@ -163,7 +165,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Beryllium",
@@ -281,7 +284,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Carbon",
@@ -337,7 +341,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Nitrogen",
@@ -395,7 +400,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Oxygen",
@@ -456,7 +462,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Fluorine",
@@ -578,7 +585,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Sodium",
@@ -706,7 +714,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Aluminium",
@@ -840,7 +849,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Phosphorus",
@@ -977,7 +987,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Chlorine",
@@ -1045,7 +1056,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Argon",
@@ -1115,7 +1127,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Potassium",
@@ -1186,7 +1199,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Calcium",
@@ -1255,7 +1269,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Scandium",
@@ -1408,7 +1423,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Vanadium",
@@ -1483,7 +1499,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Chromium",
@@ -1559,7 +1576,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Manganese",
@@ -1718,7 +1736,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Cobalt",
@@ -1879,7 +1898,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Copper",
@@ -1963,7 +1983,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Zinc",
@@ -2037,7 +2058,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Gallium",
@@ -2094,7 +2116,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Germanium",
@@ -2151,7 +2174,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Arsenic",
@@ -2269,7 +2293,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Bromine",
@@ -2332,7 +2357,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Krypton",
@@ -2415,7 +2441,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Rubidium",
@@ -2478,7 +2505,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Strontium",
@@ -2542,7 +2570,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Yttrium",
@@ -2673,7 +2702,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Niobium",
@@ -2822,7 +2852,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Technetium",
@@ -2881,7 +2912,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Ruthenium",
@@ -2934,7 +2966,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Rhodium",
@@ -3040,7 +3073,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Silver",
@@ -3093,7 +3127,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Cadmium",
@@ -3146,7 +3181,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Indium",
@@ -3204,7 +3240,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Tin",
@@ -3259,7 +3296,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Antimony",
@@ -3315,7 +3353,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Tellurium",
@@ -3372,7 +3411,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Iodine",
@@ -3479,7 +3519,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Cesium",
@@ -3588,7 +3629,8 @@
         },
         "block": "s",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Lanthanum",
@@ -3644,7 +3686,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Cerium",
@@ -3701,7 +3744,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Praseodymium",
@@ -3813,7 +3857,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Promethium",
@@ -3868,7 +3913,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Samarium",
@@ -3923,7 +3969,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Europium",
@@ -3978,7 +4025,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Gadolinium",
@@ -4033,7 +4081,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Terbium",
@@ -4144,7 +4193,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Holmium",
@@ -4255,7 +4305,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Thulium",
@@ -4366,7 +4417,8 @@
         },
         "block": "f",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Lutetium",
@@ -4422,7 +4474,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Hafnium",
@@ -4477,7 +4530,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Tantalum",
@@ -4530,7 +4584,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Tungsten",
@@ -4583,7 +4638,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Rhenium",
@@ -4642,7 +4698,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Osmium",
@@ -4695,7 +4752,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Iridium",
@@ -4748,7 +4806,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Platinum",
@@ -4801,7 +4860,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Gold",
@@ -4909,7 +4969,8 @@
         },
         "block": "d",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Thallium",
@@ -4963,7 +5024,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Lead",
@@ -5019,7 +5081,8 @@
         },
         "block": "p",
         "stable": true,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Bismuth",
@@ -5129,7 +5192,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Astatine",
@@ -5181,7 +5245,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Radon",
@@ -5233,7 +5298,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Francium",
@@ -5293,7 +5359,8 @@
         },
         "block": "s",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Radium",
@@ -5347,7 +5414,8 @@
         },
         "block": "s",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Actinium",
@@ -5401,7 +5469,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Thorium",
@@ -5511,7 +5580,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Uranium",
@@ -5565,7 +5635,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Neptunium",
@@ -5618,7 +5689,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": false
+        "synthetic": false,
+        "mononuclidic": false
     },
     {
         "name": "Plutonium",
@@ -5725,7 +5797,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Curium",
@@ -5778,7 +5851,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Berkelium",
@@ -5831,7 +5905,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Californium",
@@ -5884,7 +5959,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Einsteinium",
@@ -5937,7 +6013,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Fermium",
@@ -5990,7 +6067,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Mendelevium",
@@ -6043,7 +6121,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Nobelium",
@@ -6096,7 +6175,8 @@
         },
         "block": "f",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Lawrencium",
@@ -6149,7 +6229,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Rutherfordium",
@@ -6202,7 +6283,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Dubnium",
@@ -6253,7 +6335,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Seaborgium",
@@ -6304,7 +6387,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Bohrium",
@@ -6355,7 +6439,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Hassium",
@@ -6406,7 +6491,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Meitnerium",
@@ -6457,7 +6543,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Darmstadtium",
@@ -6508,7 +6595,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Roentgenium",
@@ -6559,7 +6647,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Copernicium",
@@ -6610,7 +6699,8 @@
         },
         "block": "d",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Nihonium",
@@ -6661,7 +6751,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Flerovium",
@@ -6712,7 +6803,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Moscovium",
@@ -6763,7 +6855,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Livermorium",
@@ -6814,7 +6907,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Tennessine",
@@ -6865,7 +6959,8 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     },
     {
         "name": "Oganesson",
@@ -6916,6 +7011,7 @@
         },
         "block": "p",
         "stable": false,
-        "synthetic": true
+        "synthetic": true,
+        "mononuclidic": false
     }
 ]
