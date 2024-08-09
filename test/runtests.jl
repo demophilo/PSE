@@ -212,3 +212,15 @@ end
 		"Oganesson"
 	]
 end
+@testset "get_elements_by_blocks" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	block_elements = get_elements_by_blocks(elements, ["s"], false)
+	block_elements2 = get_elements_by_blocks(elements, ["f"], false)
+	block_elements3 = get_elements_by_blocks(elements, ["p"], true)
+	@test length(block_elements) == 14
+	@test block_elements[14].name_de == "Radium"
+	@test length(block_elements2) == 28
+	@test block_elements2[28].name_de == "Nobelium"
+	@test length(block_elements3) == 30
+	@test block_elements3[30].name_de == "Radon"
+end
