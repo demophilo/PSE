@@ -31,30 +31,6 @@ function read_chemical_elements(filename::String)
 end
 
 # functions to get elements::Vector{Element}
-mononuclidic_elements = [
-	"Beryllium",
-	"Fluor",
-	"Natrium",
-	"Aluminium",
-	"Phosphor",
-	"Scandium",
-	"Mangan",
-	"Cobalt",
-	"Arsen",
-	"Yttrium",
-	"Niob",
-	"Rhodium",
-	"Iod",
-	"Caesium",
-	"Praseodym",
-	"Terbium",
-	"Holmium",
-	"Thulium",
-	"Gold",
-	"Bismut",
-	"Thorium",
-	"Plutonium"
-]
 
 Tom_Lehrer_en_elements = [
 	"Antimony",
