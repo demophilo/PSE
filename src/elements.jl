@@ -145,12 +145,8 @@ function get_nature_elements(elements::Vector{Element})
 	return [_element for _element in elements if !_element.synthetic]
 end
 
-function get_synthetic_elements(elements::Vector{Element})
-	return [_element for _element in elements if _element.synthetic]
-end
-
 function get_elements_by_blocks(elements::Vector{Element}, blockletters::Vector{String}, easy_mode::Bool)
-	return [_element for _element in elements for _block in blockletters if _element.block == _block && (_element.number <= 94 || (_element.number >= 95 && !easy_mode))]
+	return [_element for _element in elements for _block in blockletters if _element.block == _block && !(_element.synthetic && easy_mode)]
 end
 
 function get_stable_elements(elements::Vector{Element})
@@ -158,7 +154,7 @@ function get_stable_elements(elements::Vector{Element})
 end
 
 function get_radioactive_elements(elements::Vector{Element}, easy_mode::Bool)
-	return [_element for _element in elements if !_element.stable && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
+	return [_element for _element in elements if !_element.stable && !(_element.synthetic && easy_mode)]
 end
 
 function get_single_letter_elements(elements::Vector{Element})
@@ -166,7 +162,7 @@ function get_single_letter_elements(elements::Vector{Element})
 end
 
 function get_elements_with_same_name(elements::Vector{Element}, easy_mode::Bool)
-	return [_element for _element in elements if _element.name == _element.name_de && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
+	return [_element for _element in elements if _element.name == _element.name_de && !(_element.synthetic && easy_mode)]
 end
 
 function get_Tom_Lehrer_de_elements(elements::Vector{Element}, Tom_Lehrer_en_elements)
