@@ -32,3 +32,35 @@ end
 	@test group_elements3[1].name_de == "Bor"
 	@test length(group_elements3) == 5
 end
+
+@testset "mononuclidic elements" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	mononuclidic_elements = get_mononuclidic_elements(elements)
+	mononuclidic_elements = [element.name_de for element in mononuclidic_elements]
+	@test length(mononuclidic_elements) == 22
+	@test mononuclidic_elements == [
+		"Beryllium",
+		"Fluor",
+		"Natrium",
+		"Aluminium",
+		"Phosphor",
+		"Scandium",
+		"Mangan",
+		"Cobalt",
+		"Arsen",
+		"Yttrium",
+		"Niob",
+		"Rhodium",
+		"Iod",
+		"Caesium",
+		"Praseodym",
+		"Terbium",
+		"Holmium",
+		"Thulium",
+		"Gold",
+		"Bismut",
+		"Thorium",
+		"Plutonium"
+	]
+
+end
