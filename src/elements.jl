@@ -1,6 +1,7 @@
 module Elements
 using JSON
-export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name, get_Tom_Lehrer_de_elements, get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, filter_periodic_table
+export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
+	get_Tom_Lehrer_de_elements, get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, filter_periodic_table
 
 struct Element
 	name::String # English name of the element
@@ -186,8 +187,6 @@ function element_compare(element1::Element, element2::Element)
 		return true
 	elseif element1.group != "actinide" && element1.group != "lanthanide" && element2.group != "actinide" && element2.group != "lanthanide"
 		return element1.group < element2.group
-	else
-		println("ein Fall beim Sortieren der Elemente wurde nicht bedacht")
 	end
 end
 
