@@ -1,6 +1,6 @@
 module Elements
 using JSON
-export Element, read_chemical_elements, get_group_elements
+export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name, get_Tom_Lehrer_de_elements, get_mononuclidic_elements, get_elements_without_synthetic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, filter_periodic_table
 
 struct Element
 	name::String # English name of the element
@@ -15,6 +15,7 @@ struct Element
 	block::String # s, p, d, f
 	stable::Bool
 	synthetic::Bool
+	mononuclidic::Bool
 end
 
 """
@@ -194,6 +195,10 @@ end
 
 function get_Tom_Lehrer_de_elements(elements::Vector{Element}, Tom_Lehrer_en_elements)
 	return [_element for _element in elements if _element.name in Tom_Lehrer_en_elements]
+end
+
+function get_mononuclidic_elements(elements::Vector{Element})
+	return [_element for _element in elements if _element.mononuclidic]
 end
 
 function get_elements_without_synthetic_elements(elements::Vector{Element})
