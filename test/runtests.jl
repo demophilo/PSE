@@ -86,7 +86,6 @@ end
 	@test sorted_elements[89].name_de == "Lanthan"
 	@test sorted_elements[104].name_de == "Actinium"
 	@test sorted_elements[118].name_de == "Lawrencium"
-
 end
 
 @testset "get_single_letter_elements" begin
