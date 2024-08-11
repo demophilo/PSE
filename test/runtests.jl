@@ -288,3 +288,9 @@ end
 	@test color_dict["lightpurple"] == "\e[95m"
 	@test color_dict["cyan"] == "\e[96m"
 end
+
+@testset "colorize_string" begin
+	color_dict = get_color_dict()
+	colored_string = colorize_string("Hello World!", color_dict, "red")
+	@test colored_string == "\e[31mHello World!\e[0m"
+end
