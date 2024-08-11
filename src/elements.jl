@@ -22,7 +22,6 @@ struct Element
 	synthetic::Bool
 	mononuclidic::Bool
 	Lehrer_number::Union{Integer, Nothing}
-	mononuclidic::Bool
 end
 
 """
