@@ -1,6 +1,8 @@
 using Test
-include("../src/elements.jl") # Pfad zur Datei, die das Modul `Elements` enthält
-using .Elements # Zugriff auf das Modul `Elements`
+include("../src/elements.jl")
+using .Elements
+include("../src/screen_manipulation.jl")
+using .ScreenManipulation
 
 
 @testset "Element Struct Tests" begin
@@ -267,6 +269,22 @@ end
 	@test PSE_matrix[1, 1] == "H"
 	@test PSE_matrix[1, 18] == "He"
 	@test PSE_matrix_wide[2, 1] == "Li"
-	@test PSE_matrix_wide[2, 32] == "Ne"
+	@test PSE_matrix_wide[7, 32] == "Og"
 
+end
+
+@testset "get_color_dict" begin
+	color_dict = get_color_dict()
+	@test color_dict["red"] == "\e[31m"
+	@test color_dict["green"] == "\e[32m"
+	@test color_dict["yellow"] == "\e[33m"
+	@test color_dict["blue"] == "\e[34m"
+	@test color_dict["purple"] == "\e[35m"
+	@test color_dict["lightblue"] == "\e[36m"
+	@test color_dict["white"] == "\e[37m"
+	@test color_dict["lightred"] == "\e[91m"
+	@test color_dict["green2"] == "\e[92m"
+	@test color_dict["lightyellow"] == "\e[93m"
+	@test color_dict["lightpurple"] == "\e[95m"
+	@test color_dict["cyan"] == "\e[96m"
 end
