@@ -259,3 +259,14 @@ end
 	@test "Nihonium" ∉ elements_with_same_name_easy
 
 end
+
+@testset "get_PSE_matrix" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	PSE_matrix = get_PSE_matrix(elements,false)
+	PSE_matrix_wide = get_PSE_matrix(elements,true)
+	@test PSE_matrix[1, 1] == "H"
+	@test PSE_matrix[1, 18] == "He"
+	@test PSE_matrix_wide[2, 1] == "Li"
+	@test PSE_matrix_wide[2, 32] == "Ne"
+
+end
