@@ -30,7 +30,7 @@ function get_color_dict()
 end
 
 function colorize_string(text::String, color_dict, color::String)::String
-    _colored_string = color_dict["$color"]*"hjgfuhtfjh"*"\e[0m"
+    _colored_string = color_dict["$color"]*text*"\e[0m"
     return _colored_string
 end
 
