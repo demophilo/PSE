@@ -1,7 +1,11 @@
 module Elements
 using JSON
+
+include("screen_manipulation.jl")
+using .ScreenManipulation
+
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_Tom_Lehrer_de_elements, get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, filter_periodic_table
+	get_Tom_Lehrer_de_elements, get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, Tom_Lehrer_en_elements
 
 struct Element
 	name::String # English name of the element
@@ -17,6 +21,7 @@ struct Element
 	stable::Bool
 	synthetic::Bool
 	mononuclidic::Bool
+	Lehrer_number::Union{Integer, Nothing}
 end
 
 """
@@ -138,6 +143,10 @@ Tom_Lehrer_en_elements = [
 	"Sodium"
 ]
 
+function compare_elements_by_Lehrer_number(a::Element, b::Element)
+	return a.Lehrer_number < b.Lehrer_number ? -1 : a.Lehrer_number > b.Lehrer_number ? 1 : 0
+end
+
 function get_group_elements(elements::Vector{Element}, group_name::Any, easy_mode::Bool)
 	return [_element for _element in elements if _element.group == group_name && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
 end
@@ -237,7 +246,7 @@ end
 
 hides the false elements, colors the right elements and the positions to guess
 """
-function filter_periodic_table(PSE_matrix, symbols_to_show, element_sympols_to_guess)
+function get_PSE_ready_to_print(PSE_matrix, symbols_to_show, element_sympols_to_guess)
 	_filtered_matrix = copy(PSE_matrix)
 	_max_rows, _max_columns = size(_filtered_matrix)
 	_elements_not_yet_guessed = setdiff(element_sympols_to_guess, symbols_to_show)
