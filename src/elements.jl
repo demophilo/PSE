@@ -1,5 +1,5 @@
 module Elements
-using JSON
+using JSON3
 
 include("screen_manipulation.jl")
 using .ScreenManipulation
@@ -22,6 +22,7 @@ struct Element
 	synthetic::Bool
 	mononuclidic::Bool
 	Lehrer_number::Union{Integer, Nothing}
+	mononuclidic::Bool
 end
 
 """
@@ -31,7 +32,7 @@ reads the information of the json file and returns a dictionary
 """
 function read_chemical_elements(filename::String)
 	_PSE_data = read(filename, String)
-	_elemente_dict = JSON.parse(_PSE_data)
+	_elemente_dict = JSON3.read(_PSE_data)
 	_elements = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in _elemente_dict]
 	return _elements
 end

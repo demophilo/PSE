@@ -1,23 +1,8 @@
 
+using JSON3
 
 include("elements.jl")
 using .Elements
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -38,27 +23,17 @@ function display_screen(show_matrix, score, time_bonus)
 end
 
 # player section
-mutable struct Player
-	name::String
-	game::String
-	total_score::Int
-end
 
-function read_Players_json_to_array(filename::String)::Vector{Player}
-	open(filename, "r") do file
-		_json_data = JSON.parse(file)
-		_player_array = [Player(item["name"], item["game"], item["total_score"]) for item in _json_data]
-		return _player_array
-	end
-end
+
+
 
 function append_Player_to_json_array(new_player::Player, filename::String)
 	_new_item_dict = Dict("name" => new_player.name, "game" => new_player.game, "total_score" => new_player.total_score)
 	open(filename, "r+") do file
-		_existing_data = JSON.parse(file)
+		_existing_data = JSON3.read(file)
 		push!(_existing_data, _new_item_dict)
 		seekstart(file)
-		JSON.print(file, _existing_data)
+		JSON3.write(file, _existing_data)
 	end
 end
 
