@@ -5,7 +5,7 @@ include("screen_manipulation.jl")
 using .ScreenManipulation
 
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements
+	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess
 
 struct Element
 	name::String # English name of the element
@@ -140,32 +140,25 @@ end
 
 hides the false elements, colors the right elements and the positions to guess
 """
-function get_PSE_ready_to_print(PSE_matrix, symbols_to_show, element_sympols_to_guess)
+function get_PSE_ready_to_print(PSE_matrix, elements_to_show, elements_symbols_to_guess, elements_not_to_guess)
 	_filtered_matrix = copy(PSE_matrix)
 	_max_rows, _max_columns = size(_filtered_matrix)
-	_elements_not_yet_guessed = setdiff(element_sympols_to_guess, symbols_to_show)
+	_elements_not_yet_guessed = setdiff(elements_symbols_to_guess, elements_to_show)
+
 	for row in 1:_max_rows
 		for column in 1:_max_columns
 
-			if _filtered_matrix[row, column] in symbols_to_show
+			if _filtered_matrix[row, column] in elements_to_show
 				_cell = rpad(_filtered_matrix[row, column], 3, " ")
 				_filtered_matrix[row, column] = "\e[32m$_cell\e[0m"
 			end
-
 
 			if _filtered_matrix[row, column] in _elements_not_yet_guessed
 				_filtered_matrix[row, column] = "\e[31m__ \e[0m"
 			end
 
-
-
-			if !(_filtered_matrix[row, column] in symbols_to_show || _filtered_matrix[row, column] == "")
-				if _filtered_matrix[row, column] in element_sympols_to_guess
-					_filtered_matrix[row, column] = "\e[31m__ \e[0m"
-				else
-					_filtered_matrix[row, column] = "__ "
-				end
-
+			if _filtered_matrix[row, column] in elements_not_to_guess
+				_filtered_matrix[row, column] = "__ "
 			end
 
 			if _filtered_matrix[row, column] == ""
@@ -177,6 +170,10 @@ function get_PSE_ready_to_print(PSE_matrix, symbols_to_show, element_sympols_to_
 	end
 
 	return _filtered_matrix
+end
+
+function get_elements_not_to_guess(elements::Vector{Element}, elements_to_guess::Vector{Element})
+	return [_element for _element in elements if !(_element in elements_to_guess)]
 end
 
 
