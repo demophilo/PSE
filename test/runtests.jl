@@ -4,6 +4,9 @@ using .Elements
 include("../src/screen_manipulation.jl")
 using .ScreenManipulation
 
+include("../src/module_IO_func.jl")
+using .IO_func
+
 
 @testset "Element Struct Tests" begin
 	# Test der Instanziierung
@@ -328,4 +331,27 @@ end
 	@test show_matrix[1, 2] == "   "
 	@test show_matrix[3, 1] == "\e[31m__ \e[0m"
 	@test show_matrix[7, 1] == "\e[32mFr \e[0m"
+end
+
+
+@testset "Test input_element" begin
+    # Simulierte Eingabe
+    simulated_input = "Helium\n"
+    io = IOBuffer(simulated_input)
+
+    # Funktion, die die Eingabe liest
+    function read_input()
+        trial_element = IO_func.input_element()
+        @test trial_element == "Helium"
+    end
+
+    # Pipe erstellen und Daten schreiben
+    rd, wr = redirect_stdin()
+    write(wr, simulated_input)
+    close(wr)
+
+    # Umleiten der Standard-Eingabe
+    redirect_stdin(rd) do
+        read_input()
+    end
 end
