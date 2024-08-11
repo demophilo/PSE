@@ -27,15 +27,7 @@ end
 
 
 
-function append_Player_to_json_array(new_player::Player, filename::String)
-	_new_item_dict = Dict("name" => new_player.name, "game" => new_player.game, "total_score" => new_player.total_score)
-	open(filename, "r+") do file
-		_existing_data = JSON3.read(file)
-		push!(_existing_data, _new_item_dict)
-		seekstart(file)
-		JSON3.write(file, _existing_data)
-	end
-end
+
 
 function input_player_name()
 	println("Geben Sie ihren Namen ein:")
