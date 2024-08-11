@@ -264,8 +264,8 @@ end
 
 @testset "get_PSE_matrix" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	PSE_matrix = get_PSE_matrix(elements,false)
-	PSE_matrix_wide = get_PSE_matrix(elements,true)
+	PSE_matrix = get_PSE_matrix(elements, false)
+	PSE_matrix_wide = get_PSE_matrix(elements, true)
 	@test PSE_matrix[1, 1] == "H"
 	@test PSE_matrix[1, 18] == "He"
 	@test PSE_matrix_wide[2, 1] == "Li"
@@ -299,6 +299,33 @@ end
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	Lehrer_element_vector = get_Lehrer_elements(elements)
 	for (index, element) in enumerate(Lehrer_element_vector)
-        @test element.Lehrer_number == index
-    end
+		@test element.Lehrer_number == index
+	end
+end
+
+@testset "get_elements_not_to_guess" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements_to_guess = get_group_elements(elements, 1, false)
+	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
+	@test length(elements_not_to_guess) == 111
+	@test elements[2] ∈ elements_not_to_guess
+	@test elements[1] ∉ elements_not_to_guess
+	@test elements[3] ∉ elements_not_to_guess
+end
+
+
+@testset "get_PSE_ready_to_print" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	PSE_matrix = get_PSE_matrix(elements, false)
+	elements_to_guess = get_group_elements(elements, 1, false)
+	element_symbols_to_guess = [element.symbol for element in elements_to_guess]
+	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
+	element_symbols_not_to_guess = [element.symbol for element in elements_not_to_guess]
+	right_element_symbols = ["H", "Fr"]
+	show_matrix = get_PSE_ready_to_print(PSE_matrix, right_element_symbols, element_symbols_to_guess, element_symbols_not_to_guess)
+	@test show_matrix[1, 1] == "\e[32mH  \e[0m"
+	@test show_matrix[2, 2] == "__ "
+	@test show_matrix[1, 2] == "   "
+	@test show_matrix[3, 1] == "\e[31m__ \e[0m"
+	@test show_matrix[7, 1] == "\e[32mFr \e[0m"
 end
