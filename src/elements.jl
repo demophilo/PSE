@@ -5,7 +5,7 @@ include("screen_manipulation.jl")
 using .ScreenManipulation
 
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_Tom_Lehrer_de_elements, get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, Tom_Lehrer_en_elements
+	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements
 
 struct Element
 	name::String # English name of the element
@@ -38,117 +38,11 @@ end
 
 # functions to get elements::Vector{Element}
 
-Tom_Lehrer_en_elements = [
-	"Antimony",
-	"Arsenic",
-	"Aluminium",
-	"Selenium",
-	"Hydrogen",
-	"Oxygen",
-	"Nitrogen",
-	"Rhenium",
-	"Nickel",
-	"Neodymium",
-	"Neptunium",
-	"Germanium",
-	"Iron",
-	"Americium",
-	"Ruthenium",
-	"Uranium",
-	"Europium",
-	"Zirconium",
-	"Lutetium",
-	"Vanadium",
-	"Lanthanum",
-	"Osmium",
-	"Astatine",
-	"Radium",
-	"Gold",
-	"Protactinium",
-	"Indium",
-	"Gallium",
-	"Iodine",
-	"Thorium",
-	"Thulium",
-	"Thallium",
-	"Yttrium",
-	"Ytterbium",
-	"Actinium",
-	"Rubidium",
-	"Boron",
-	"Gadolinium",
-	"Niobium",
-	"Iridium",
-	"Strontium",
-	"Silicon",
-	"Silver",
-	"Samarium",
-	"Bismuth",
-	"Bromine",
-	"Lithium",
-	"Beryllium",
-	"Barium",
-	"Holmium",
-	"Helium",
-	"Hafnium",
-	"Erbium",
-	"Phosphorus",
-	"Francium",
-	"Fluorine",
-	"Terbium",
-	"Manganese",
-	"Mercury",
-	"Molybdenum",
-	"Magnesium",
-	"Dysprosium",
-	"Scandium",
-	"Cerium",
-	"Cesium",
-	"Lead",
-	"Praseodymium",
-	"Platinum",
-	"Plutonium",
-	"Palladium",
-	"Promethium",
-	"Potassium",
-	"Polonium",
-	"Tantalum",
-	"Technetium",
-	"Titanium",
-	"Tellurium",
-	"Cadmium",
-	"Calcium",
-	"Chromium",
-	"Curium",
-	"Sulfur",
-	"Californium",
-	"Fermium",
-	"Berkelium",
-	"Mendelevium",
-	"Einsteinium",
-	"Nobelium",
-	"Argon",
-	"Krypton",
-	"Neon",
-	"Radon",
-	"Xenon",
-	"Zinc",
-	"Rhodium",
-	"Chlorine",
-	"Carbon",
-	"Cobalt",
-	"Copper",
-	"Tungsten",
-	"Tin",
-	"Sodium"
-]
-
-function compare_elements_by_Lehrer_number(a::Element, b::Element)
-	return a.Lehrer_number < b.Lehrer_number ? -1 : a.Lehrer_number > b.Lehrer_number ? 1 : 0
-end
 
 function get_Lehrer_elements(elements::Vector{Element})
-	return [_element for _element in elements if !isnothing(_element.Lehrer_number)]
+	Lehrer_element_vector = [_element for _element in elements if !isnothing(_element.Lehrer_number)]
+	sort!(Lehrer_element_vector, by = x -> x.Lehrer_number)
+	return Lehrer_element_vector
 end
 
 function get_group_elements(elements::Vector{Element}, group_name::Any, easy_mode::Bool)
@@ -177,10 +71,6 @@ end
 
 function get_elements_with_same_name(elements::Vector{Element}, easy_mode::Bool)
 	return [_element for _element in elements if _element.name == _element.name_de && !(_element.synthetic && easy_mode)]
-end
-
-function get_Tom_Lehrer_de_elements(elements::Vector{Element}, Tom_Lehrer_en_elements)
-	return [_element for _element in elements if _element.name in Tom_Lehrer_en_elements]
 end
 
 function get_mononuclidic_elements(elements::Vector{Element})
