@@ -294,3 +294,11 @@ end
 	colored_string = colorize_string("Hello World!", color_dict, "red")
 	@test colored_string == "\e[31mHello World!\e[0m"
 end
+
+@testset "get_Lehrer_elements" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	Lehrer_element_vector = get_Lehrer_elements(elements)
+	for (index, element) in enumerate(Lehrer_element_vector)
+        @test element.Lehrer_number == index
+    end
+end
