@@ -24,7 +24,7 @@ end
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	group_elements = get_group_elements(elements::Vector{Element}, 1, false)
 	group_elements2 = get_group_elements(elements::Vector{Element}, "actinide", false)
-	group_elements3 = get_group_elements(elements::Vector{Element}, 13, true)	
+	group_elements3 = get_group_elements(elements::Vector{Element}, 13, true)
 	@test length(group_elements) == 7
 	@test group_elements[1].name_de == "Wasserstoff"
 	@test group_elements[2].name_de == "Lithium"
@@ -163,12 +163,12 @@ end
 		"Uran",
 		"Neptunium",
 		"Plutonium"
-	]	
+	]
 end
 
 @testset "get_radioactive_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	radioactive_elements = get_radioactive_elements(elements,false)
+	radioactive_elements = get_radioactive_elements(elements, false)
 	radioactive_elements = [element.name_de for element in radioactive_elements]
 	@test length(radioactive_elements) == 38
 	@test radioactive_elements == [
@@ -233,5 +233,29 @@ end
 	@test sorted_elements[89].name_de == "Lanthan"
 	@test sorted_elements[104].name_de == "Actinium"
 	@test sorted_elements[118].name_de == "Lawrencium"
-	
+
+end
+
+@testset "get_single_letter_elements" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	single_letter_elements = get_single_letter_elements(elements)
+	single_letter_elements = [element.name_de for element in single_letter_elements]
+	@test length(single_letter_elements) == 14
+	@test "Yttrium" ∈ single_letter_elements
+	@test "Zink" ∉ single_letter_elements
+end
+
+@testset "get_elements_with_same_name" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements_with_same_name = get_elements_with_same_name(elements, false)
+	elements_with_same_name_easy = get_elements_with_same_name(elements, true)
+	elements_with_same_name = [element.name_de for element in elements_with_same_name]
+	@test length(elements_with_same_name) == 76
+	@test length(elements_with_same_name_easy) == 53
+	@test "Aluminium" ∈ elements_with_same_name
+	@test "Silicium" ∉ elements_with_same_name
+	@test "Bismut" ∉ elements_with_same_name
+	@test "Nihonium" ∈ elements_with_same_name
+	@test "Nihonium" ∉ elements_with_same_name_easy
+
 end
