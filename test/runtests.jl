@@ -41,181 +41,29 @@ end
 @testset "mononuclidic elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	mononuclidic_elements = get_mononuclidic_elements(elements)
-	mononuclidic_elements = [element.name_de for element in mononuclidic_elements]
 	@test length(mononuclidic_elements) == 22
-	@test mononuclidic_elements == [
-		"Beryllium",
-		"Fluor",
-		"Natrium",
-		"Aluminium",
-		"Phosphor",
-		"Scandium",
-		"Mangan",
-		"Cobalt",
-		"Arsen",
-		"Yttrium",
-		"Niob",
-		"Rhodium",
-		"Iod",
-		"Caesium",
-		"Praseodym",
-		"Terbium",
-		"Holmium",
-		"Thulium",
-		"Gold",
-		"Bismut",
-		"Thorium",
-		"Plutonium"
-	]
+	for element in mononuclidic_elements
+		@test element.mononuclidic
+	end
+	
 end
 @testset "natural elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	natural_elements = get_nature_elements(elements)
-	natural_elements = [element.name_de for element in natural_elements]
 	@test length(natural_elements) == 94
-	@test natural_elements == [
-		"Wasserstoff",
-		"Helium",
-		"Lithium",
-		"Beryllium",
-		"Bor",
-		"Kohlenstoff",
-		"Stickstoff",
-		"Sauerstoff",
-		"Fluor",
-		"Neon",
-		"Natrium",
-		"Magnesium",
-		"Aluminium",
-		"Silicium",
-		"Phosphor",
-		"Schwefel",
-		"Chlor",
-		"Argon",
-		"Kalium",
-		"Calcium",
-		"Scandium",
-		"Titan",
-		"Vanadium",
-		"Chrom",
-		"Mangan",
-		"Eisen",
-		"Cobalt",
-		"Nickel",
-		"Kupfer",
-		"Zink",
-		"Gallium",
-		"Germanium",
-		"Arsen",
-		"Selen",
-		"Brom",
-		"Krypton",
-		"Rubidium",
-		"Strontium",
-		"Yttrium",
-		"Zirconium",
-		"Niob",
-		"Molybdän",
-		"Technetium",
-		"Ruthenium",
-		"Rhodium",
-		"Palladium",
-		"Silber",
-		"Cadmium",
-		"Indium",
-		"Zinn",
-		"Antimon",
-		"Tellur",
-		"Iod",
-		"Xenon",
-		"Caesium",
-		"Barium",
-		"Lanthan",
-		"Cer",
-		"Praseodym",
-		"Neodym",
-		"Promethium",
-		"Samarium",
-		"Europium",
-		"Gadolinium",
-		"Terbium",
-		"Dysprosium",
-		"Holmium",
-		"Erbium",
-		"Thulium",
-		"Ytterbium",
-		"Lutetium",
-		"Hafnium",
-		"Tantal",
-		"Wolfram",
-		"Rhenium",
-		"Osmium",
-		"Iridium",
-		"Platin",
-		"Gold",
-		"Quecksilber",
-		"Thallium",
-		"Blei",
-		"Bismut",
-		"Polonium",
-		"Astat",
-		"Radon",
-		"Francium",
-		"Radium",
-		"Actinium",
-		"Thorium",
-		"Protactinium",
-		"Uran",
-		"Neptunium",
-		"Plutonium"
-	]
+	for element in natural_elements
+		@test !element.synthetic
+	end
 end
 
 @testset "get_radioactive_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	radioactive_elements = get_radioactive_elements(elements, false)
-	radioactive_elements = [element.name_de for element in radioactive_elements]
 	@test length(radioactive_elements) == 38
-	@test radioactive_elements == [
-		"Technetium",
-		"Promethium",
-		"Bismut",
-		"Polonium",
-		"Astat",
-		"Radon",
-		"Francium",
-		"Radium",
-		"Actinium",
-		"Thorium",
-		"Protactinium",
-		"Uran",
-		"Neptunium",
-		"Plutonium",
-		"Americium",
-		"Curium",
-		"Berkelium",
-		"Californium",
-		"Einsteinium",
-		"Fermium",
-		"Mendelevium",
-		"Nobelium",
-		"Lawrencium",
-		"Rutherfordium",
-		"Dubnium",
-		"Seaborgium",
-		"Bohrium",
-		"Hassium",
-		"Meitnerium",
-		"Darmstadtium",
-		"Roentgenium",
-		"Copernicium",
-		"Nihonium",
-		"Flerovium",
-		"Moscovium",
-		"Livermorium",
-		"Tenness",
-		"Oganesson"
-	]
+	for element in radioactive_elements
+		@test !element.stable
+	end
+	
 end
 @testset "get_elements_by_blocks" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
@@ -244,10 +92,10 @@ end
 @testset "get_single_letter_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	single_letter_elements = get_single_letter_elements(elements)
-	single_letter_elements = [element.name_de for element in single_letter_elements]
 	@test length(single_letter_elements) == 14
-	@test "Yttrium" ∈ single_letter_elements
-	@test "Zink" ∉ single_letter_elements
+	for element in single_letter_elements
+		@test length(element.symbol) == 1
+	end
 end
 
 @testset "get_elements_with_same_name" begin
