@@ -147,6 +147,10 @@ function compare_elements_by_Lehrer_number(a::Element, b::Element)
 	return a.Lehrer_number < b.Lehrer_number ? -1 : a.Lehrer_number > b.Lehrer_number ? 1 : 0
 end
 
+function get_Lehrer_elements(elements::Vector{Element})
+	return [_element for _element in elements if !isnothing(_element.Lehrer_number)]
+end
+
 function get_group_elements(elements::Vector{Element}, group_name::Any, easy_mode::Bool)
 	return [_element for _element in elements if _element.group == group_name && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
 end
