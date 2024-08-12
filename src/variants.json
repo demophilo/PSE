@@ -1,0 +1,98 @@
+{
+    "a": {
+        "name": "Alle Elemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": ["elements", ["s", "p", "d", "f"], false]
+        
+    },
+    "ae": {
+        "name": "Alle Elemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": ["elements", ["s", "p", "d", "f"], true]
+    },
+    "b": {
+        "name": "1. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 1, false]
+    },
+    "be": {
+        "name": "1. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 1, true]
+    },
+    "c": {
+        "name": "2. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 2, false]
+    },
+    "ce": {
+        "name": "2. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 2, true]
+    },
+    "d": {
+        "name": "3. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 13, false]
+    },
+    "de": {
+        "name": "3. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 13, true]
+    },
+    "e": {
+        "name": "4. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 14, false]
+    },
+    "ee": {
+        "name": "4. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 14, true]
+    },
+    "f": {
+        "name": "5. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 15, false]
+    },
+    "fe": {
+        "name": "5. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 15, true]
+    },
+    "g": {
+        "name": "6. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 16, false]
+    },
+    "ge": {
+        "name": "6. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 16, true]
+    },
+    "h": {
+        "name": "7. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 17, false]
+    },
+    "he": {
+        "name": "7. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 17, true]
+    }, 
+    "i": {
+        "name": "8. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 18, false]
+    },
+    "ie": {
+        "name": "8. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", 18, true]
+    },
+    "j": {
+        "name": "Lanthanoide",
+        "funktion": "get_group_elements",
+        "parameter": ["elements", "lanthanoide", false]
+    },
+}
