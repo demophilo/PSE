@@ -66,8 +66,12 @@ function get_elements_by_blocks(elements::Vector{Element}, blockletters::Vector{
 	return [_element for _element in elements for _block in blockletters if _element.block == _block && !(_element.synthetic && easy_mode)]
 end
 
-function get_stable_elements(elements::Vector{Element})
-	return [_element for _element in elements if _element.stable]
+function get_stable_elements(elements::Vector{Element}, stable::Bool, easy_mode::Bool)
+	if stable
+		return [_element for _element in elements if _element.stable]
+	else
+		return [_element for _element in elements if !_element.stable && !(_element.synthetic && easy_mode)]
+	end
 end
 
 function get_radioactive_elements(elements::Vector{Element}, easy_mode::Bool)
