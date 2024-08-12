@@ -2779,7 +2779,7 @@
             12,
             1
         ],
-        "summary": "Niobium,  formerly columbium,  is a chemical element with symbol Nb (formerly Cb) and atomic number 41. It is a soft,  grey,  ductile transition metal,  which is often found in the pyrochlore mineral,  the main commercial source for niobium,  and columbite. The name comes from Greek mythology:Niobe,  daughter of Tantalus since it is so similar to tantalum.",
+        "summary": "Niobium,  formerly columbium,  is a chemical element with symbol Nb (formerly Cb) and atomic number 41. It is a soft,  grey,  ductile transition metal,  which is often found in the pyrochlore mineral,  the main commercial source for niobium,  and columbite. The name comes from Greek mythology:Niobe, daughter of Tantalus since it is so similar to tantalum.",
         "molar_heat": 24.6,
         "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1 4d4",
         "named_by": null,
@@ -4615,7 +4615,11 @@
         "Lehrer_number": 74,
         "stable": true,
         "name": "Tantalum",
-        "funfact": "",
+        "funfact": [
+            "Tantal ist das seltenste natürliche Element im Universum.",
+            "Tantal ist aufgrund seines negativen Normalpotenzials als unedeles Metall anzusehen. Es passiviert sich jedoch mit einer kompakten Oxidschicht derart, dass es in kompakter Form bei Raumtemperatur beständiger gegen Chemikalien ist als Gold.",
+            "Ähnlich wie bei seinem leichteren Homologen Niob existieren auch von Tantal keine Kationen in wässriger Lösung. Selbst bei kleinsten pH-Werten sind keine Ionen wie etwa Ta3+, TaO2+ oder TaO2+ darstellbar, da diese sofort und vollständig zu Ta2O5 hydrolysieren."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_073_tantalum/element_073_tantalum.glb",
         "wypos": 6,
         "boil": 5731,
