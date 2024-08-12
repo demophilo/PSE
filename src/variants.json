@@ -2,97 +2,307 @@
     "a": {
         "name": "Alle Elemente",
         "funktion": "get_elements_by_blocks",
-        "parameter": ["elements", ["s", "p", "d", "f"], false]
-        
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p",
+                "d",
+                "f"
+            ],
+            false
+        ]
     },
     "ae": {
         "name": "Alle Elemente",
         "funktion": "get_elements_by_blocks",
-        "parameter": ["elements", ["s", "p", "d", "f"], true]
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p",
+                "d",
+                "f"
+            ],
+            true
+        ]
     },
     "b": {
         "name": "1. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 1, false]
+        "parameter": [
+            "elements",
+            1,
+            false
+        ]
     },
     "be": {
         "name": "1. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 1, true]
+        "parameter": [
+            "elements",
+            1,
+            true
+        ]
     },
     "c": {
         "name": "2. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 2, false]
+        "parameter": [
+            "elements",
+            2,
+            false
+        ]
     },
     "ce": {
         "name": "2. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 2, true]
+        "parameter": [
+            "elements",
+            2,
+            true
+        ]
     },
     "d": {
         "name": "3. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 13, false]
+        "parameter": [
+            "elements",
+            13,
+            false
+        ]
     },
     "de": {
         "name": "3. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 13, true]
+        "parameter": [
+            "elements",
+            13,
+            true
+        ]
     },
     "e": {
         "name": "4. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 14, false]
+        "parameter": [
+            "elements",
+            14,
+            false
+        ]
     },
     "ee": {
         "name": "4. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 14, true]
+        "parameter": [
+            "elements",
+            14,
+            true
+        ]
     },
     "f": {
         "name": "5. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 15, false]
+        "parameter": [
+            "elements",
+            15,
+            false
+        ]
     },
     "fe": {
         "name": "5. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 15, true]
+        "parameter": [
+            "elements",
+            15,
+            true
+        ]
     },
     "g": {
         "name": "6. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 16, false]
+        "parameter": [
+            "elements",
+            16,
+            false
+        ]
     },
     "ge": {
         "name": "6. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 16, true]
+        "parameter": [
+            "elements",
+            16,
+            true
+        ]
     },
     "h": {
         "name": "7. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 17, false]
+        "parameter": [
+            "elements",
+            17,
+            false
+        ]
     },
     "he": {
         "name": "7. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 17, true]
-    }, 
+        "parameter": [
+            "elements",
+            17,
+            true
+        ]
+    },
     "i": {
         "name": "8. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 18, false]
+        "parameter": [
+            "elements",
+            18,
+            false
+        ]
     },
     "ie": {
         "name": "8. Hauptgruppe",
         "funktion": "get_group_elements",
-        "parameter": ["elements", 18, true]
+        "parameter": [
+            "elements",
+            18,
+            true
+        ]
     },
     "j": {
+        "name": "Hauptgruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p"
+            ],
+            false
+        ]
+    },
+    "je": {
+        "name": "Hauptgruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p"
+            ],
+            true
+        ]
+    },
+    "k": {
+        "name": "Nebengruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": [
+            "elements",
+            [
+                "d"
+            ],
+            false
+        ]
+    },
+    "ke": {
+        "name": "Nebengruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "parameter": [
+            "elements",
+            [
+                "d"
+            ],
+            true
+        ]
+    },
+    "l": {
         "name": "Lanthanoide",
         "funktion": "get_group_elements",
-        "parameter": ["elements", "lanthanoide", false]
+        "parameter": [
+            "elements",
+            "lanthanide",
+            false
+        ]
     },
+    "m": {
+        "name": "Actinoide",
+        "funktion": "get_group_elements",
+        "parameter": [
+            "elements",
+            "actinide",
+            false
+        ]
+    },
+    "n": {
+        "name": "Natürliche Elemente",
+        "funktion": "get_natural_elements",
+        "parameter": [
+            "elements"
+        ]
+    },
+    "o": {
+        "name": "Künstliche Elemente",
+        "funktion": "get_artificial_elements",
+        "parameter": [
+            "elements"
+        ]
+    },
+    "p": {
+        "name": "Radioaktive Elemente",
+        "funktion": "get_stable_elements",
+        "parameter": [
+            "elements",
+            false,
+            false
+        ]
+    },
+    "pe": {
+        "name": "Radioaktive Elemente",
+        "funktion": "get_stable_elements",
+        "parameter": [
+            "elements",
+            false,
+            true
+        ]
+    },
+    "q": {
+        "name": "Einbuchstabige Elemente",
+        "funktion": "get_single_letter_elements",
+        "parameter": [
+            "elements",
+            false
+        ]
+    },
+    "r": {
+        "name": "Reinelemente",
+        "funktion": "get_mononuclidic_elements",
+        "parameter": [
+            "elements"
+        ]
+    },
+    "s": {
+        "name": "Gleichnamige Elemente",
+        "funktion": "get_elements_with_same_name",
+        "parameter": [
+            "elements",
+            false
+        ]
+    },
+    "se": {
+        "name": "Gleichnamige Elemente",
+        "funktion": "get_elements_with_same_name",
+        "parameter": [
+            "elements",
+            true
+        ]
+    },
+    "t": {
+        "name": "Tom Lehrer Elemente",
+        "funktion": "get_Lehrer_elements",
+        "parameter": [
+            "elements"
+        ]
+    }
 }
