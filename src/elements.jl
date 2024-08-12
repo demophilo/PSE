@@ -74,10 +74,6 @@ function get_stable_elements(elements::Vector{Element}, stable::Bool, easy_mode:
 	end
 end
 
-function get_radioactive_elements(elements::Vector{Element}, easy_mode::Bool)
-	return [_element for _element in elements if !_element.stable && !(_element.synthetic && easy_mode)]
-end
-
 function get_single_letter_elements(elements::Vector{Element})
 	return [_element for _element in elements if length(_element.symbol) == 1]
 end
