@@ -70,7 +70,7 @@ end
 
 @testset "get_radioactive_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	radioactive_elements = get_radioactive_elements(elements, false)
+	radioactive_elements = get_stable_elements(elements, false, false)
 	@test length(radioactive_elements) == 38
 	for element in radioactive_elements
 		@test !element.stable
