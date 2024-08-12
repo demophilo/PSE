@@ -28,14 +28,26 @@ end
 @testset "get group Elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	group_elements = get_group_elements(elements::Vector{Element}, 1, false)
-	group_elements2 = get_group_elements(elements::Vector{Element}, "actinide", false)
-	group_elements3 = get_group_elements(elements::Vector{Element}, 13, true)
+	group_elements2 = get_group_elements(elements::Vector{Element}, 13, true)
+	group_elements3 = get_group_elements(elements::Vector{Element}, 17, false)
+	group_elements_actinide = get_group_elements(elements::Vector{Element}, "actinide", false)
+	group_elements_lanthanide = get_group_elements(elements::Vector{Element}, "lanthanide", false)
+
 	@test length(group_elements) == 7
+	@test length(group_elements2) == 5
+	@test length(group_elements3) == 6
+	@test length(group_elements_actinide) == 15
+	@test length(group_elements_lanthanide) == 15
 	@test group_elements[1].name_de == "Wasserstoff"
 	@test group_elements[2].name_de == "Lithium"
-	@test group_elements2[1].name_de == "Actinium"
-	@test group_elements3[1].name_de == "Bor"
-	@test length(group_elements3) == 5
+	@test group_elements2[1].name_de == "Bor"
+	@test group_elements2[end].name_de == "Thallium"
+	@test group_elements3[end].name_de == "Tenness"
+	@test group_elements_actinide[1].name_de == "Actinium"
+	@test group_elements_lanthanide[1].name_de == "Lanthan"
+	@test group_elements_lanthanide[end].name_de == "Lutetium"
+	@test group_elements_actinide[end].name_de == "Lawrencium"
+	
 end
 
 @testset "mononuclidic elements" begin
