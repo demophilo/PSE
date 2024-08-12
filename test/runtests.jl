@@ -71,11 +71,19 @@ end
 @testset "get_radioactive_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	radioactive_elements = get_stable_elements(elements, false, false)
+	radioactive_elements_easy = get_stable_elements(elements, false, true)
+	stable_elements = get_stable_elements(elements, true, false)
+	stable_elements_easy = get_stable_elements(elements, true, true)
 	@test length(radioactive_elements) == 38
 	for element in radioactive_elements
 		@test !element.stable
 	end
-	
+
+	@test length(radioactive_elements_easy) == 14
+	for element in radioactive_elements_easy
+		@test !element.stable
+	end
+	@test stable_elements == stable_elements_easy
 end
 @testset "get_elements_by_blocks" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
