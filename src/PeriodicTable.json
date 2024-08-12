@@ -5010,7 +5010,16 @@
         "Lehrer_number": 59,
         "stable": true,
         "name": "Mercury",
-        "funfact": "",
+        "funfact": [
+            "Am Quecksilber wurde vom niederländischen Physiker Heike Kamerlingh Onnes im Jahre 1911 das erste Mal das Phänomen der Supraleitung entdeckt. Ab einer Temperatur von 4,2 Kelvin (−268,9 °C) verschwindet dabei der elektrische Widerstand vollständig.",
+            "Von den chinesischen Alchimisten wurden viele quecksilberhaltige Arzneien zur Lebensverlängerung verschrieben und verursachten einen frühzeitigen Tod der Patienten.",
+            "Der erste Kaiser von China Qui Shihuandi hat in seinem riesigen Grabmal einen Quecksilbersee, weswegen man noch immer mit der Freilegung zögert.",
+            "Um das Jahr 1000 gab es in den Palästen der Kalifen von Córdoba (Medina az-Zahra), Kairo und Bagdad mit Quecksilber gefüllte Becken, die für das Spiel mit Lichtwirkungen genutzt wurden, außerdem in großen Porphyrmuscheln angelegte Quecksilberteiche (für Kairo sind 50 Ellen im Quadrat überliefert).",
+            "Die alchimistischen Ärzte verschrieben viel Quecksilberarzneien, woraus sich der Begriff Quacksalber ableitet.",
+            "Der niedere Schmelzpunkt des Quecksilbers ist ein relativistischer Effekt.",
+            "Quecksilber ist das einzige Metall, welches bei Raumtemperatur durch Verdunstung einen einatomigen Metalldampf erzeugen kann.",
+            "Die Alchimisten wollten die Eigenschaften von Quecksilber (metallisch, glänzend) mit den Eigenschaften von Schwefel (fest, gelb) kombinieren. Als bei der Reaktion das blutrote Zinnober entstand, glaubten sie an eine Verbindung mit dem Leben und gleubten ein lebenselixier herstellen zu können."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_080_mercury/element_080_mercury.glb",
         "wypos": 6,
         "boil": 629.88,
