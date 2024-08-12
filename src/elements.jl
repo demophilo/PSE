@@ -7,6 +7,14 @@ using .ScreenManipulation
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
 	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess
 
+# def new type GroupName
+const GroupName = Union{Int, String}
+const ALLOWED_STRINGS = Set(["lanthanide", "actinide"])
+const ALLOWED_INTEGERS = Set(1:18)
+function is_valid_group_name(value::GroupName)
+    return (isa(value, Int) && value in ALLOWED_INTEGERS) || (isa(value, String) && value in ALLOWED_STRINGS)
+end
+
 struct Element
 	name::String # English name of the element
 	name_de::String
@@ -16,13 +24,14 @@ struct Element
 	ypos::Integer # y position in compact PSE
 	wxpos::Integer # x position in wide PSE
 	wypos::Integer # y position in wide PSE
-	group::Any # 1...18, "lanthanid", "actinide"
+	group::GroupName # 1...18, "lanthanide", "actinide"
 	block::String # s, p, d, f
 	stable::Bool
 	synthetic::Bool
 	mononuclidic::Bool
 	Lehrer_number::Union{Integer, Nothing}
 end
+
 
 """
 	read_chemical_elements(filename::String)
@@ -45,7 +54,7 @@ function get_Lehrer_elements(elements::Vector{Element})
 	return Lehrer_element_vector
 end
 
-function get_group_elements(elements::Vector{Element}, group_name::Any, easy_mode::Bool)
+function get_group_elements(elements::Vector{Element}, group_name::GroupName, easy_mode::Bool)
 	return [_element for _element in elements if _element.group == group_name && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
 end
 
