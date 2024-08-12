@@ -23,19 +23,7 @@ function display_screen(show_matrix, score, time_bonus)
 end
 
 # player section
-
-
-
-
-
-
-function input_player_name()
-	println("Geben Sie ihren Namen ein:")
-	_name::String = readline()
-	return _name
-end
-
-global player_name = input_player_name()
+ player_name = input_player_name()
 
 # sets up the game
 clear_sreen()
