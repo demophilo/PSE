@@ -1,4 +1,6 @@
+module GameSetup
 include("elements.jl")
+using .Elements
 
 mutable struct Variant
     name::String
@@ -87,3 +89,4 @@ game_type = input_game_type(dict_game_variants)
 println(game_type)
 x = get_elements_to_guess(dict_game_variants, game_type)
 println(x)
+end # module
