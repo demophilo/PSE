@@ -54,8 +54,8 @@ function get_Lehrer_elements(elements::Vector{Element})
 	return Lehrer_element_vector
 end
 
-function get_group_elements(elements::Vector{Element}, group_name::GroupName, easy_mode::Bool)
-	return [_element for _element in elements if _element.group == group_name && (_element.number <= 94 || _element.number >= 95 && !easy_mode)]
+function get_group_elements(elements::Vector{Element}, group_name::GroupName)
+	return [_element for _element in elements if _element.group == group_name]
 end
 
 function get_nature_elements(elements::Vector{Element})
