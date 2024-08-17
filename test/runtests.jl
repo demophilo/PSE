@@ -25,22 +25,18 @@ end
 
 @testset "get_group_Elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	group_elements = get_group_elements(elements::Vector{Element}, 1, false)
-	group_elements2 = get_group_elements(elements::Vector{Element}, 13, true)
-	group_elements3 = get_group_elements(elements::Vector{Element}, 17, false)
-	group_elements_actinide = get_group_elements(elements::Vector{Element}, "actinide", false)
-	group_elements_lanthanide = get_group_elements(elements::Vector{Element}, "lanthanide", false)
+	group_elements = get_group_elements(elements::Vector{Element}, 1)
+	group_elements2 = get_group_elements(elements::Vector{Element}, 17)
+	group_elements_actinide = get_group_elements(elements::Vector{Element}, "actinide")
+	group_elements_lanthanide = get_group_elements(elements::Vector{Element}, "lanthanide")
 
 	@test length(group_elements) == 7
-	@test length(group_elements2) == 5
-	@test length(group_elements3) == 6
+	@test length(group_elements2) == 6
 	@test length(group_elements_actinide) == 15
 	@test length(group_elements_lanthanide) == 15
 	@test group_elements[1].name_de == "Wasserstoff"
 	@test group_elements[2].name_de == "Lithium"
-	@test group_elements2[1].name_de == "Bor"
-	@test group_elements2[end].name_de == "Thallium"
-	@test group_elements3[end].name_de == "Tenness"
+	@test group_elements2[end].name_de == "Tenness"
 	@test group_elements_actinide[1].name_de == "Actinium"
 	@test group_elements_lanthanide[1].name_de == "Lanthan"
 	@test group_elements_lanthanide[end].name_de == "Lutetium"
@@ -68,35 +64,23 @@ end
 
 @testset "get_stable_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	radioactive_elements = get_stable_elements(elements, false, false)
-	radioactive_elements_easy = get_stable_elements(elements, false, true)
-	stable_elements = get_stable_elements(elements, true, false)
-	stable_elements_easy = get_stable_elements(elements, true, true)
+	radioactive_elements = get_stable_elements(elements, false)
+	stable_elements = get_stable_elements(elements, true)
 
 	@test length(radioactive_elements) == 38
 	for element in radioactive_elements
 		@test !element.stable
 	end
-
-	@test length(radioactive_elements_easy) == 14
-	for element in radioactive_elements_easy
-		@test !element.stable
-	end
-
-	@test stable_elements == stable_elements_easy
 end
 @testset "get_elements_by_blocks" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	block_elements = get_elements_by_blocks(elements, ["s"], false)
-	block_elements2 = get_elements_by_blocks(elements, ["f"], false)
-	block_elements3 = get_elements_by_blocks(elements, ["p"], true)
+	block_elements = get_elements_by_blocks(elements, ["s"])
+	block_elements2 = get_elements_by_blocks(elements, ["f"])
 
 	@test length(block_elements) == 14
-	@test block_elements[14].name_de == "Radium"
+	@test block_elements[end].name_de == "Radium"
 	@test length(block_elements2) == 28
-	@test block_elements2[28].name_de == "Nobelium"
-	@test length(block_elements3) == 30
-	@test block_elements3[30].name_de == "Radon"
+	@test block_elements2[end].name_de == "Nobelium"
 end
 
 @testset "sort_elements_chemically" begin
@@ -122,24 +106,21 @@ end
 
 @testset "get_elements_with_same_name" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	elements_with_same_name = get_elements_with_same_name(elements, false)
-	elements_with_same_name_easy = get_elements_with_same_name(elements, true)
+	elements_with_same_name = get_elements_with_same_name(elements)
 	elements_with_same_name = [element.name_de for element in elements_with_same_name]
-	
+
 	@test length(elements_with_same_name) == 76
-	@test length(elements_with_same_name_easy) == 53
 	@test "Aluminium" ∈ elements_with_same_name
 	@test "Silicium" ∉ elements_with_same_name
 	@test "Bismut" ∉ elements_with_same_name
 	@test "Nihonium" ∈ elements_with_same_name
-	@test "Nihonium" ∉ elements_with_same_name_easy
 end
 
 @testset "get_PSE_matrix" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
 	PSE_matrix_wide = get_PSE_matrix(elements, true)
-	
+
 	@test PSE_matrix[1, 1] == "H"
 	@test PSE_matrix[1, 18] == "He"
 	@test PSE_matrix_wide[2, 1] == "Li"
@@ -148,7 +129,7 @@ end
 
 @testset "get_color_dict" begin
 	color_dict = get_color_dict()
-	
+
 	@test color_dict["red"] == "\e[31m"
 	@test color_dict["green"] == "\e[32m"
 	@test color_dict["yellow"] == "\e[33m"
@@ -166,14 +147,14 @@ end
 @testset "colorize_string" begin
 	color_dict = get_color_dict()
 	colored_string = colorize_string("Hello World!", color_dict, "red")
-	
+
 	@test colored_string == "\e[31mHello World!\e[0m"
 end
 
 @testset "get_Lehrer_elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	Lehrer_element_vector = get_Lehrer_elements(elements)
-	
+
 	for (index, element) in enumerate(Lehrer_element_vector)
 		@test element.Lehrer_number == index
 	end
@@ -181,9 +162,9 @@ end
 
 @testset "get_elements_not_to_guess" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	elements_to_guess = get_group_elements(elements, 1, false)
+	elements_to_guess = get_group_elements(elements, 1)
 	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
-	
+
 	@test length(elements_not_to_guess) == 111
 	@test elements[2] ∈ elements_not_to_guess
 	@test elements[1] ∉ elements_not_to_guess
@@ -193,13 +174,13 @@ end
 @testset "get_PSE_ready_to_print" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
-	elements_to_guess = get_group_elements(elements, 1, false)
+	elements_to_guess = get_group_elements(elements, 1)
 	element_symbols_to_guess = [element.symbol for element in elements_to_guess]
 	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
 	element_symbols_not_to_guess = [element.symbol for element in elements_not_to_guess]
 	right_element_symbols = ["H", "Fr"]
 	show_matrix = get_PSE_ready_to_print(PSE_matrix, right_element_symbols, element_symbols_to_guess, element_symbols_not_to_guess)
-	
+
 	@test show_matrix[1, 1] == "\e[32mH  \e[0m" # green
 	@test show_matrix[2, 2] == "__ " # nobody asked for it
 	@test show_matrix[1, 2] == "   " # not part of the PSE, just empty space
@@ -208,23 +189,23 @@ end
 end
 
 @testset "Test input_element" begin
-    # Simulierte Eingabe
-    simulated_input = "Helium\n"
-    io = IOBuffer(simulated_input)
+	# Simulierte Eingabe
+	simulated_input = "Helium\n"
+	io = IOBuffer(simulated_input)
 
-    # Funktion, die die Eingabe liest
-    function read_input()
-        trial_element = IO_func.input_element()
-        @test trial_element == "Helium"
-    end
+	# Funktion, die die Eingabe liest
+	function read_input()
+		trial_element = IO_func.input_element()
+		@test trial_element == "Helium"
+	end
 
-    # Pipe erstellen und Daten schreiben
-    rd, wr = redirect_stdin()
-    write(wr, simulated_input)
-    close(wr)
+	# Pipe erstellen und Daten schreiben
+	rd, wr = redirect_stdin()
+	write(wr, simulated_input)
+	close(wr)
 
-    # Umleiten der Standard-Eingabe
-    redirect_stdin(rd) do
-        read_input()
-    end
+	# Umleiten der Standard-Eingabe
+	redirect_stdin(rd) do
+		read_input()
+	end
 end
