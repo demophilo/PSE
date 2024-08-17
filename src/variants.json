@@ -9,22 +9,7 @@
                 "p",
                 "d",
                 "f"
-            ],
-            false
-        ]
-    },
-    "ae": {
-        "name": "Alle Elemente",
-        "funktion": "get_elements_by_blocks",
-        "parameter": [
-            "elements",
-            [
-                "s",
-                "p",
-                "d",
-                "f"
-            ],
-            true
+            ]
         ]
     },
     "b": {
@@ -32,17 +17,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            1,
-            false
-        ]
-    },
-    "be": {
-        "name": "1. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            1,
-            true
+            1
         ]
     },
     "c": {
@@ -50,17 +25,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            2,
-            false
-        ]
-    },
-    "ce": {
-        "name": "2. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            2,
-            true
+            2
         ]
     },
     "d": {
@@ -68,17 +33,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            13,
-            false
-        ]
-    },
-    "de": {
-        "name": "3. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            13,
-            true
+            13
         ]
     },
     "e": {
@@ -86,17 +41,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            14,
-            false
-        ]
-    },
-    "ee": {
-        "name": "4. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            14,
-            true
+            14
         ]
     },
     "f": {
@@ -104,17 +49,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            15,
-            false
-        ]
-    },
-    "fe": {
-        "name": "5. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            15,
-            true
+            15
         ]
     },
     "g": {
@@ -122,17 +57,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            16,
-            false
-        ]
-    },
-    "ge": {
-        "name": "6. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            16,
-            true
+            16
         ]
     },
     "h": {
@@ -140,17 +65,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            17,
-            false
-        ]
-    },
-    "he": {
-        "name": "7. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            17,
-            true
+            17
         ]
     },
     "i": {
@@ -158,17 +73,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            18,
-            false
-        ]
-    },
-    "ie": {
-        "name": "8. Hauptgruppe",
-        "funktion": "get_group_elements",
-        "parameter": [
-            "elements",
-            18,
-            true
+            18
         ]
     },
     "j": {
@@ -179,20 +84,7 @@
             [
                 "s",
                 "p"
-            ],
-            false
-        ]
-    },
-    "je": {
-        "name": "Hauptgruppenelemente",
-        "funktion": "get_elements_by_blocks",
-        "parameter": [
-            "elements",
-            [
-                "s",
-                "p"
-            ],
-            true
+            ]
         ]
     },
     "k": {
@@ -202,19 +94,7 @@
             "elements",
             [
                 "d"
-            ],
-            false
-        ]
-    },
-    "ke": {
-        "name": "Nebengruppenelemente",
-        "funktion": "get_elements_by_blocks",
-        "parameter": [
-            "elements",
-            [
-                "d"
-            ],
-            true
+            ]
         ]
     },
     "l": {
@@ -222,8 +102,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            "lanthanide",
-            false
+            "lanthanide"
         ]
     },
     "m": {
@@ -231,8 +110,7 @@
         "funktion": "get_group_elements",
         "parameter": [
             "elements",
-            "actinide",
-            false
+            "actinide"
         ]
     },
     "n": {
@@ -254,25 +132,14 @@
         "funktion": "get_stable_elements",
         "parameter": [
             "elements",
-            false,
             false
-        ]
-    },
-    "pe": {
-        "name": "Radioaktive Elemente",
-        "funktion": "get_stable_elements",
-        "parameter": [
-            "elements",
-            false,
-            true
         ]
     },
     "q": {
         "name": "Einbuchstabige Elemente",
         "funktion": "get_single_letter_elements",
         "parameter": [
-            "elements",
-            false
+            "elements"
         ]
     },
     "r": {
@@ -286,16 +153,7 @@
         "name": "Gleichnamige Elemente",
         "funktion": "get_elements_with_same_name",
         "parameter": [
-            "elements",
-            false
-        ]
-    },
-    "se": {
-        "name": "Gleichnamige Elemente",
-        "funktion": "get_elements_with_same_name",
-        "parameter": [
-            "elements",
-            true
+            "elements"
         ]
     },
     "t": {
