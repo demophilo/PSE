@@ -5,7 +5,7 @@ include("screen_manipulation.jl")
 using .ScreenManipulation
 
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess
+	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements
 
 # def new type GroupName
 const GroupName = Union{Int, String}
@@ -39,10 +39,10 @@ end
 reads the information of the json file and returns a dictionary
 """
 function read_chemical_elements(filename::String)
-	_PSE_data = read(filename, String)
-	_elemente_dict = JSON3.read(_PSE_data)
-	_elements = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in _elemente_dict]
-	return _elements
+	PSE_data = read(filename, String)
+	elemente_dict = JSON3.read(PSE_data)
+	element_vector = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in elemente_dict]
+	return element_vector
 end
 
 # functions to get elements::Vector{Element}
@@ -62,15 +62,15 @@ function get_nature_elements(elements::Vector{Element})
 	return [_element for _element in elements if !_element.synthetic]
 end
 
-function get_elements_by_blocks(elements::Vector{Element}, blockletters::Vector{String}, easy_mode::Bool)
-	return [_element for _element in elements for _block in blockletters if _element.block == _block && !(_element.synthetic && easy_mode)]
+function get_elements_by_blocks(elements::Vector{Element}, blockletters::Vector{String})
+	return [element for element in elements for _block in blockletters if element.block == _block]
 end
 
-function get_stable_elements(elements::Vector{Element}, stable::Bool, easy_mode::Bool)
+function get_stable_elements(elements::Vector{Element}, stable::Bool)
 	if stable
 		return [_element for _element in elements if _element.stable]
 	else
-		return [_element for _element in elements if !_element.stable && !(_element.synthetic && easy_mode)]
+		return [_element for _element in elements if !_element.stable]
 	end
 end
 
@@ -78,12 +78,12 @@ function get_single_letter_elements(elements::Vector{Element})
 	return [_element for _element in elements if length(_element.symbol) == 1]
 end
 
-function get_elements_with_same_name(elements::Vector{Element}, easy_mode::Bool)
-	return [_element for _element in elements if _element.name == _element.name_de && !(_element.synthetic && easy_mode)]
+function get_elements_with_same_name(elements::Vector{Element})
+	return [element for element in elements if element.name == element.name_de]
 end
 
 function get_mononuclidic_elements(elements::Vector{Element})
-	return [_element for _element in elements if _element.mononuclidic]
+	return [element for element in elements if element.mononuclidic]
 end
 
 function element_compare(element1::Element, element2::Element)
@@ -185,5 +185,8 @@ function get_elements_not_to_guess(elements::Vector{Element}, elements_to_guess:
 	return [_element for _element in elements if !(_element in elements_to_guess)]
 end
 
+function remove_synthetic_elements(elements::Vector{Element})
+	return [element for element in elements if !element.synthetic]	
+end
 
 end # module
