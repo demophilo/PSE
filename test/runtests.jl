@@ -116,6 +116,16 @@ end
 	@test "Nihonium" ∈ elements_with_same_name
 end
 
+@testset "remove_synthetic_elements" begin
+	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = remove_synthetic_elements(elements)
+
+	@test length(elements) == 94
+	for element in elements
+		@test !element.synthetic
+	end
+end
+
 @testset "get_PSE_matrix" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
