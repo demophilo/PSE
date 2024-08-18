@@ -5149,7 +5149,11 @@
         "Lehrer_number": 66,
         "stable": true,
         "name": "Lead",
-        "funfact": "",
+        "funfact": [
+            "Da die Bleiisotope 206, 207 und 208 die Endprodukte der drei natürlichen Zerfallsreihen radioaktiver Elemente sind, ist relativ viel Blei entstanden; es kommt deshalb in der Erdkruste im Vergleich zu anderen schweren Elementen (Quecksilber, Gold u. a.) häufig vor.",
+            "Blei ist das schwerste stabile Element.",
+            "Bevor man Flachglas herstellen konnte,  wurden Fenster aus Bleiglas hergestellt. Die Bleiruten wurden in Form gebogen und die Zwischenräume mit farbigem Glas gefüllt. Die Bleiruten sind heute noch sichtbar."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_082_lead/element_082_lead.glb",
         "wypos": 6,
         "boil": 2022,
