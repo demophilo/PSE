@@ -4335,7 +4335,9 @@
         "Lehrer_number": 53,
         "stable": true,
         "name": "Erbium",
-        "funfact": "",
+        "funfact": [
+            "Erbium-dotierte Lichtwellenleiter werden für optische Verstärker verwendet, die in der Lage sind, ein Lichtsignal zu verstärken, ohne es zuvor in ein elektrisches Signal zu wandeln."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_068_erbium/element_068_erbium.glb",
         "wypos": 6,
         "boil": 3141,
