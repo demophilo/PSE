@@ -4104,7 +4104,10 @@
         "Lehrer_number": 38,
         "stable": true,
         "name": "Gadolinium",
-        "funfact": "Gadolinium hat den höchsten Einfangsquerschnitt für Neutronen aller Elemente.",
+        "funfact": [
+            "Gadolinium hat mit 49.000 barn wegen seines enthaltenen Isotops Gd-157 (mit 254.000 barn) den höchsten Einfangquerschnitt für thermische Neutronen aller bekannten stabilen Elemente",
+            "Gadolinium wird nur in geringerem Umfang produziert und benötigt."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_064_gadolinium/element_064_gadolinium.glb",
         "wypos": 6,
         "boil": 3273,
