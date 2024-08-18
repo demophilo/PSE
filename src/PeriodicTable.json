@@ -5664,7 +5664,10 @@
         "Lehrer_number": 26,
         "stable": false,
         "name": "Protactinium",
-        "funfact": "",
+        "funfact": [
+            "Protactinium hat keine praktische Anwendung, da es schwer herzustellen ist und sehr giftig ist.",
+            "Bei Protactinium wurde zum ersten Mal Kernisomerie beobachtet."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_091_protactinium/element_091_protactinium.glb",
         "wypos": 7,
         "boil": 4300,
