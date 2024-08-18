@@ -4851,7 +4851,10 @@
         "Lehrer_number": 40,
         "stable": true,
         "name": "Iridium",
-        "funfact": "",
+        "funfact": [
+            "Iridium ist nach Rhenium zusammen mit Rhodium und Ruthenium das seltenste nicht-radioaktive Metall.",
+            "Iridium ist das einzige Element, von dem eine verbindung mit der Oxidationsstufe +9 hergestellt wurde."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_077_iridium/element_077_iridium.glb",
         "wypos": 6,
         "boil": 4403,
