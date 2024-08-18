@@ -3987,7 +3987,10 @@
         "Lehrer_number": 44,
         "stable": true,
         "name": "Samarium",
-        "funfact": "",
+        "funfact": [
+            "Samarium wird derzeit fast ausschließlich in China gewonnen.",
+            "Samarium hat gleich 3 radioaktive Isotope mit Halbwertszeitem von mehr als des hundertfachen des Alter des Universums."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_062_samarium/element_062_samarium.glb",
         "wypos": 6,
         "boil": 2173,
