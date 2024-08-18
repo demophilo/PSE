@@ -5495,7 +5495,11 @@
         "Lehrer_number": 24,
         "stable": false,
         "name": "Radium",
-        "funfact": "",
+        "funfact": [
+            "Frauen, bemalten im 20. Jahrhundert Zifferblätter für Uhren mit radiumhaltiger Leuchtfarbe. Sie leckten die Pinsel an, um sie zu spitzen, deswegen inkorporierten sie die radioaktiven Substanzen und starben an Knochenkrebs. Die Uhrmacherinnen wurden als „Radium Girls“ bekannt.",
+            "Die als Radium Girls bekannt gewordenen Frauen, die Zifferblätter von Uhren mit radiumhaltiger Leuchtfarbe bemalten, bemalten sich auch die Fingernägel und die Lippen damit. Ihre Partner bemerkten, dass sie in der nacht leuchteten.",
+            "Der US Präsident Harding schenkte Marie Curie 1 Gramm Radium, um ihre Forschung zu unterstützen. Die Spende wurde von amerikanischen Frauen finanziert."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_088_radium/element_088_radium.glb",
         "wypos": 7,
         "boil": 2010,
