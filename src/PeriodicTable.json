@@ -3930,7 +3930,10 @@
         "Lehrer_number": 71,
         "stable": false,
         "name": "Promethium",
-        "funfact": "[Promthium ist neben Technicium das zweite Element unter der Ordnungszahl 80,  das keine stabile Isotope hat.]",
+        "funfact": [
+            "Promthium ist neben Technicium das zweite Element unter der Ordnungszahl 81, das keine stabile Isotope hat.",
+            "Durch die Entdeckung von Promethium 1945 wurde die damals letzte Lücke im Periodensystem geschlossen."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_061_promethium/element_061_promethium.glb",
         "wypos": 6,
         "boil": 3273,
