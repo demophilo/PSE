@@ -3698,7 +3698,9 @@
         "Lehrer_number": 21,
         "stable": true,
         "name": "Lanthanum",
-        "funfact": "",
+        "funfact": [
+            "Lanthanhydrid (LaH10) ist ein Supraleiter mit einer Sprungtemperatur von 250 K (−23° C) bei einem Druck von ungefähr 170 Gigapascal."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_057_lanthanum/element_057_lanthanum.glb",
         "wypos": 6,
         "boil": 3737,
@@ -3758,7 +3760,7 @@
         "name": "Cerium",
         "funfact": [
             "Obwohl Auer von Welsbach viele Seltene Erden entdeckt hat und mit Glühstrümpfen zur Steigerung der Lichtausbeute für Gaslicht großen Erfolg hatte und damit berühmt wurde - Auerlicht -  ist nur seine Erfindung Cereisen als Zündstein heute noch unverändert im Einsatz.",
-            " Cer wurde nach dem Zwergplaneten Ceres benannt."
+            "Cer wurde nach dem Zwergplaneten Ceres benannt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_058_cerium/element_058_cerium.glb",
         "wypos": 6,
