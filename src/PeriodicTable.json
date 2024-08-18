@@ -4221,7 +4221,10 @@
         "Lehrer_number": 62,
         "stable": true,
         "name": "Dysprosium",
-        "funfact": "",
+        "funfact": [
+            "Dysprosium besitzt zusammen mit Holmium das höchste magnetische Moment (10,6 μB) aller natürlich vorkommenden chemischen Elemente.",
+            "Die Verwendung in Permanentmagneten, wie sie u. a. in den Generatoren mancher Windkraftanlagentypen verwendet werden, hat die Metalle der seltenen Erden wie Dysprosium zum raren Rohstoff gemacht."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_066_dysprosium/element_066_dysprosium.glb",
         "wypos": 6,
         "boil": 2840,
