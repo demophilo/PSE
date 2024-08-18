@@ -4278,7 +4278,10 @@
         "Lehrer_number": 50,
         "stable": true,
         "name": "Holmium",
-        "funfact": "",
+        "funfact": [
+            "Erst 1911 gelang dem schwedischen Chemiker Holmberg die Gewinnung von reinem Holmiumoxid. Ob er die Bezeichnung Holmium, vorgeschlagen vom Chemiker Cleve für die schwedische Landeshauptstadt Stockholm, übernahm oder als Ableitung seines eigenen Namens betrachtete, ist nicht bekannt.",
+            " Holmium wurde bereits 1878 entdeckt, reines Holmium wurde jedoch erst 1940 isoliert."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_067_holmium/element_067_holmium.glb",
         "wypos": 6,
         "boil": 2873,
