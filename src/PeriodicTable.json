@@ -4566,7 +4566,8 @@
         "name": "Hafnium",
         "funfact": [
             "Der Betastrahler Hf-182 zerfällt mit einer Halbwertszeit von 9 Mio. Jahren in das stabile Wolfram-Isotop W-182. Diese Erkenntnis wurde genutzt, um die Bildung des Mondes und des Erdkerns auf einen Zeitraum innerhalb der ersten 50 Mio. Jahre einzuschränken.",
-            "Hafnium wird in der Kerntechnik als Hafniumlegierung in Steuerstäben von Kernreaktoren eingesetzt. Auf Grund des hohen Preises kommt es häufig nur für militärische Anwendungen in Frage, beispielsweise für Reaktoren in Atom-U-Booten."
+            "Hafnium wird in der Kerntechnik als Hafniumlegierung in Steuerstäben von Kernreaktoren eingesetzt. Auf Grund des hohen Preises kommt es häufig nur für militärische Anwendungen in Frage, beispielsweise für Reaktoren in Atom-U-Booten.",
+            "Benannt ist Hafnium nach dem lateinischen Namen der Stadt Kopenhagen, Hafnia, in der das Element entdeckt wurde."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_072_hafnium/element_072_hafnium.glb",
         "wypos": 6,
