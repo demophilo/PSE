@@ -5958,7 +5958,10 @@
         "Lehrer_number": 81,
         "stable": false,
         "name": "Curium",
-        "funfact": "",
+        "funfact": [
+            "Curium ist das schwerste Element mit einem Isotop, mit einer Halbwertszeit von über einer Million Jahren.",
+            "Curium wurde nach Marie und Pierre Curie benannt, die für ihre Forschung zur Radioaktivität bekannt waren."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_096_curium/element_096_curium.glb",
         "wypos": 7,
         "boil": 3383,
