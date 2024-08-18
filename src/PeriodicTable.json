@@ -4679,8 +4679,13 @@
         "synthetic": false,
         "Lehrer_number": 100,
         "stable": true,
-        "name": "Tungsten",
-        "funfact": "Früher wurde im englischen Sprachraum ausschließlich der Tangsten als Elementname verwendet. Heute ist fachsprachlich Wolfram gebräuchlich.",
+        "name": "Wolfram",
+        "funfact": [
+            "Früher wurde im englischen Sprachraum ausschließlich der Tungsten als Elementname verwendet. Heute ist fachsprachlich Wolfram gebräuchlich.",
+            "Wolfram hat fast die gleiche Dichte wie Gold und wird daher oft zum Fälschen von Goldbarren verwendet.",
+            "Wolfram hat den höchsten Schmelz- und Siedepunkt aller Elemente.",
+            "Wolframcarbid ist fast so hart wie Diamant und wird zur Herstellung von Schmuck verwendet."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_074_tungsten/element_074_tungsten.glb",
         "wypos": 6,
         "boil": 6203,
