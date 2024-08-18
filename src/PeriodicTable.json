@@ -3873,7 +3873,10 @@
         "Lehrer_number": 10,
         "stable": true,
         "name": "Neodymium",
-        "funfact": "",
+        "funfact": [
+            "Neodym-Eisen-Bor (Nd2Fe14B) ist der Werkstoff, aus dem derzeit die stärksten Dauermagnete hergestellt werden können.",
+            "Der wichtigste Lieferant mit 91 % der Weltproduktion ist China."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_060_neodymium/element_060_neodymium.glb",
         "wypos": 6,
         "boil": 3347,
