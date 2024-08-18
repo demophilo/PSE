@@ -3815,7 +3815,10 @@
         "Lehrer_number": 67,
         "stable": true,
         "name": "Praseodymium",
-        "funfact": "",
+        "funfact": [
+            "Von der Grünfärbung seiner Verbindungen kommt der Name des Praseoymiums: Das griechische Wort πράσινος prásinos bedeutet „grün“, δίδυμος didymos „doppelt“ oder „Zwilling“.",
+            "Praseodym ist ein Reineelement."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_059_praseodymium/element_059_praseodymium.glb",
         "wypos": 6,
         "boil": 3403,
