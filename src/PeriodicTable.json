@@ -3531,7 +3531,11 @@
         "Lehrer_number": 93,
         "stable": true,
         "name": "Xenon",
-        "funfact": "",
+        "funfact": [
+            "Xenon hat als einziges Edelgas mehrere, bei Normalbedingungen stabile Verbindungen.",
+            "Xenon wird als Narkosemittel verwendet",
+            "Xenon ist das seltenste nichtradioaktive Element auf der Erde."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_054_xenon/element_054_xenon.glb",
         "wypos": 5,
         "boil": 165.051,
