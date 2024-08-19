@@ -3132,7 +3132,14 @@
         "Lehrer_number": 43,
         "stable": true,
         "name": "Silver",
-        "funfact": "Argentinien ist das einzige Land,  dass nach einem Element benannt wurde. Viele Elemente wurde jedoch nach Ländern benannt.",
+        "funfact": [
+            "Argentinien ist das einzige Land, dass nach einem Element, Silber, benannt wurde. Viele Elemente wurde jedoch nach Ländern benannt.",
+            "Das meiste Silber wird in Mexiko produziert.",
+            "Größter Silberproduzent im Mittelalter war Schwaz.",
+            "Im größten Teil der Geschichte war Silber das Metall aus dem die Münzen gemacht wurden.",
+            "Silber besitzt die höchste elektrische Leitfähigkeit aller Metalle.",
+            "Kolloidales Silber ist bei Esoterikern ein beliebtes Heilmittel. Es führt jedoch zu einer Blauverfärbung der Haut, die nicht wieder rückgängig gemacht werden kann."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_047_silver/element_047_silver.glb",
         "wypos": 5,
         "boil": 2435,
@@ -3187,7 +3194,11 @@
         "Lehrer_number": 78,
         "stable": true,
         "name": "Cadmium",
-        "funfact": "",
+        "funfact": [
+            "1942 benutzte der Physiker Enrico Fermi Cadmiumstäbe beim Bau des ersten Atomreaktors der Welt. Diese Stäbe konnte man in den Reaktor hinein- und hinausschieben. Auf diese Weise konnte der Reaktor kontrolliert werden.",
+            "Cadmium ist ein sehr seltenes Element. Es gibt keine abbauwürdigen Lagerstätten.  Cadmium wird ausschließlich als Nebenprodukt bei der Zinkverhüttung, in kleinem Umfang auch bei der Blei- und Kupferverhüttung gewonnen.",
+            "Obwohl Cadmium giftig ist, wurde Cadmiumsulfid früher als Gelb- und Orangepigment in Haushaltsplastikschüsseln verwendet."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_048_cadmium/element_048_cadmium.glb",
         "wypos": 5,
         "boil": 1040,
