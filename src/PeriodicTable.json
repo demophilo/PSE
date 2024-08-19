@@ -3642,7 +3642,10 @@
         "Lehrer_number": 49,
         "stable": true,
         "name": "Barium",
-        "funfact": "",
+        "funfact": [
+            "Obwohl Barium giftig ist, wird es in der Medizin als Kontrastmittel für den Magen verwendet.",
+            "Bariumsulfat wird oft als Farbpigment verwendet, weil es einerseits brilliant ist und andererseits nicht so abrasiv ist wie Titandioxid."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_056_barium/element_056_barium.glb",
         "wypos": 6,
         "boil": 2118,
