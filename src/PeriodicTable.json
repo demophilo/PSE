@@ -3023,7 +3023,11 @@
         "Lehrer_number": 95,
         "stable": true,
         "name": "Rhodium",
-        "funfact": "",
+        "funfact": [
+            "Rhodium ist das teuerste Edelmetall.",
+            "Rhodium wird in der Schmuckindustrie verwendet.",
+            "Viele Rhodiumsalze sind rosenrot. Daher der Name, der aus dem Griechischen kommt und „rosenrot“ bedeutet."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_045_rhodium/element_045_rhodium.glb",
         "wypos": 5,
         "boil": 3968,
