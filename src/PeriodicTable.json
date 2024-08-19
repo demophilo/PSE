@@ -3359,7 +3359,10 @@
         "Lehrer_number": 1,
         "stable": true,
         "name": "Antimony",
-        "funfact": "",
+        "funfact": [
+            "Magische Säure, die stärkste Supersäure, besteht aus Antimonpentafluorid und Fluorsulfonsäure. Sie ist 2*10^19 mal stärker als Schwefelsäure.",
+            "Antimontrioxd und Antimonpentoxid sind Teil vieler Brandschutzsysteme."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_051_antimony/element_051_antimony.glb",
         "wypos": 5,
         "boil": 1908,
