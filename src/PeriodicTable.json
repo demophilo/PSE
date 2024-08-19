@@ -3476,7 +3476,12 @@
         "Lehrer_number": 29,
         "stable": true,
         "name": "Iodine",
-        "funfact": "",
+        "funfact": [
+            "Iod ist eines der wenigen Elemente, die sublimieren, also direkt vom festen in den gasförmigen Zustand übergehen. Es kann zwar auch schmelzen, aber die Wärmezufuhr muss sehr rasch erfolgen, bevor das Iod wegsublimiert.",
+            "Ioddämpfe sind violett, daher kommt auch der Name Iod, der sich altgriechischen Wort „ioeides“ (ιο-ειδής) für „veilchenfarbig, violett“ ableitet.",
+            "Iodmangel ist die häufigste Ursache für Schilddrüsenvergrößerung (Kropf). Dagegen wurden in vielen Staaten Jodsalze eingeführt, um die Bevölkerung mit Jod zu versorgen und so Kropf zu verhindern. Esoteriker verteufeln diese Vorsorge, verteufeln die sogenannte „westliche Nachsorgemedizin“ wegen angeblich mangelnder Vorsorge. Esoteriker meditieren sehr viel, um ihr Gehirn erfolgreich auszuschalten.",
+            "Iod färbt lösliche Stärke tiefblau. Diese Reaktion wird in der Chemie als Nachweis für Iod verwendet."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_053_iodine/element_053_iodine.glb",
         "wypos": 5,
         "boil": 457.4,
