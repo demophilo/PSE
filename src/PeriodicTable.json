@@ -3586,7 +3586,11 @@
         "Lehrer_number": 65,
         "stable": true,
         "name": "Cesium",
-        "funfact": "",
+        "funfact": [
+            "Gasförmiges Caesium hat einen ungewöhnlichen Brechungsindex kleiner als eins. Das bedeutet, dass die Phasengeschwindigkeit der elektromagnetischen Welle – in diesem Fall Licht – größer als im Vakuum ist, was aber nicht im Widerspruch zur Relativitätstheorie steht.",
+            "Caesium ist ein Reinelement.",
+            "Caesium ist eines der wenigen Metalle, die nicht grau bis silbern sind. Caesium ist goldgelb glänzend."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_055_cesium/element_055_cesium.glb",
         "wypos": 6,
         "boil": 944,
