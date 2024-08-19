@@ -3417,7 +3417,13 @@
         "Lehrer_number": 77,
         "stable": true,
         "name": "Tellurium",
-        "funfact": "",
+        "funfact": [
+            "Tellur zeigt von allen Elementen die höchste Affinität zu Gold",
+            "Tellur ist ungefähr so selten wie Gold, allerdings weitaus billiger.",
+            "Tellur ist nach dem leiteinischen Gott der Erde, Tellus, benannt. Tellus ist das römische Äquivalent zur griechischen Göttin Gaia.",
+            "Nur ca. ein Drittel des Tellurs besteht aus stabilen Isotopen. Der Rest besteht aus radioaktiven Isotopen mit Halbwertszeiten jenseits des zehntausendfachen des Alters des Universums.",
+            "Te-128 gilt als das Isotop mit dem langsamsten Zerfall aller nichtstabilen Isotope sämtlicher Elemente. Es hat eine Halbwertszeit von 2,2*10^24 Jahren. Das ist 160 Billionen mal so lang wie das Alter des Universums."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_052_tellurium/element_052_tellurium.glb",
         "wypos": 5,
         "boil": 1261,
