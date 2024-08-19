@@ -3078,7 +3078,10 @@
         "Lehrer_number": 70,
         "stable": true,
         "name": "Palladium",
-        "funfact": "",
+        "funfact": [
+            "Palladium besitzt die höchste Absorptionsfähigkeit aller Elemente für Wasserstoff. Bei Raumtemperatur kann es das 900-fache, Palladiummohr das 1200-fache und kolloidale Palladiumlösungen das 3000-fache des eigenen Volumens binden.",
+            "Fleischmann und Pons behaupteten 1989, dass sie mit Palladium und Deuterium in einer elektrochemischen Zelle Kernfusion erzeugen konnten. Diese Behauptung wurde jedoch nie bestätigt."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_046_palladium/element_046_palladium.glb",
         "wypos": 5,
         "boil": 3236,
