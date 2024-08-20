@@ -6320,7 +6320,10 @@
         "Lehrer_number": 84,
         "stable": false,
         "name": "Fermium",
-        "funfact": "",
+        "funfact": [
+            "Als Fermiumbarriere bezeichnet man den Umstand, dass Fermium letzte Element ist, dass man mit Neutroneneinfang herstellen kann.",
+            "Fermium hat kein Isotop mit einem Beta-Zerfall."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_100_fermium/element_100_fermium.glb",
         "wypos": 7,
         "boil": null,
