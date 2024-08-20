@@ -2909,10 +2909,11 @@
         "name": "Technetium",
         "funfact": [
             "Es ist das leichteste Element ohne stabiles Isotop.",
-            "Als es zu ersten Mal nachgewiesen wurde,  konnten die Ergebnisse nicht reproduziert werden. Erst in den 1990er Jahren,  konnten Simulationen die Erstentdeckung bestätigen. Das war aber für die Bennennung zu spät",
+            "Als es zu ersten Mal nachgewiesen wurde, konnten die Ergebnisse nicht reproduziert werden. Erst in den 1990er Jahren,  konnten Simulationen die Erstentdeckung bestätigen. Das war aber für die Bennennung zu spät",
             "Technetium wird in der Medizin als Radiopharmakon verwendet.",
-            "Es war das erste Element,  das synthetisch hergestellt wurde.",
-            "Technetium ist das leichteste Element,  das nur im Mikrogrammbereich in der Erdkruste vorkommt."
+            "Es war das erste Element, das synthetisch hergestellt wurde.",
+            "Technetium ist das leichteste Element, das nur im Mikrogrammbereich in der Erdkruste vorkommt.",
+            "Polinium, Ilmenium, Pelopium, Davyum, Lucium, Nipponium und Masurium waren die Namen. die vermeintliche Entdecker dem Technecium gaben."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_043_technetium/element_043_technetium.glb",
         "wypos": 5,
