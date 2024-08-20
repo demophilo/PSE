@@ -5681,7 +5681,10 @@
         "Lehrer_number": 35,
         "stable": false,
         "name": "Actinium",
-        "funfact": "",
+        "funfact": [
+            "Aufgrund seiner starken Radioaktivität leuchtet Actinium im Dunkeln in einem hellblauen Licht.",
+            "Der Name leitete sich wegen der Radioaktivität von griechisch ἀκτίς aktís ‚Strahl‘ ab. Damit ist es mit Radium und Radon das dritte Element, das nach dieser Eigenschaft benannt wurde. Nur das es bei Actinium Griechisch ist und nicht Lateinisch."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_089_actinium/element_089_actinium.glb",
         "wypos": 7,
         "boil": 3500,
