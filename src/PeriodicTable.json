@@ -2968,7 +2968,11 @@
         "Lehrer_number": 15,
         "stable": true,
         "name": "Ruthenium",
-        "funfact": "",
+        "funfact": [
+            "Im Oktober 1917 gelangte radioaktives Ru-103 im Südural in die Atmosphäre und wurde in Europa nachgewiesen. Die freigesetzte Aktivität wurde mit 100–300 Terabecquerel abgeschätzt, eine für die lokale Bevölkerung riskante Menge. Dafür wurde nie jemand zur Verantwortung gezogen.",
+            "Ruthenium zählt zu den seltensten nicht-radioaktiven Elementen auf der Erde.",
+            "Ruthenium ist nach Russland benannt, da es in den Uralen entdeckt wurde.",
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_044_ruthenium/element_044_ruthenium.glb",
         "wypos": 5,
         "boil": 4423,
