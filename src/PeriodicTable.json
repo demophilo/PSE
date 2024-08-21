@@ -6492,7 +6492,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Lawrencium",
-        "funfact": "",
+        "funfact": [
+            "Anfangs wählte man für Lawrencium Symbol „Lw“. 1963 wurde es von der IUPAC in „Lr“ geändert."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_103_lawrencium/element_103_lawrencium.glb",
         "wypos": 7,
         "boil": null,
