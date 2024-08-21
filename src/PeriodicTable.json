@@ -7107,7 +7107,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Flerovium",
-        "funfact": "",
+        "funfact": [
+            "Flerovium ist das letzte Element, noch Halbwertszeiten von Sekunden hat."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_114_flerovium/element_114_flerovium.glb",
         "wypos": 7,
         "boil": 420,
