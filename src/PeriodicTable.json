@@ -6940,7 +6940,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Roentgenium",
-        "funfact": "It is the only element which use oe instead of ö in its name",
+        "funfact": [
+            "Roentgenium ist das einzige Element, das eine Umschreibung von einem Umlaut hat."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_111_roentgenium/element_111_roentgenium.glb",
         "wypos": 7,
         "boil": null,
