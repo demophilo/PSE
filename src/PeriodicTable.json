@@ -6435,7 +6435,9 @@
         "Lehrer_number": 88,
         "stable": false,
         "name": "Nobelium",
-        "funfact": "",
+        "funfact": [
+            "Nobelium ist eines von drei Elementen, die nach einer Person benannt sind, die nicht im 20. Jahrhundert lebte."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_102_nobelium/element_102_nobelium.glb",
         "wypos": 7,
         "boil": null,
