@@ -6828,7 +6828,11 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Meitnerium",
-        "funfact": "Lise Meitner war die Wissenschaflerin,  die am öftesten - 48 mal - als Nobelpreisträgerin nominiert wurde und ihn nie bekam. Sie wurde als Frau und Jüdin diskriminiert. Sie ist die einzige Frau,  nach der ein Element benannt wurde,  da Curium nach dem Ehepaar Curie und nicht nach Marie alleine bennant wurde. Sie ist damit auch die einzige Österreicherin nach der je ein Element benannt wurde.",
+        "funfact": [
+            "Lise Meitner wurde 48 mal als Nobelpreisträgerin nominiert, bekam ihn aber nie. Sie wurde als Frau und Jüdin diskriminiert.",
+            "Lise Meitner ist die einzige Frau, nach der ein Element benannt wurde, da Curium nach dem Ehepaar Curie und nicht nach Marie alleine bennant wurde.",
+            "Lise Meitner ist die einzige Österreicherin nach der je ein Element benannt wurde."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_109_meitnerium/element_109_meitnerium.glb",
         "wypos": 7,
         "boil": null,
