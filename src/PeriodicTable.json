@@ -6995,7 +6995,10 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Copernicium",
-        "funfact": "Is the only element named after a person not related to chemistry at all. It is named after the astronomer Nicolaus Copernicus.",
+        "funfact": [
+            "Copernicium ist das einzige Element, das nach einer Person, Nikolaus Kopernikus, benannt wurde, die nichts mit Chemie zu tun hatte und zu dessen Lebzeiten der Begriff Chemie noch nicht exisierte.",
+            "Nach Pressemitteilungen des Paul Scherrer Instituts und der Universität Bern ergaben Experimente, dass Copernicium sich chemisch ähnlich wie Quecksilber verhalte. Diese Aussage stützt sich auf die Beobachtung von lediglich zwei Atomen Cn-283."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_112_copernicium/element_112_copernicium.glb",
         "wypos": 7,
         "boil": 3570,
