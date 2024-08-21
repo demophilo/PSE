@@ -6607,7 +6607,10 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Dubnium",
-        "funfact": "Dubnium wurde im Westen früher Hahnium genannt. Nachdem nach 25 Jahren die Prioritätsfrage geklärt wurde. Wechselte der Name zu Dubnium,  benannt nach der sowjetischen Forschungseinrichtung für Schwerionenforschung. Viele Physiker verwendeten trotzem den Namen Hahnium,  nachdem der Streit geklärt war.",
+        "funfact": [
+            "Dubnium wurde im Westen früher Hahnium genannt. Nachdem nach 25 Jahren die Prioritätsfrage geklärt wurde. Wechselte der Name zu Dubnium, benannt nach der sowjetischen Forschungseinrichtung für Schwerionenforschung. Viele Physiker verwendeten trotzem den Namen Hahnium, nachdem der Streit geklärt war.",
+            "1994 erklärte die IUPAC, dass der Name für das Element 105 Joliotum sein sollte, nach dem Forscherehepaar Joliot-Curie. 1997 entschied sie sich endgültig für Dubnium."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_105_dubnium/element_105_dubnium.glb",
         "wypos": 7,
         "boil": null,
