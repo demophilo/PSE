@@ -6718,7 +6718,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Bohrium",
-        "funfact": "",
+        "funfact": [
+            "Bohrium wurde von inbesondere von deutschen Forschern Nielsbohrium genannt, nach dem dänischen Physiker Niels Bohr. Die IUPAC entschied sich jedoch für Bohrium, um den Namen nicht zu lang werden zu lassen. Das Symbol Ns wollte man auch nicht haben."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_107_bohrium/element_107_bohrium.glb",
         "wypos": 7,
         "boil": null,
