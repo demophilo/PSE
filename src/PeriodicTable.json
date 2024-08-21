@@ -6773,7 +6773,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Hassium",
-        "funfact": "Nachdem der Name Hahnium für das heutige Dubnium aufgegeben wurde,  wollten viele Forscher das Element 108 Hahnium nach dem Entdecker der Kernspaltung benennen. Aber es gab Widerstände,  die einen Naziforscher nicht so geehrt haben wollten. Daher benannte man das Element nach dem alten lateinischen Namen für Hessen. So wurden die beiden führenden Köpfe der Entdeckung der Kernspaltung übergangen. Lise Meitner bekam nie einen Nobelpreis,  weil sie Jüdin war. Otto Hahn bekam nie einen Elementnamen,  weil er in Nazizeit zu stromlinienförmig war.",
+        "funfact": [
+            "Nachdem der Name Hahnium für das heutige Dubnium aufgegeben wurde, wollten viele Forscher das Element 108 Hahnium nach dem Entdecker der Kernspaltung benennen. Aber es gab Widerstände, die einen Naziforscher nicht so geehrt haben wollten. Daher benannte man das Element nach dem alten lateinischen Namen für Hessen. So wurden die beiden führenden Köpfe der Entdeckung der Kernspaltung übergangen. Lise Meitner bekam nie einen Nobelpreis, weil sie Jüdin war. Otto Hahn bekam nie einen Elementnamen, weil er in Nazizeit zu stromlinienförmig war."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_108_hassium/element_108_hassium.glb",
         "wypos": 7,
         "boil": null,
