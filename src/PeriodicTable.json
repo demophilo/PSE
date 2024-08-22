@@ -1231,7 +1231,9 @@
         "Lehrer_number": 79,
         "stable": true,
         "name": "Calcium",
-        "funfact": "Die Wikinger haben möglicherweise das Calciummineral Calcit verwendet,  um bei bewölktem Himmel und bei Nebel zu navigieren. Durch dess doppelbrechende Eigenmschaftkann man den Sonnenstand ermittleln.",
+        "funfact": [
+            "Die Wikinger haben möglicherweise das Calciummineral Calcit verwendet, um bei bewölktem Himmel und bei Nebel zu navigieren. Durch die doppelbrechende Eigenschaft kann man den Sonnenstand ermittleln, auch wenn die Sonne nicht sichtbar ist."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_020_calcium/element_020_calcium.glb",
         "wypos": 4,
         "boil": 1757,
