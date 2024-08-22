@@ -58,15 +58,19 @@ function get_group_elements(elements::Vector{Element}, group_name::GroupName)
 	return [_element for _element in elements if _element.group == group_name]
 end
 
-function get_nature_elements(elements::Vector{Element})
-	return [_element for _element in elements if !_element.synthetic]
+function get_nature_elements(elements::Vector{Element}, synthetic::Bool = false)
+	if synthetic
+		return [_element for _element in elements if _element.synthetic]
+	else
+		return [_element for _element in elements if !_element.synthetic]
+	end
 end
 
 function get_elements_by_blocks(elements::Vector{Element}, blockletters::Vector{String})
 	return [element for element in elements for _block in blockletters if element.block == _block]
 end
 
-function get_stable_elements(elements::Vector{Element}, stable::Bool)
+function get_stable_elements(elements::Vector{Element}, stable::Bool = true)
 	if stable
 		return [_element for _element in elements if _element.stable]
 	else

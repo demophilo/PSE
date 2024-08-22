@@ -10,7 +10,8 @@
                 "d",
                 "f"
             ]
-        ]
+        ],
+        "easy_mode": false
     },
     "b": {
         "name": "1. Hauptgruppe",
@@ -18,7 +19,8 @@
         "parameter": [
             "elements",
             1
-        ]
+        ],
+        "easy_mode": false
     },
     "c": {
         "name": "2. Hauptgruppe",
@@ -26,7 +28,8 @@
         "parameter": [
             "elements",
             2
-        ]
+        ],
+        "easy_mode": false
     },
     "d": {
         "name": "3. Hauptgruppe",
@@ -34,7 +37,8 @@
         "parameter": [
             "elements",
             13
-        ]
+        ],
+        "easy_mode": false
     },
     "e": {
         "name": "4. Hauptgruppe",
@@ -42,7 +46,8 @@
         "parameter": [
             "elements",
             14
-        ]
+        ],
+        "easy_mode": false
     },
     "f": {
         "name": "5. Hauptgruppe",
@@ -50,7 +55,8 @@
         "parameter": [
             "elements",
             15
-        ]
+        ],
+        "easy_mode": false
     },
     "g": {
         "name": "6. Hauptgruppe",
@@ -58,7 +64,8 @@
         "parameter": [
             "elements",
             16
-        ]
+        ],
+        "easy_mode": false
     },
     "h": {
         "name": "7. Hauptgruppe",
@@ -66,7 +73,8 @@
         "parameter": [
             "elements",
             17
-        ]
+        ],
+        "easy_mode": false
     },
     "i": {
         "name": "8. Hauptgruppe",
@@ -74,7 +82,8 @@
         "parameter": [
             "elements",
             18
-        ]
+        ],
+        "easy_mode": false
     },
     "j": {
         "name": "Hauptgruppenelemente",
@@ -85,7 +94,8 @@
                 "s",
                 "p"
             ]
-        ]
+        ],
+        "easy_mode": false
     },
     "k": {
         "name": "Nebengruppenelemente",
@@ -95,7 +105,8 @@
             [
                 "d"
             ]
-        ]
+        ],
+        "easy_mode": false
     },
     "l": {
         "name": "Lanthanoide",
@@ -103,7 +114,8 @@
         "parameter": [
             "elements",
             "lanthanide"
-        ]
+        ],
+        "easy_mode": false
     },
     "m": {
         "name": "Actinoide",
@@ -111,21 +123,26 @@
         "parameter": [
             "elements",
             "actinide"
-        ]
+        ],
+        "easy_mode": false
     },
     "n": {
         "name": "Natürliche Elemente",
-        "funktion": "get_natural_elements",
+        "funktion": "get_nature_elements",
         "parameter": [
-            "elements"
-        ]
+            "elements",
+            true
+        ],
+        "easy_mode": false
     },
     "o": {
         "name": "Künstliche Elemente",
-        "funktion": "get_artificial_elements",
+        "funktion": "get_nature_elements",
         "parameter": [
-            "elements"
-        ]
+            "elements",
+            false
+        ],
+        "easy_mode": false
     },
     "p": {
         "name": "Radioaktive Elemente",
@@ -133,34 +150,39 @@
         "parameter": [
             "elements",
             false
-        ]
+        ],
+        "easy_mode": false
     },
     "q": {
         "name": "Einbuchstabige Elemente",
         "funktion": "get_single_letter_elements",
         "parameter": [
             "elements"
-        ]
+        ],
+        "easy_mode": false
     },
     "r": {
         "name": "Reinelemente",
         "funktion": "get_mononuclidic_elements",
         "parameter": [
             "elements"
-        ]
+        ],
+        "easy_mode": false
     },
     "s": {
         "name": "Gleichnamige Elemente",
         "funktion": "get_elements_with_same_name",
         "parameter": [
             "elements"
-        ]
+        ],
+        "easy_mode": false
     },
     "t": {
         "name": "Tom Lehrer Elemente",
         "funktion": "get_Lehrer_elements",
         "parameter": [
             "elements"
-        ]
+        ],
+        "easy_mode": false
     }
 }
