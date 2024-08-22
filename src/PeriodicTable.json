@@ -5328,7 +5328,9 @@
         "Lehrer_number": 45,
         "stable": false,
         "name": "Bismuth",
-        "funfact": "Früher wurde es als letztes stabiles Element angesehen. Aber durch thermometrische Messungen konnte man nachweisen,  dass es eine Halbwertszeit von ungefähr 10^19 Jahren hat. Mit gängigen Methoden kann der Nachweis nicht gefphrt werden.",
+        "funfact": [
+            "Früher wurde es als letztes stabiles Element angesehen. Aber durch thermometrische Messungen konnte man nachweisen, dass es eine Halbwertszeit von ungefähr 10^19 Jahren hat. Mit gängigen Methoden kann der Nachweis nicht geführt werden."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_083_bismuth/element_083_bismuth.glb",
         "wypos": 6,
         "boil": 1837,
