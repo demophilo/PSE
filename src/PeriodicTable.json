@@ -5984,7 +5984,9 @@
         "Lehrer_number": 69,
         "stable": false,
         "name": "Plutonium",
-        "funfact": "Formerly it was referred to as a synthetic element,  but it is found in trace amounts in nature.",
+        "funfact": [
+            "Früher wurde Plutonium zu den den synthetischen Elementen gezählt, aber man hat Spuren davon in der NAtur nachweisen können, sodass es heute als das letzte natürliche Element anerkannt ist."
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_094_plutonium/element_094_plutonium.glb",
         "wypos": 7,
         "boil": 3505,
