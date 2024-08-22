@@ -7272,7 +7272,9 @@
         "Lehrer_number": null,
         "stable": false,
         "name": "Tennessine",
-        "funfact": "At first the German name was tennessium. There even were some PSE tables printed. But it was changed to tenness. In English the rule was continued to end every halogene with -ine. In German this suffix had been ripped of to get the name of the halogene. So this rule was continued too.",
+        "funfact": [
+            "In angelsächsischen Sprachraum wollte man die Regel, dass Halogenide immer auf -ine enden, fortführen. Zuerst nannte man es in deutschen Sprachraum Tennessium. Erste Ausgaben des neuen PSE führten schon diesen Namen. Doch dann überlegte man es sich anders und wollte die Regel fortführen, dass Halogenide wie im Englischen heißen aber ohne -ine. Derher heiß es jetzt Tenness"
+        ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_117_tennessine/element_117_tennessine.glb",
         "wypos": 7,
         "boil": 883,
