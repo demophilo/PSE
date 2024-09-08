@@ -1,8 +1,10 @@
-module GameSetup
+module VariantSetup
 using JSON3
 
 include("elements.jl")
 using .Elements
+
+export Variant, create_path, parse_json_to_variants, input_game_type, get_elements_to_guess
 
 
 mutable struct Variant
@@ -12,11 +14,16 @@ mutable struct Variant
 	easy_mode::Bool
 end
 
-mutable struct Game
-	name::String
-	variant::Variant
+
+function create_path(directories::Vector{String}, filename::String)::String
+    return joinpath(directories..., filename)
 end
-variants_path = "variants.json"
+#=
+directories = ["src"]
+filename = "variants.json"
+variants_path = create_path(directories, filename)
+println(variants_path)
+=#
 function parse_json_to_variants(file_path::String)::Dict{String, Variant}
 	json_data = read(file_path, String)
 	parsed_data = JSON3.read(json_data, Dict{String, Any})
@@ -26,7 +33,7 @@ function parse_json_to_variants(file_path::String)::Dict{String, Variant}
 	end
 	return variants
 end
-game_type = parse_json_to_variants(variants_path)
+# game_type = parse_json_to_variants(variants_path)
 function input_game_type(dict_game_variants)
 	_row = ["$key $(variant.name)" for (key, variant) in (dict_game_variants) if length(key) == 1]
 	println.("\t", sort(_row))
@@ -62,9 +69,9 @@ function get_elements_to_guess(dict_game_variants, game_type_key::String)
 	#end
 	return _elements_to_guess
 end
-
+#=
 for (key, value) in game_type
-    println(key, " ", value)
+	println(key, " ", value)
 end
-
+=#
 end # module

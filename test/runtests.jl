@@ -9,6 +9,13 @@ using .ScreenManipulation
 include("../src/module_IO_func.jl")
 using .IO_func
 
+include("../src/game_variants.jl")
+using .VariantSetup
+
+#################################################
+# Tests module Elements
+#################################################
+
 @testset "Element Struct Tests" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 
@@ -109,7 +116,7 @@ end
 	elements_with_same_name = get_elements_with_same_name(elements)
 	elements_with_same_name = [element.name_de for element in elements_with_same_name]
 
-	@test length(elements_with_same_name) == 76
+	@test length(elements_with_same_name) == 77
 	@test "Aluminium" ∈ elements_with_same_name
 	@test "Silicium" ∉ elements_with_same_name
 	@test "Bismut" ∉ elements_with_same_name
@@ -135,30 +142,6 @@ end
 	@test PSE_matrix[1, 18] == "He"
 	@test PSE_matrix_wide[2, 1] == "Li"
 	@test PSE_matrix_wide[7, 32] == "Og"
-end
-
-@testset "get_color_dict" begin
-	color_dict = get_color_dict()
-
-	@test color_dict["red"] == "\e[31m"
-	@test color_dict["green"] == "\e[32m"
-	@test color_dict["yellow"] == "\e[33m"
-	@test color_dict["blue"] == "\e[34m"
-	@test color_dict["purple"] == "\e[35m"
-	@test color_dict["lightblue"] == "\e[36m"
-	@test color_dict["white"] == "\e[37m"
-	@test color_dict["lightred"] == "\e[91m"
-	@test color_dict["green2"] == "\e[92m"
-	@test color_dict["lightyellow"] == "\e[93m"
-	@test color_dict["lightpurple"] == "\e[95m"
-	@test color_dict["cyan"] == "\e[96m"
-end
-
-@testset "colorize_string" begin
-	color_dict = get_color_dict()
-	colored_string = colorize_string("Hello World!", color_dict, "red")
-
-	@test colored_string == "\e[31mHello World!\e[0m"
 end
 
 @testset "get_Lehrer_elements" begin
@@ -198,6 +181,38 @@ end
 	@test show_matrix[7, 1] == "\e[32mFr \e[0m" # green again
 end
 
+#################################################
+# Tests module ScreenManipulation
+#################################################
+
+@testset "get_color_dict" begin
+	color_dict = get_color_dict()
+
+	@test color_dict["red"] == "\e[31m"
+	@test color_dict["green"] == "\e[32m"
+	@test color_dict["yellow"] == "\e[33m"
+	@test color_dict["blue"] == "\e[34m"
+	@test color_dict["purple"] == "\e[35m"
+	@test color_dict["lightblue"] == "\e[36m"
+	@test color_dict["white"] == "\e[37m"
+	@test color_dict["lightred"] == "\e[91m"
+	@test color_dict["green2"] == "\e[92m"
+	@test color_dict["lightyellow"] == "\e[93m"
+	@test color_dict["lightpurple"] == "\e[95m"
+	@test color_dict["cyan"] == "\e[96m"
+end
+
+@testset "colorize_string" begin
+	color_dict = get_color_dict()
+	colored_string = colorize_string("Hello World!", color_dict, "red")
+
+	@test colored_string == "\e[31mHello World!\e[0m"
+end
+
+#################################################
+# Tests module IO_func
+#################################################
+
 @testset "Test input_element" begin
 	# Simulierte Eingabe
 	simulated_input = "Helium\n"
@@ -218,4 +233,25 @@ end
 	redirect_stdin(rd) do
 		read_input()
 	end
+end
+
+#################################################
+# Tests module game_variants
+#################################################
+
+@testset "Test create_path" begin
+	directories = ["src"]
+	filename = "variants.json"
+	variants_path = create_path(directories, filename)
+	expected_path = Sys.iswindows() ? "src\\variants.json" : "src/variants.json"
+	@test variants_path == expected_path
+end
+
+@testset "Test parse_json_to_variants" begin
+	dict_game_variants = parse_json_to_variants("../src/variants.json")
+	
+	@test dict_game_variants["c"].name == "2. Hauptgruppe"
+	@test dict_game_variants["c"].funktion == "get_group_elements"
+	@test dict_game_variants["c"].parameter == ["elements", 2]
+	@test dict_game_variants["c"].easy_mode == false
 end

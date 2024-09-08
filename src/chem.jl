@@ -4,7 +4,10 @@ using JSON3
 include("elements.jl")
 using .Elements
 
-
+mutable struct Game
+	name::String
+	variant::Variant
+end
 
 
 """
