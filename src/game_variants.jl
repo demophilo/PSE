@@ -16,7 +16,7 @@ end
 
 
 function create_path(directories::Vector{String}, filename::String)::String
-    return joinpath(directories..., filename)
+	return joinpath(directories..., filename)
 end
 #=
 directories = ["src"]
@@ -33,30 +33,20 @@ function parse_json_to_variants(file_path::String)::Dict{String, Variant}
 	end
 	return variants
 end
-# game_type = parse_json_to_variants(variants_path)
-function input_game_type(dict_game_variants)
-	_row = ["$key $(variant.name)" for (key, variant) in (dict_game_variants) if length(key) == 1]
-	println.("\t", sort(_row))
-	_single_keys = [single for single in keys(dict_game_variants) if length(single) == 1]
-	_keys_str = join(sort(collect(_single_keys)), ", ")
+
+function input_game_type(dict_game_variants::Dict{String, Variant})
+	sorted_keys = sort(collect(keys(dict_game_variants)))
+
+	for key in sorted_keys
+		println("$key => $(dict_game_variants[key].name)")
+	end
+
+	_keys_str = join(sorted_keys, ", ")
 	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
 
 	_chosen_game_letter = ""
-	while length(_chosen_game_letter) != 1
-		_input_game_letter = readline()
-		if _input_game_letter in _single_keys
-			_chosen_game_letter *= _input_game_letter
-		end
-	end
-
-	if dict_game_variants[_chosen_game_letter].mode == "normal"
-
-		println("Wenn Sie das Spiel ohne künstliche Elemente spielen wollen, geben Sie j ein.")
-		_input_mode = readline()
-		if _input_mode == "j"
-			return _chosen_game_letter * "e"
-		end
-
+	while !occursin(_chosen_game_letter, _keys_str)
+		_chosen_game_letter = string(readline()[1])
 	end
 
 	return _chosen_game_letter
