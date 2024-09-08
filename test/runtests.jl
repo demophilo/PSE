@@ -252,9 +252,38 @@ end
 	filename = "variants.json"
 	variants_path = create_path(directories, filename)
 	dict_game_variants = parse_json_to_variants(variants_path)
-	
+
 	@test dict_game_variants["c"].name == "2. Hauptgruppe"
 	@test dict_game_variants["c"].funktion == "get_group_elements"
 	@test dict_game_variants["c"].parameter == ["elements", 2]
 	@test dict_game_variants["c"].easy_mode == false
 end
+
+@testset "Test input_game_type" begin
+	directories = ["..", "src"]
+	filename = "variants.json"
+	variants_path = create_path(directories, filename)
+	dict_game_variants = parse_json_to_variants(variants_path)
+
+	# Simulierte Eingabe
+	simulated_input = "c\n"
+	io = IOBuffer(simulated_input)
+
+	# Funktion, die die Eingabe liest
+	function read_input()
+		game_type = input_game_type(dict_game_variants)
+		
+		@test typeof(game_type) == typeof("c")	
+	end
+
+	# Pipe erstellen und Daten schreiben
+	rd, wr = redirect_stdin()
+	write(wr, simulated_input)
+	close(wr)
+
+	# Umleiten der Standard-Eingabe
+	redirect_stdin(rd) do
+		read_input()
+	end
+end
+
