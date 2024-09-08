@@ -248,7 +248,10 @@ end
 end
 
 @testset "Test parse_json_to_variants" begin
-	dict_game_variants = parse_json_to_variants("../src/variants.json")
+	directories = ["..", "src"]
+	filename = "variants.json"
+	variants_path = create_path(directories, filename)
+	dict_game_variants = parse_json_to_variants(variants_path)
 	
 	@test dict_game_variants["c"].name == "2. Hauptgruppe"
 	@test dict_game_variants["c"].funktion == "get_group_elements"
