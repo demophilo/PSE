@@ -5,14 +5,14 @@ include("screen_manipulation.jl")
 using .ScreenManipulation
 
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements
+	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements, tests
 
 # def new type GroupName
 const GroupName = Union{Int, String}
 const ALLOWED_STRINGS = Set(["lanthanide", "actinide"])
 const ALLOWED_INTEGERS = Set(1:18)
 function is_valid_group_name(value::GroupName)
-    return (isa(value, Int) && value in ALLOWED_INTEGERS) || (isa(value, String) && value in ALLOWED_STRINGS)
+	return (isa(value, Int) && value in ALLOWED_INTEGERS) || (isa(value, String) && value in ALLOWED_STRINGS)
 end
 
 struct Element
@@ -190,7 +190,7 @@ function get_elements_not_to_guess(elements::Vector{Element}, elements_to_guess:
 end
 
 function remove_synthetic_elements(elements::Vector{Element})
-	return [element for element in elements if !element.synthetic]	
+	return [element for element in elements if !element.synthetic]
 end
 
 end # module
