@@ -287,3 +287,8 @@ end
 	end
 end
 
+@testset "Test call_function_by_name" begin
+	elements = call_function_by_name(Elements, "read_chemical_elements", ["../src/PeriodicTable.json"])
+	
+	@test elements[2].name == "Helium"
+end
