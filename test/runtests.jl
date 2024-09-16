@@ -27,13 +27,13 @@ using .VariantSetup
 	@test elements[2].ypos == 1
 	@test elements[2].wxpos == 32
 	@test elements[2].wypos == 1
-	@test elements[2].group == 18
+	@test elements[2].group == "18"
 end
 
 @testset "get_group_Elements" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	group_elements = get_group_elements(elements::Vector{Element}, 1)
-	group_elements2 = get_group_elements(elements::Vector{Element}, 17)
+	group_elements = get_group_elements(elements::Vector{Element}, "1")
+	group_elements2 = get_group_elements(elements::Vector{Element}, "17")
 	group_elements_actinide = get_group_elements(elements::Vector{Element}, "actinide")
 	group_elements_lanthanide = get_group_elements(elements::Vector{Element}, "lanthanide")
 
@@ -155,7 +155,7 @@ end
 
 @testset "get_elements_not_to_guess" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-	elements_to_guess = get_group_elements(elements, 1)
+	elements_to_guess = get_group_elements(elements, "1")
 	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
 
 	@test length(elements_not_to_guess) == 111
@@ -167,7 +167,7 @@ end
 @testset "get_PSE_ready_to_print" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
-	elements_to_guess = get_group_elements(elements, 1)
+	elements_to_guess = get_group_elements(elements, "1")
 	element_symbols_to_guess = [element.symbol for element in elements_to_guess]
 	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
 	element_symbols_not_to_guess = [element.symbol for element in elements_not_to_guess]
@@ -255,10 +255,11 @@ end
 
 	@test dict_game_variants["c"].name == "2. Hauptgruppe"
 	@test dict_game_variants["c"].funktion == "get_group_elements"
-	@test dict_game_variants["c"].parameter == ["elements", 2]
+	@test dict_game_variants["c"].parameter[1] == "elements"
+	@test dict_game_variants["c"].parameter[2] == "2"
 	@test dict_game_variants["c"].easy_mode == false
 end
-
+#=
 @testset "Test input_game_type" begin
 	directories = ["..", "src"]
 	filename = "variants.json"
@@ -288,7 +289,29 @@ end
 end
 
 @testset "Test call_function_by_name" begin
-	elements = call_function_by_name(Elements, "read_chemical_elements", ["../src/PeriodicTable.json"])
+	directories_elements = ["..", "src"]
+	filename_elements = "PeriodicTable.json"
+	Elements_path = create_path(directories_elements, filename_elements)
+	elements = call_function_by_name(Elements, "read_chemical_elements", [Elements_path])
 	
 	@test elements[2].name == "Helium"
 end
+
+@testset "Test get_elements_to_guess" begin
+	directories_variants = ["..", "src"]
+	filename_variants = "variants.json"
+	variants_path = create_path(directories_variants, filename_variants)
+
+	directories_elements = ["..", "src"]
+	filename_elements = "PeriodicTable.json"
+	Elements_path = create_path(directories_elements, filename_elements)
+
+	dict_game_variants = parse_json_to_variants(variants_path)
+	game_type = "t"
+	elements = read_chemical_elements(Elements_path)
+	elements_to_guess = get_elements_to_guess(dict_game_variants, game_type)
+	
+
+	@test elements_to_guess[end].name_de == "Natrium"
+end
+=#

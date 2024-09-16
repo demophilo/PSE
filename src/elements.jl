@@ -5,15 +5,7 @@ include("screen_manipulation.jl")
 using .ScreenManipulation
 
 export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements, tests
-
-# def new type GroupName
-const GroupName = Union{Int, String}
-const ALLOWED_STRINGS = Set(["lanthanide", "actinide"])
-const ALLOWED_INTEGERS = Set(1:18)
-function is_valid_group_name(value::GroupName)
-	return (isa(value, Int) && value in ALLOWED_INTEGERS) || (isa(value, String) && value in ALLOWED_STRINGS)
-end
+	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements
 
 struct Element
 	name::String # English name of the element
@@ -24,7 +16,7 @@ struct Element
 	ypos::Integer # y position in compact PSE
 	wxpos::Integer # x position in wide PSE
 	wypos::Integer # y position in wide PSE
-	group::GroupName # 1...18, "lanthanide", "actinide"
+	group::String # "1"..."18", "lanthanide", "actinide"
 	block::String # s, p, d, f
 	stable::Bool
 	synthetic::Bool
@@ -54,7 +46,7 @@ function get_Lehrer_elements(elements::Vector{Element})
 	return Lehrer_element_vector
 end
 
-function get_group_elements(elements::Vector{Element}, group_name::GroupName)
+function get_group_elements(elements::Vector{Element}, group_name::String)
 	return [_element for _element in elements if _element.group == group_name]
 end
 
@@ -102,7 +94,9 @@ function element_compare(element1::Element, element2::Element)
 	elseif (element1.group != "actinide" && element1.group != "lanthanide") && (element2.group == "actinide" || element2.group == "lanthanide")
 		return true
 	elseif element1.group != "actinide" && element1.group != "lanthanide" && element2.group != "actinide" && element2.group != "lanthanide"
-		return element1.group < element2.group
+		group1 = parse(Int, element1.group)
+        group2 = parse(Int, element2.group)
+        return group1 < group2
 	end
 end
 
