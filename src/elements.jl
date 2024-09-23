@@ -4,8 +4,9 @@ using JSON3
 include("screen_manipulation.jl")
 using .ScreenManipulation
 
-export Element, read_chemical_elements, get_group_elements, get_nature_elements, get_synthetic_elements, get_elements_by_blocks, get_stable_elements, get_radioactive_elements, get_single_letter_elements, get_elements_with_same_name,
-	get_mononuclidic_elements, element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_Lehrer_elements, get_elements_not_to_guess, remove_synthetic_elements
+export Element, Variant, read_chemical_elements, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements, element_compare,
+	sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
+	get_elements_to_guess2
 
 struct Element
 	name::String # English name of the element
@@ -24,6 +25,12 @@ struct Element
 	Lehrer_number::Union{Integer, Nothing}
 end
 
+mutable struct Variant
+	letter::String
+	name::String
+	with_easy_mode::Bool
+	easy_mode::Bool
+end
 
 """
 	read_chemical_elements(filename::String)
@@ -46,7 +53,7 @@ function get_Lehrer_elements(elements::Vector{Element})
 	return Lehrer_element_vector
 end
 
-function get_group_elements(elements::Vector{Element}, group_name::String)
+function get_group_elements(elements::Vector{Element}, group_name::String)::Vector{Element}
 	return [_element for _element in elements if _element.group == group_name]
 end
 
@@ -95,8 +102,8 @@ function element_compare(element1::Element, element2::Element)
 		return true
 	elseif element1.group != "actinide" && element1.group != "lanthanide" && element2.group != "actinide" && element2.group != "lanthanide"
 		group1 = parse(Int, element1.group)
-        group2 = parse(Int, element2.group)
-        return group1 < group2
+		group2 = parse(Int, element2.group)
+		return group1 < group2
 	end
 end
 
@@ -186,5 +193,135 @@ end
 function remove_synthetic_elements(elements::Vector{Element})
 	return [element for element in elements if !element.synthetic]
 end
+
+function create_path(directories::Vector{String}, filename::String)::String
+	return joinpath(directories..., filename)
+end
+
+function read_json_to_variant_vector(file_path::String)::Vector{Variant}
+	json_data = JSON3.read(file_path)
+	variants = Vector{Variant}()
+	for item in json_data
+		variant = Variant(
+			item["letter"],
+			item["name"],
+			item["with_easy_mode"],
+			item["easy_mode"]
+		)
+		push!(variants, variant)
+	end
+
+	return variants
+end
+
+function get_elements_to_guess(elements_vector, variant::Variant)::Vector{Element}
+	if variant.letter == "a"
+		return elements_vector
+	end
+
+	if variant.letter == "b"
+		return get_group_elements(elements_vector, "1")
+	end
+
+	if variant.letter == "c"
+		return get_group_elements(elements_vector, "2")
+	end
+
+	if variant.letter == "d"
+		return get_group_elements(elements_vector, "13")
+	end
+
+	if variant.letter == "e"
+		return get_group_elements(elements_vector, "14")
+	end
+
+	if variant.letter == "f"
+		return get_group_elements(elements_vector, "15")
+	end
+
+	if variant.letter == "g"
+		return get_group_elements(elements_vector, "16")
+	end
+
+	if variant.letter == "h"
+		return get_group_elements(elements_vector, "17")
+	end
+
+	if variant.letter == "i"
+		return get_group_elements(elements_vector, "18")
+	end
+
+	if variant.letter == "j"
+		return get_group_elements(elements_vector, "lanthanide")
+	end
+
+	if variant.letter == "k"
+		return get_group_elements(elements_vector, "actinide")
+	end
+
+	if variant.letter == "l"
+		return get_mononuclidic_elements(elements_vector)
+	end
+
+	if variant.letter == "m"
+		return get_stable_elements(elements_vector, false)
+	end
+
+	if variant.letter == "n"
+		return get_elements_by_blocks(elements_vector, ["s", "p"])
+	end
+
+	if variant.letter == "o"
+		return get_elements_by_blocks(elements_vector, ["d"])
+	end
+
+	if variant.letter == "p"
+		return get_elements_with_same_name(elements_vector)
+	end
+
+	if variant.letter == "q"
+		return get_single_letter_elements(elements_vector)
+	end
+
+	if variant.letter == "r"
+		return get_Lehrer_elements(elements_vector)
+	end
+end
+
+
+function input_game_type(variant_vector::Vector)::String
+	for variant in variant_vector
+		println("$(variant.letter) => $(variant.name)")
+	end
+
+	_keys_str = join([variant.letter for variant in variant_vector], ", ")
+	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
+
+	_chosen_game_letter = ""
+	while _chosen_game_letter ∉ [variant.letter for variant in variant_vector]
+		_chosen_game_letter = string(readline()[1])
+	end
+
+	return _chosen_game_letter
+end
+
+function call_function_by_name(mod::Module, func_name::String, param_types::Vector{DataType}, params::AbstractVector)
+	func = getfield(mod, Symbol(func_name))
+	typed_params = [convert(param_types[i], params[i]) for i in eachindex(param_types)]
+	return func(typed_params...)
+end
+
+function get_elements_to_guess2(elements::Vector{Element}, variant::Variant)
+	# Fügen Sie den `elements`-Vektor zu den Parametern hinzu
+	params_with_elements = [elements; variant.parameter]
+	param_types_with_elements = [Vector{Element}; variant.param_types]
+	elements_to_guess = call_function_by_name(Elements, variant.funktion, param_types_with_elements, params_with_elements)
+	return elements_to_guess
+end
+
+
+
+
+
 
 end # module

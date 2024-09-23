@@ -9,8 +9,6 @@ using .ScreenManipulation
 include("../src/module_IO_func.jl")
 using .IO_func
 
-include("../src/game_variants.jl")
-using .VariantSetup
 
 #################################################
 # Tests module Elements
@@ -18,7 +16,7 @@ using .VariantSetup
 
 @testset "Element Struct Tests" begin
 	elements = read_chemical_elements("../src/PeriodicTable.json")
-
+	
 	@test elements[2].name == "Helium"
 	@test elements[2].name_de == "Helium"
 	@test elements[2].symbol == "He"
@@ -247,34 +245,32 @@ end
 	@test variants_path == expected_path
 end
 
-@testset "Test parse_json_to_variants" begin
+@testset "Test read_json_to_variants" begin
 	directories = ["..", "src"]
 	filename = "variants.json"
 	variants_path = create_path(directories, filename)
-	dict_game_variants = parse_json_to_variants(variants_path)
+	game_variant_vector = read_json_to_variant_vector(variants_path)
+	sort!(game_variant_vector, by = x -> x.letter)
 
-	@test dict_game_variants["c"].name == "2. Hauptgruppe"
-	@test dict_game_variants["c"].funktion == "get_group_elements"
-	@test dict_game_variants["c"].parameter[1] == "elements"
-	@test dict_game_variants["c"].parameter[2] == "2"
-	@test dict_game_variants["c"].easy_mode == false
+	@test game_variant_vector[1].letter == "a"
 end
-#=
+
 @testset "Test input_game_type" begin
 	directories = ["..", "src"]
 	filename = "variants.json"
 	variants_path = create_path(directories, filename)
-	dict_game_variants = parse_json_to_variants(variants_path)
-
+	game_variant_vector = read_json_to_variant_vector(variants_path)
+	game_type_vector = [variant.letter for variant in game_variant_vector]
 	# Simulierte Eingabe
 	simulated_input = "c\n"
 	io = IOBuffer(simulated_input)
 
 	# Funktion, die die Eingabe liest
 	function read_input()
-		game_type = input_game_type(dict_game_variants)
+		game_type = input_game_type(game_variant_vector)
 		
-		@test typeof(game_type) == typeof("c")	
+		@test typeof(game_type) == typeof("c")
+		@test game_type in game_type_vector
 	end
 
 	# Pipe erstellen und Daten schreiben
@@ -292,26 +288,30 @@ end
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
 	Elements_path = create_path(directories_elements, filename_elements)
-	elements = call_function_by_name(Elements, "read_chemical_elements", [Elements_path])
+	elements = call_function_by_name(Elements, "read_chemical_elements", [String], [Elements_path])
 	
 	@test elements[2].name == "Helium"
 end
 
 @testset "Test get_elements_to_guess" begin
-	directories_variants = ["..", "src"]
-	filename_variants = "variants.json"
-	variants_path = create_path(directories_variants, filename_variants)
-
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
 	Elements_path = create_path(directories_elements, filename_elements)
-
-	dict_game_variants = parse_json_to_variants(variants_path)
-	game_type = "t"
 	elements = read_chemical_elements(Elements_path)
-	elements_to_guess = get_elements_to_guess(dict_game_variants, game_type)
-	
 
-	@test elements_to_guess[end].name_de == "Natrium"
+	directories = ["..", "src"]
+	filename = "variants.json"
+	variants_path = create_path(directories, filename)
+	game_variant_vector = read_json_to_variant_vector(variants_path)
+	sort!(game_variant_vector, by = x -> x.letter)	
+	
+	variant = game_variant_vector[3]
+	elements_to_guess = get_elements_to_guess(elements, variant)
+
+	@test elements_to_guess[1].name_de == "Beryllium"
+	@test elements_to_guess[2].name_de == "Magnesium"
+	@test elements_to_guess[3].name_de == "Calcium"
+	@test elements_to_guess[4].name_de == "Strontium"
+	@test elements_to_guess[5].name_de == "Barium"
+	@test elements_to_guess[6].name_de == "Radium"
 end
-=#

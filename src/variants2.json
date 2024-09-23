@@ -1,0 +1,264 @@
+{
+    "a": {
+        "name": "Alle Elemente",
+        "funktion": "get_elements_by_blocks",
+        "param_types": [
+            "Vector{Element}",
+            "Vector{String}"
+        ],
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p",
+                "d",
+                "f"
+            ]
+        ],
+        "easy_mode": false
+    },
+    "b": {
+        "name": "1. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "1"
+        ],
+        "easy_mode": false
+    },
+    "c": {
+        "name": "2. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "2"
+        ],
+        "easy_mode": false
+    },
+    "d": {
+        "name": "3. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "13"
+        ],
+        "easy_mode": false
+    },
+    "e": {
+        "name": "4. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "14"
+        ],
+        "easy_mode": false
+    },
+    "f": {
+        "name": "5. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "15"
+        ],
+        "easy_mode": false
+    },
+    "g": {
+        "name": "6. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "16"
+        ],
+        "easy_mode": false
+    },
+    "h": {
+        "name": "7. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "17"
+        ],
+        "easy_mode": false
+    },
+    "i": {
+        "name": "8. Hauptgruppe",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "18"
+        ],
+        "easy_mode": false
+    },
+    "j": {
+        "name": "Hauptgruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "param_types": [
+            "Vector{Element}",
+            "Vector{String}"
+        ],
+        "parameter": [
+            "elements",
+            [
+                "s",
+                "p"
+            ]
+        ],
+        "easy_mode": false
+    },
+    "k": {
+        "name": "Nebengruppenelemente",
+        "funktion": "get_elements_by_blocks",
+        "param_types": [
+            "Vector{Element}",
+            "Vector{String}"
+        ],
+        "parameter": [
+            "elements",
+            [
+                "d"
+            ]
+        ],
+        "easy_mode": false
+    },
+    "l": {
+        "name": "Lanthanoide",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "lanthanide"
+        ],
+        "easy_mode": false
+    },
+    "m": {
+        "name": "Actinoide",
+        "funktion": "get_group_elements",
+        "param_types": [
+            "Vector{Element}",
+            "String"
+        ],
+        "parameter": [
+            "elements",
+            "actinide"
+        ],
+        "easy_mode": false
+    },
+    "n": {
+        "name": "Natürliche Elemente",
+        "funktion": "get_nature_elements",
+        "param_types": [
+            "Vector{Element}",
+            "Bool"
+        ],
+        "parameter": [
+            "elements",
+            true
+        ],
+        "easy_mode": false
+    },
+    "o": {
+        "name": "Künstliche Elemente",
+        "funktion": "get_nature_elements",
+        "param_types": [
+            "Vector{Element}",
+            "Bool"
+        ],
+        "parameter": [
+            "elements",
+            false
+        ],
+        "easy_mode": false
+    },
+    "p": {
+        "name": "Radioaktive Elemente",
+        "funktion": "get_stable_elements",
+        "param_types": [
+            "Vector{Element}",
+            "Bool"
+        ],
+        "parameter": [
+            "elements",
+            false
+        ],
+        "easy_mode": false
+    },
+    "q": {
+        "name": "Einbuchstabige Elemente",
+        "funktion": "get_single_letter_elements",
+        "param_types": [
+            "Vector{Element}"
+        ],
+        "parameter": [
+            "elements"
+        ],
+        "easy_mode": false
+    },
+    "r": {
+        "name": "Reinelemente",
+        "funktion": "get_mononuclidic_elements",
+        "param_types": [
+            "Vector{Element}"
+        ],
+        "parameter": [
+            "elements"
+        ],
+        "easy_mode": false
+    },
+    "s": {
+        "name": "Gleichnamige Elemente",
+        "funktion": "get_elements_with_same_name",
+        "param_types": [
+            "Vector{Element}"
+        ],
+        "parameter": [
+            "elements"
+        ],
+        "easy_mode": false
+    },
+    "t": {
+        "name": "Tom Lehrer Elemente",
+        "funktion": "get_Lehrer_elements",
+        "param_types": [
+            "Vector{Element}"
+        ],
+        "parameter": [
+            "elements"
+        ],
+        "easy_mode": false
+    }
+}
