@@ -10,6 +10,9 @@ include("../src/module_IO_func.jl")
 using .IO_func
 
 
+include("../src/module_PlayerManipulation.jl")
+using .PlayerManipulation
+
 #################################################
 # Tests module Elements
 #################################################
@@ -314,4 +317,43 @@ end
 	@test elements_to_guess[4].name_de == "Strontium"
 	@test elements_to_guess[5].name_de == "Barium"
 	@test elements_to_guess[6].name_de == "Radium"
+end
+
+#################################################
+# Tests module PlayerManipulation
+#################################################
+
+@testset "Test read_players" begin
+    # Simulieren des Inhalts einer JSON-Datei
+    players_json = """
+    [
+        {"name": "Alice", "game": "Chess", "total_score": 1500},
+        {"name": "Bob", "game": "Poker", "total_score": 1200},
+        {"name": "Charlie", "game": "Go", "total_score": 1800}
+    ]
+    """
+
+    # Schreiben des JSON-Inhalts in eine temporäre Datei
+    filename = "temp_players.json"
+    open(filename, "w") do file
+        write(file, players_json)
+    end
+
+    # Aufruf der Funktion read_players
+    players = PlayerManipulation.read_players(filename)
+
+    # Überprüfen der zurückgegebenen Spieler
+    @test length(players) == 3
+    @test players[1].name == "Alice"
+    @test players[1].game == "Chess"
+    @test players[1].total_score == 1500
+    @test players[2].name == "Bob"
+    @test players[2].game == "Poker"
+    @test players[2].total_score == 1200
+    @test players[3].name == "Charlie"
+    @test players[3].game == "Go"
+    @test players[3].total_score == 1800
+
+    # Löschen der temporären Datei
+    rm(filename)
 end
