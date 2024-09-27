@@ -289,7 +289,7 @@ function get_elements_to_guess(elements_vector, variant::Variant)::Vector{Elemen
 end
 
 
-function input_game_type(variant_vector::Vector)::String
+function input_game_type(variant_vector::Vector)
 	for variant in variant_vector
 		println("$(variant.letter) => $(variant.name)")
 	end
@@ -302,7 +302,12 @@ function input_game_type(variant_vector::Vector)::String
 		_chosen_game_letter = string(readline()[1])
 	end
 
-	return _chosen_game_letter
+	for variant in variant_vector
+		if variant.letter == _chosen_game_letter
+			return variant
+		end
+	end
+	
 end
 
 function call_function_by_name(mod::Module, func_name::String, param_types::Vector{DataType}, params::AbstractVector)
