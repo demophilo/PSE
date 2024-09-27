@@ -118,7 +118,7 @@ end
 generates the PSE matrix, fills it with empty strings and fills the right positions with the element symbols
 if is_wide is true, a wide matrix will be generated
 """
-function get_PSE_matrix(elements::Vector{Element}, is_wide = true)
+function get_PSE_matrix(elements::Vector{Element}, is_wide = true)::Matrix{String}
 	if is_wide
 		_periodic_table_matrix = fill("", 8, 32)
 		for element in elements
