@@ -1,6 +1,6 @@
 module ScreenManipulation
 
-export print_title, get_color_dict, colorize_string, clear_sreen
+export print_title, get_color_dict, colorize_string, clear_sreen, display_screen
 
 function print_title()
     title = open("title.txt", "r") do file
@@ -36,6 +36,21 @@ end
 
 function clear_sreen()
     print("\e[2J")
+end
+
+"""
+	display_screen(show_matrix, score, time_bonus)
+
+shows the gaming screen with title, PSE and score
+"""
+function display_screen(show_matrix, score, time_bonus)
+	clear_sreen()
+	println(title, "\n"^10)
+	println("")
+	print_PSE(show_matrix)
+	println("")
+	_total = score + time_bonus
+	println("Score: $score    Timebonus: $time_bonus    Total: $_total")
 end
 
 end # module

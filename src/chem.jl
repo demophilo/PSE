@@ -10,20 +10,6 @@ mutable struct Game
 end
 
 
-"""
-	display_screen(show_matrix, score, time_bonus)
-
-shows the gaming screen with title, PSE and score
-"""
-function display_screen(show_matrix, score, time_bonus)
-	clear_sreen()
-	println(title, "\n"^10)
-	println("")
-	print_PSE(show_matrix)
-	println("")
-	_total = score + time_bonus
-	println("Score: $score    Timebonus: $time_bonus    Total: $_total")
-end
 
 # player section
  player_name = input_player_name()
