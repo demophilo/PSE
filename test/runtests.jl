@@ -1,4 +1,5 @@
 using Test
+using JSON3
 
 include("../src/elements.jl")
 using .Elements
@@ -353,6 +354,41 @@ end
     @test players[3].name == "Charlie"
     @test players[3].game == "Go"
     @test players[3].total_score == 1800
+
+    # Löschen der temporären Datei
+    rm(filename)
+end
+
+@testset "Test append_Player_to_json_array" begin
+    # Simulieren des Inhalts einer JSON-Datei
+    initial_players_json = """
+    [
+        {"name": "Alice", "game": "Chess", "total_score": 1500},
+        {"name": "Bob", "game": "Poker", "total_score": 1200}
+    ]
+    """
+
+    # Schreiben des initialen JSON-Inhalts in eine temporäre Datei
+    filename = "temp_players.json"
+    open(filename, "w") do file
+        write(file, initial_players_json)
+    end
+
+    # Neuer Spieler, der hinzugefügt werden soll
+    new_player = PlayerManipulation.Player("Charlie", "Go", 1800)
+
+    # Aufruf der Funktion append_Player_to_json_array
+    PlayerManipulation.append_Player_to_json_vector(filename, new_player)
+
+    # Lesen des aktualisierten Inhalts der Datei
+    updated_players_data = read(filename, String)
+    updated_players_array = JSON3.read(updated_players_data)
+
+    # Überprüfen der aktualisierten Spieler
+    @test length(updated_players_array) == 3
+    @test updated_players_array[3]["name"] == "Charlie"
+    @test updated_players_array[3]["game"] == "Go"
+    @test updated_players_array[3]["total_score"] == 1800
 
     # Löschen der temporären Datei
     rm(filename)
