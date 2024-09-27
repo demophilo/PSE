@@ -264,7 +264,6 @@ end
 	filename = "variants.json"
 	variants_path = create_path(directories, filename)
 	game_variant_vector = read_json_to_variant_vector(variants_path)
-	game_type_vector = [variant.letter for variant in game_variant_vector]
 	# Simulierte Eingabe
 	simulated_input = "c\n"
 	io = IOBuffer(simulated_input)
@@ -273,8 +272,8 @@ end
 	function read_input()
 		game_type = input_game_type(game_variant_vector)
 		
-		@test typeof(game_type) == typeof("c")
-		@test game_type in game_type_vector
+		@test typeof(game_type) == Variant
+		@test game_type in game_variant_vector
 	end
 
 	# Pipe erstellen und Daten schreiben
