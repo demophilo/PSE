@@ -154,7 +154,7 @@ end
 
 hides the false elements, colors the right elements and the positions to guess
 """
-function get_PSE_ready_to_print(PSE_matrix, elements_to_show, elements_symbols_to_guess, elements_not_to_guess)
+function get_PSE_ready_to_print(PSE_matrix::Matrix{String}, elements_to_show, elements_symbols_to_guess, elements_not_to_guess)
 	_filtered_matrix = copy(PSE_matrix)
 	_max_rows, _max_columns = size(_filtered_matrix)
 	_elements_not_yet_guessed = setdiff(elements_symbols_to_guess, elements_to_show)
@@ -214,7 +214,7 @@ function read_json_to_variant_vector(file_path::String)::Vector{Variant}
 	return variants
 end
 
-function get_elements_to_guess(elements_vector, variant::Variant)::Vector{Element}
+function get_elements_to_guess(elements_vector::Vector{Element}, variant::Variant)::Vector{Element}
 	if variant.letter == "a"
 		return elements_vector
 	end
