@@ -4,9 +4,6 @@ using JSON3
 include("../src/elements.jl")
 using .Elements
 
-include("../src/screen_manipulation.jl")
-using .ScreenManipulation
-
 include("../src/module_IO_func.jl")
 using .IO_func
 
@@ -19,7 +16,7 @@ using .PlayerManipulation
 #################################################
 
 @testset "Element Struct Tests" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	
 	@test elements[2].name == "Helium"
 	@test elements[2].name_de == "Helium"
@@ -33,7 +30,7 @@ using .PlayerManipulation
 end
 
 @testset "get_group_Elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	group_elements = get_group_elements(elements::Vector{Element}, "1")
 	group_elements2 = get_group_elements(elements::Vector{Element}, "17")
 	group_elements_actinide = get_group_elements(elements::Vector{Element}, "actinide")
@@ -53,7 +50,7 @@ end
 end
 
 @testset "get_mononuclidic_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	mononuclidic_elements = get_mononuclidic_elements(elements)
 
 	@test length(mononuclidic_elements) == 22
@@ -62,7 +59,7 @@ end
 	end
 end
 @testset "get_natural_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	natural_elements = get_nature_elements(elements)
 
 	@test length(natural_elements) == 94
@@ -72,7 +69,7 @@ end
 end
 
 @testset "get_stable_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	radioactive_elements = get_stable_elements(elements, false)
 	stable_elements = get_stable_elements(elements, true)
 
@@ -82,7 +79,7 @@ end
 	end
 end
 @testset "get_elements_by_blocks" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	block_elements = get_elements_by_blocks(elements, ["s"])
 	block_elements2 = get_elements_by_blocks(elements, ["f"])
 
@@ -93,7 +90,7 @@ end
 end
 
 @testset "sort_elements_chemically" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	sorted_elements = sort_elements_chemically(elements)
 
 	@test sorted_elements[1].name_de == "Wasserstoff"
@@ -104,7 +101,7 @@ end
 end
 
 @testset "get_single_letter_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	single_letter_elements = get_single_letter_elements(elements)
 
 	@test length(single_letter_elements) == 14
@@ -114,7 +111,7 @@ end
 end
 
 @testset "get_elements_with_same_name" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	elements_with_same_name = get_elements_with_same_name(elements)
 	elements_with_same_name = [element.name_de for element in elements_with_same_name]
 
@@ -126,7 +123,7 @@ end
 end
 
 @testset "remove_synthetic_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	elements = remove_synthetic_elements(elements)
 
 	@test length(elements) == 94
@@ -136,7 +133,7 @@ end
 end
 
 @testset "get_PSE_matrix" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
 	PSE_matrix_wide = get_PSE_matrix(elements, true)
 
@@ -147,7 +144,7 @@ end
 end
 
 @testset "get_Lehrer_elements" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	Lehrer_element_vector = get_Lehrer_elements(elements)
 
 	for (index, element) in enumerate(Lehrer_element_vector)
@@ -156,7 +153,7 @@ end
 end
 
 @testset "get_elements_not_to_guess" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	elements_to_guess = get_group_elements(elements, "1")
 	elements_not_to_guess = get_elements_not_to_guess(elements, elements_to_guess)
 
@@ -167,7 +164,7 @@ end
 end
 
 @testset "get_PSE_ready_to_print" begin
-	elements = read_chemical_elements("../src/PeriodicTable.json")
+	elements = read_json_to_element_vector("../src/PeriodicTable.json")
 	PSE_matrix = get_PSE_matrix(elements, false)
 	elements_to_guess = get_group_elements(elements, "1")
 	element_symbols_to_guess = [element.symbol for element in elements_to_guess]
@@ -291,7 +288,7 @@ end
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
 	Elements_path = create_path(directories_elements, filename_elements)
-	elements = call_function_by_name(Elements, "read_chemical_elements", [String], [Elements_path])
+	elements = call_function_by_name(Elements, "read_json_to_element_vector", [String], [Elements_path])
 	
 	@test elements[2].name == "Helium"
 end
@@ -300,7 +297,7 @@ end
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
 	Elements_path = create_path(directories_elements, filename_elements)
-	elements = read_chemical_elements(Elements_path)
+	elements = read_json_to_element_vector(Elements_path)
 
 	directories = ["..", "src"]
 	filename = "variants.json"

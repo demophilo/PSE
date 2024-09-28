@@ -1,44 +1,50 @@
 
 using JSON3
 
-include("elements.jl")
+include("../src/elements.jl")
 using .Elements
 
-mutable struct Game
-	name::String
-	variant::Variant
-end
+
+include("../src/module_IO_func.jl")
+using .IO_func
 
 
-
-# player section
- player_name = input_player_name()
 
 # sets up the game
 clear_sreen()
-println(title, "\n"^10)
 
-while true
-	global game_type = input_game_type(dict_game_variants)
-	global elements_to_guess = get_elements_to_guess(dict_game_variants, game_type)
-	global element_sympols_to_guess = [element.symbol for element in elements if element.name_de in elements_to_guess]
+print_title()
+# player section
+player::Player = Player("", "", 0)
+player_name = input_player_name()
 
+element_vector::Vector{Element} = read_json_to_element_vector("PeriodicTable.json")
+game_variant_vector::Vector{Variant} = read_json_to_variant_vector("variants.json")
+
+is_playing = true
+while is_playing
+	game_type::Variant = input_game_type(game_variant_vector)
+	element_to_guess_vector::Vector{Element} = get_elements_to_guess(element_vector::Vector{Element}, game_type::Variant)
+	element_symbol_to_guess_vector::Vector{String} = [element.symbol for element in element_to_guess_vector]
+	element_name_to_guess_vector::Vector{String} = [element.name_de for element in element_to_guess_vector]
+	element_not_to_guess_vector::Vector{Element} = setdiff(element_vector, element_to_guess_vector)
+	element_symbols_not_to_guess_vector::Vector{String} = [element.symbol for element in element_not_to_guess_vector]
 	# sets up the initial values 
-	global is_wide = false
-	global periodic_table_matrix = get_PSE_matrix(is_wide)
-	global right_element_names = Set([])
-	global right_element_symbols = []
-	global start_time = time()
-	global max_time = length(elements_to_guess) * 10
-	global score::Int = 0
-	global time_bonus::Int = max_time * 10
+	is_wide = false
+	periodic_table_matrix::Matrix{String} = get_PSE_matrix(element_vector, is_wide)
+	right_element_set::Set{Element} = Set{Element}()  # Initialisiert als Set von Elementen
+	right_element_symbols::Vector{String} = []
+	start_time = time()
+	max_time = length(element_to_guess_vector) * 10
+	score = 0
+	time_bonus = max_time * 10
 
 	# displays the first screen
-	global show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_sympols_to_guess)
+	show_matrix::Matrix{String} = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
 	display_screen(show_matrix, score, time_bonus)
 
 	# gaming loop
-	while length(elements_to_guess) > length(right_element_names)
+	while length(element_to_guess_vector) > length(right_element_set)
 		trial = input_element()
 
 		if trial == "q" # to quit the game
@@ -47,46 +53,47 @@ while true
 		end
 
 		if trial == "w" # to toggle from narrow to wide PSE
-			global is_wide = !is_wide
-			global periodic_table_matrix = get_PSE_matrix(is_wide)
+			is_wide = !is_wide
+			periodic_table_matrix = get_PSE_matrix(is_wide)
 		end
 
-
-		if trial in elements_to_guess
-			push!(right_element_names, trial)
-			for element in elements
+		if trial in element_name_to_guess_vector
+			for element in element_vector
 				if trial == element.name_de
-					push!(right_element_symbols, element.symbol)
+					push!(right_element_set, element)
+					if element in right_element_set
+						push!(right_element_symbols, element.symbol)
+					end
 				end
 			end
 		end
+	clear_sreen()
+	show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
+	display_screen(show_matrix, score, time_bonus)
+	end # end of gaming loop
+
+	end_time = time()
+	duration = end_time - start_time
+	score::Int = length(right_element_symbols) * 100
+	time_bonus::Int = (max_time - round(duration)) > 0 ? (max_time - round(duration)) * 10 : 0
+
+	show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
+	display_screen(show_matrix, score, time_bonus)
+	
 
 
-		end_time = time()
-
-		duration = end_time - start_time
-
-		global score::Int = length(right_element_names) * 100
-		global time_bonus::Int = (max_time - round(duration)) > 0 ? (max_time - round(duration)) * 10 : 0
+	player = Player(player_name, game_type.name, score + time_bonus)
 
 
-		global show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_sympols_to_guess)
-		display_screen(show_matrix, score, time_bonus)
-	end
+	every_player_history_vector = read_players("chem_players_history.json")
+	player_history_vector = [person for person in every_player_history_vector if person.name == player.name && person.game == game_type.name]
 
-
-	player = Player(player_name, dict_game_variants[game_type].name, score + time_bonus)
-
-
-	players_history = read_Players_json_to_array("chem_players_history.json")
-	player_history = [person for person in players_history if person.name == player.name && person.game == dict_game_variants[game_type].name]
-
-	if length(player_history) < 3
-		append_Player_to_json_array(player, "chem_players_history.json")
+	if length(player_history_vector) < 4
+		append_Player_to_json_vector("chem_players_history.json", player)
 	end
 
 	empty_space = " "^8
-	for person in player_history
+	for person in player_history_vector
 		println("$(person.name)$empty_space$(person.game)$empty_space$(person.total_score)")
 	end
 
@@ -94,6 +101,7 @@ while true
 
 	play_again = readline()
 	if play_again == "n"
-		break
+		global is_playing = false
 	end
-end
+end # end of game
+

@@ -4,9 +4,9 @@ using JSON3
 include("screen_manipulation.jl")
 using .ScreenManipulation
 
-export Element, Variant, read_chemical_elements, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements, element_compare,
-	sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
-	get_elements_to_guess2
+export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
+	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
+	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector
 
 struct Element
 	name::String # English name of the element
@@ -32,12 +32,18 @@ mutable struct Variant
 	easy_mode::Bool
 end
 
+mutable struct Player
+	name::String
+	game::String
+	total_score::Int
+end
+
 """
 	read_chemical_elements(filename::String)
 
 reads the information of the json file and returns a dictionary
 """
-function read_chemical_elements(filename::String)
+function read_json_to_element_vector(filename::String)
 	PSE_data = read(filename, String)
 	elemente_dict = JSON3.read(PSE_data)
 	element_vector = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in elemente_dict]
@@ -186,7 +192,7 @@ function get_PSE_ready_to_print(PSE_matrix::Matrix{String}, elements_to_show, el
 	return _filtered_matrix
 end
 
-function get_elements_not_to_guess(elements::Vector{Element}, elements_to_guess::Vector{Element})
+function get_elements_not_to_guess(elements::Vector{Element}, elements_to_guess::Vector{Element})::Vector{Element}
 	return [_element for _element in elements if !(_element in elements_to_guess)]
 end
 
@@ -307,7 +313,7 @@ function input_game_type(variant_vector::Vector)
 			return variant
 		end
 	end
-	
+
 end
 
 function call_function_by_name(mod::Module, func_name::String, param_types::Vector{DataType}, params::AbstractVector)
@@ -324,6 +330,80 @@ function get_elements_to_guess2(elements::Vector{Element}, variant::Variant)
 	return elements_to_guess
 end
 
+function print_title()
+	title = open("title.txt", "r") do file
+		read(file, String)
+	end
+
+	println("\e[98m$title")
+
+end
+
+function get_color_dict()
+	farben = Dict(
+		"red" => "\e[31m",
+		"green" => "\e[32m",
+		"yellow" => "\e[33m",
+		"blue" => "\e[34m",
+		"purple" => "\e[35m",
+		"lightblue" => "\e[36m",
+		"white" => "\e[37m",
+		"lightred" => "\e[91m",
+		"green2" => "\e[92m",
+		"lightyellow" => "\e[93m",
+		"lightpurple" => "\e[95m",
+		"cyan" => "\e[96m"
+	)
+	return farben
+end
+
+function colorize_string(text::String, color_dict, color::String)::String
+	_colored_string = color_dict["$color"] * text * "\e[0m"
+	return _colored_string
+end
+
+function clear_sreen()
+	print("\e[2J")
+end
+
+"""
+	display_screen(show_matrix, score, time_bonus)
+
+shows the gaming screen with title, PSE and score
+"""
+function display_screen(show_matrix, score, time_bonus)
+	clear_sreen()
+	print_title()
+	println("")
+	print_PSE(show_matrix)
+	println("")
+	_total = score + time_bonus
+	println("Score: $score    Timebonus: $time_bonus    Total: $_total")
+end
+
+
+
+function read_players(filename::String)
+	_players_data = read(filename, String)
+	_players_json = JSON3.read(_players_data)
+	_player_vector = [Player([dict["$field_name"] for field_name in fieldnames(Player)]...) for dict in _players_json]
+
+	return _player_vector
+end
+
+function append_Player_to_json_vector(filename::String, player::Player)
+	players_data = read(filename, String)
+	players_array = try
+		JSON3.read(players_data, Vector{Dict{String, Any}})
+	catch e
+		println("Fehler beim Lesen der JSON-Daten: ", e)
+		return
+	end
+	push!(players_array, Dict("name" => player.name, "game" => player.game, "total_score" => player.total_score))
+	open(filename, "w") do file
+		write(file, JSON3.write(players_array))
+	end
+end
 
 
 

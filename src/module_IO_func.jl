@@ -2,7 +2,7 @@ module IO_func
 
 export input_element, input_player_name
 
-function input_element()
+function input_element()::String
 	print("Gib den Namen eines Elements ein: ")
 	trial_element = readline()
 	return trial_element
