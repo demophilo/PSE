@@ -8,8 +8,6 @@ include("../src/module_IO_func.jl")
 using .IO_func
 
 
-include("../src/module_PlayerManipulation.jl")
-using .PlayerManipulation
 
 #################################################
 # Tests module Elements
@@ -17,7 +15,7 @@ using .PlayerManipulation
 
 @testset "Element Struct Tests" begin
 	elements = read_json_to_element_vector("../src/PeriodicTable.json")
-	
+
 	@test elements[2].name == "Helium"
 	@test elements[2].name_de == "Helium"
 	@test elements[2].symbol == "He"
@@ -268,7 +266,7 @@ end
 	# Funktion, die die Eingabe liest
 	function read_input()
 		game_type = input_game_type(game_variant_vector)
-		
+
 		@test typeof(game_type) == Variant
 		@test game_type in game_variant_vector
 	end
@@ -289,7 +287,7 @@ end
 	filename_elements = "PeriodicTable.json"
 	Elements_path = create_path(directories_elements, filename_elements)
 	elements = call_function_by_name(Elements, "read_json_to_element_vector", [String], [Elements_path])
-	
+
 	@test elements[2].name == "Helium"
 end
 
@@ -303,8 +301,8 @@ end
 	filename = "variants.json"
 	variants_path = create_path(directories, filename)
 	game_variant_vector = read_json_to_variant_vector(variants_path)
-	sort!(game_variant_vector, by = x -> x.letter)	
-	
+	sort!(game_variant_vector, by = x -> x.letter)
+
 	variant = game_variant_vector[3]
 	elements_to_guess = get_elements_to_guess(elements, variant)
 
@@ -321,71 +319,97 @@ end
 #################################################
 
 @testset "Test read_players" begin
-    # Simulieren des Inhalts einer JSON-Datei
-    players_json = """
-    [
-        {"name": "Alice", "game": "Chess", "total_score": 1500},
-        {"name": "Bob", "game": "Poker", "total_score": 1200},
-        {"name": "Charlie", "game": "Go", "total_score": 1800}
-    ]
-    """
+	# Simulieren des Inhalts einer JSON-Datei
+	players_json = """
+	[
+		{"name": "Alice", "game": "Chess", "total_score": 1500},
+		{"name": "Bob", "game": "Poker", "total_score": 1200},
+		{"name": "Charlie", "game": "Go", "total_score": 1800}
+	]
+	"""
 
-    # Schreiben des JSON-Inhalts in eine temporäre Datei
-    filename = "temp_players.json"
-    open(filename, "w") do file
-        write(file, players_json)
-    end
+	# Schreiben des JSON-Inhalts in eine temporäre Datei
+	filename = "temp_players.json"
+	open(filename, "w") do file
+		write(file, players_json)
+	end
 
-    # Aufruf der Funktion read_players
-    players = PlayerManipulation.read_players(filename)
+	# Aufruf der Funktion read_players
+	players = read_players(filename)
 
-    # Überprüfen der zurückgegebenen Spieler
-    @test length(players) == 3
-    @test players[1].name == "Alice"
-    @test players[1].game == "Chess"
-    @test players[1].total_score == 1500
-    @test players[2].name == "Bob"
-    @test players[2].game == "Poker"
-    @test players[2].total_score == 1200
-    @test players[3].name == "Charlie"
-    @test players[3].game == "Go"
-    @test players[3].total_score == 1800
+	# Überprüfen der zurückgegebenen Spieler
+	@test length(players) == 3
+	@test players[1].name == "Alice"
+	@test players[1].game == "Chess"
+	@test players[1].total_score == 1500
+	@test players[2].name == "Bob"
+	@test players[2].game == "Poker"
+	@test players[2].total_score == 1200
+	@test players[3].name == "Charlie"
+	@test players[3].game == "Go"
+	@test players[3].total_score == 1800
 
-    # Löschen der temporären Datei
-    rm(filename)
+	# Löschen der temporären Datei
+	rm(filename)
 end
 
 @testset "Test append_Player_to_json_array" begin
-    # Simulieren des Inhalts einer JSON-Datei
-    initial_players_json = """
-    [
-        {"name": "Alice", "game": "Chess", "total_score": 1500},
-        {"name": "Bob", "game": "Poker", "total_score": 1200}
+	# Simulieren des Inhalts einer JSON-Datei
+	initial_players_json = """
+	[
+		{"name": "Alice", "game": "Chess", "total_score": 1500},
+		{"name": "Bob", "game": "Poker", "total_score": 1200}
+	]
+	"""
+
+	# Schreiben des initialen JSON-Inhalts in eine temporäre Datei
+	filename = "temp_players.json"
+	open(filename, "w") do file
+		write(file, initial_players_json)
+	end
+
+	# Neuer Spieler, der hinzugefügt werden soll
+	new_player = Player("Charlie", "Go", 1800)
+
+	# Aufruf der Funktion append_Player_to_json_array
+	append_Player_to_json_vector(filename, new_player)
+
+	# Lesen des aktualisierten Inhalts der Datei
+	updated_players_data = read(filename, String)
+	updated_players_array = JSON3.read(updated_players_data)
+
+	# Überprüfen der aktualisierten Spieler
+	@test length(updated_players_array) == 3
+	@test updated_players_array[3]["name"] == "Charlie"
+	@test updated_players_array[3]["game"] == "Go"
+	@test updated_players_array[3]["total_score"] == 1800
+
+	# Löschen der temporären Datei
+	rm(filename)
+end
+
+@testset "add_player_and_get_top_3" begin
+	initial_player_vector::Vector{Player} = [
+        Player("Alice", "Chess", 1500),
+        Player("Bob", "Poker", 1200),
+        Player("Charlie", "Go", 1800)
     ]
-    """
+	# Neuer Spieler, der hinzugefügt werden soll
+	new_player = Player("David", "Chess", 2000)
 
-    # Schreiben des initialen JSON-Inhalts in eine temporäre Datei
-    filename = "temp_players.json"
-    open(filename, "w") do file
-        write(file, initial_players_json)
-    end
+	# Aufruf der Funktion add_player_and_get_top_3
+	top_3 = add_player_and_update_top_3!(initial_player_vector, new_player)
 
-    # Neuer Spieler, der hinzugefügt werden soll
-    new_player = PlayerManipulation.Player("Charlie", "Go", 1800)
+	# Überprüfen der Top 3 Spieler
+	@test length(top_3) == 3
+	@test top_3[1].name == "David"
+	@test top_3[1].game == "Chess"
+	@test top_3[1].total_score == 2000
+	@test top_3[2].name == "Charlie"
+	@test top_3[2].game == "Go"
+	@test top_3[2].total_score == 1800
+	@test top_3[3].name == "Alice"
+	@test top_3[3].game == "Chess"
+	@test top_3[3].total_score == 1500
 
-    # Aufruf der Funktion append_Player_to_json_array
-    PlayerManipulation.append_Player_to_json_vector(filename, new_player)
-
-    # Lesen des aktualisierten Inhalts der Datei
-    updated_players_data = read(filename, String)
-    updated_players_array = JSON3.read(updated_players_data)
-
-    # Überprüfen der aktualisierten Spieler
-    @test length(updated_players_array) == 3
-    @test updated_players_array[3]["name"] == "Charlie"
-    @test updated_players_array[3]["game"] == "Go"
-    @test updated_players_array[3]["total_score"] == 1800
-
-    # Löschen der temporären Datei
-    rm(filename)
 end
