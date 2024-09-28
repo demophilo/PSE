@@ -388,7 +388,7 @@ end
 	rm(filename)
 end
 
-@testset "add_player_and_get_top_3" begin
+@testset "add_player_and_cut_top_n!" begin
 	initial_player_vector::Vector{Player} = [
         Player("Alice", "Chess", 1500),
         Player("Bob", "Poker", 1200),
@@ -398,7 +398,7 @@ end
 	new_player = Player("David", "Chess", 2000)
 
 	# Aufruf der Funktion add_player_and_get_top_3
-	top_3 = add_player_and_update_top_3!(initial_player_vector, new_player)
+	top_3 = add_player_and_cut_top_n!(initial_player_vector, new_player,3)
 
 	# Überprüfen der Top 3 Spieler
 	@test length(top_3) == 3
@@ -411,5 +411,4 @@ end
 	@test top_3[3].name == "Alice"
 	@test top_3[3].game == "Chess"
 	@test top_3[3].total_score == 1500
-
 end
