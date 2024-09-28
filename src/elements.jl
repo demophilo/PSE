@@ -6,7 +6,7 @@ using .ScreenManipulation
 
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
 	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
-	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector
+	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector, add_player_and_update_top_3!
 
 struct Element
 	name::String # English name of the element
@@ -405,8 +405,10 @@ function append_Player_to_json_vector(filename::String, player::Player)
 	end
 end
 
-
-
-
+function add_player_and_update_top_3!(player_history_vector::Vector{Player}, player::Player)
+    push!(player_history_vector, player)
+    sort!(player_history_vector, by=x -> x.total_score, rev=true)
+    resize!(player_history_vector, min(3, length(player_history_vector)))
+end
 
 end # module
