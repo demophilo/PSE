@@ -34,6 +34,8 @@ end
 mutable struct Player
 	name::String
 	game::String
+	game_variant::String
+	game_mode::String
 	total_score::Int
 end
 
@@ -389,17 +391,19 @@ function read_players(filename::String)
 end
 
 function append_Player_to_json_vector(filename::String, player::Player)
-	players_data = read(filename, String)
-	players_array = try
-		JSON3.read(players_data, Vector{Dict{String, Any}})
-	catch e
-		println("Fehler beim Lesen der JSON-Daten: ", e)
-		return
-	end
-	push!(players_array, Dict("name" => player.name, "game" => player.game, "total_score" => player.total_score))
-	open(filename, "w") do file
-		write(file, JSON3.write(players_array))
-	end
+    players_data = read(filename, String)
+    players_array = try
+        JSON3.read(players_data, Vector{Player})
+    catch e
+        println("Fehler beim Lesen der JSON-Daten: ", e)
+        return
+    end
+
+    push!(players_array, player)
+
+    open(filename, "w") do file
+        write(file, JSON3.write(players_array))
+    end
 end
 
 function add_player_and_cut_top_n!(player_history_vector::Vector{Player}, player::Player, n::Int)
