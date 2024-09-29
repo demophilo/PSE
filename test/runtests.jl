@@ -322,9 +322,9 @@ end
 	# Simulieren des Inhalts einer JSON-Datei
 	players_json = """
 	[
-		{"name": "Alice", "game": "Chess", "total_score": 1500},
-		{"name": "Bob", "game": "Poker", "total_score": 1200},
-		{"name": "Charlie", "game": "Go", "total_score": 1800}
+		{"name": "Alice", "game": "Chess", "game_variant": "fischer","game_mode": "easy", "total_score": 1500},
+		{"name": "Bob", "game": "Poker", "game_variant": "Texas", "game_mode": "vegas", "total_score": 1200},
+		{"name": "Charlie", "game": "Go", "game_variant": "bang", "game_mode": "baby", "total_score": 1800}
 	]
 	"""
 
@@ -345,6 +345,7 @@ end
 	@test players[2].name == "Bob"
 	@test players[2].game == "Poker"
 	@test players[2].total_score == 1200
+	@test players[2].game_variant == "Texas"
 	@test players[3].name == "Charlie"
 	@test players[3].game == "Go"
 	@test players[3].total_score == 1800
@@ -353,12 +354,12 @@ end
 	rm(filename)
 end
 
-@testset "Test append_Player_to_json_array" begin
+@testset "Test append_Player_to_json_vector" begin
 	# Simulieren des Inhalts einer JSON-Datei
 	initial_players_json = """
 	[
-		{"name": "Alice", "game": "Chess", "total_score": 1500},
-		{"name": "Bob", "game": "Poker", "total_score": 1200}
+		{"name": "Alice", "game": "Chess", "game_variant": "fischer","game_mode": "easy", "total_score": 1500},
+		{"name": "Bob", "game": "Poker", "game_variant": "Texas", "game_mode": "vegas", "total_score": 1200}
 	]
 	"""
 
@@ -369,7 +370,7 @@ end
 	end
 
 	# Neuer Spieler, der hinzugefügt werden soll
-	new_player = Player("Charlie", "Go", 1800)
+	new_player = Player("Charlie", "Go", "bang", "baby", 1800)
 
 	# Aufruf der Funktion append_Player_to_json_array
 	append_Player_to_json_vector(filename, new_player)
@@ -390,12 +391,12 @@ end
 
 @testset "add_player_and_cut_top_n!" begin
 	initial_player_vector::Vector{Player} = [
-        Player("Alice", "Chess", 1500),
-        Player("Bob", "Poker", 1200),
-        Player("Charlie", "Go", 1800)
+        Player("Alice", "Chess", "Fischer", "easy", 1500),
+        Player("Bob", "Poker", "Texas", "hard", 1200),
+        Player("Charlie", "Go", "bang", "baby", 1800)
     ]
 	# Neuer Spieler, der hinzugefügt werden soll
-	new_player = Player("David", "Chess", 2000)
+	new_player = Player("David", "Chess", "China", "middle", 2000)
 
 	# Aufruf der Funktion add_player_and_get_top_3
 	top_3 = add_player_and_cut_top_n!(initial_player_vector, new_player,3)
@@ -404,6 +405,7 @@ end
 	@test length(top_3) == 3
 	@test top_3[1].name == "David"
 	@test top_3[1].game == "Chess"
+	@test top_3[1].game_variant == "China"
 	@test top_3[1].total_score == 2000
 	@test top_3[2].name == "Charlie"
 	@test top_3[2].game == "Go"
