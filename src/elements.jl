@@ -1,12 +1,10 @@
 module Elements
 using JSON3
 
-include("screen_manipulation.jl")
-using .ScreenManipulation
 
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
 	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
-	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector, add_player_and_cut_top_n!
+	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector, add_player_and_cut_top_n!, input_element, input_player_name
 struct Element
 	name::String # English name of the element
 	name_de::String
@@ -221,76 +219,76 @@ function read_json_to_variant_vector(file_path::String)::Vector{Variant}
 	return variants
 end
 
-function get_elements_to_guess(elements_vector::Vector{Element}, variant::Variant)::Vector{Element}
-	if variant.letter == "a"
+function get_elements_to_guess(elements_vector::Vector{Element}, variant::String)::Vector{Element}
+	if variant == "a"
 		return elements_vector
 	end
 
-	if variant.letter == "b"
+	if variant == "b"
 		return get_group_elements(elements_vector, "1")
 	end
 
-	if variant.letter == "c"
+	if variant == "c"
 		return get_group_elements(elements_vector, "2")
 	end
 
-	if variant.letter == "d"
+	if variant == "d"
 		return get_group_elements(elements_vector, "13")
 	end
 
-	if variant.letter == "e"
+	if variant == "e"
 		return get_group_elements(elements_vector, "14")
 	end
 
-	if variant.letter == "f"
+	if variant == "f"
 		return get_group_elements(elements_vector, "15")
 	end
 
-	if variant.letter == "g"
+	if variant == "g"
 		return get_group_elements(elements_vector, "16")
 	end
 
-	if variant.letter == "h"
+	if variant == "h"
 		return get_group_elements(elements_vector, "17")
 	end
 
-	if variant.letter == "i"
+	if variant == "i"
 		return get_group_elements(elements_vector, "18")
 	end
 
-	if variant.letter == "j"
+	if variant == "j"
 		return get_group_elements(elements_vector, "lanthanide")
 	end
 
-	if variant.letter == "k"
+	if variant == "k"
 		return get_group_elements(elements_vector, "actinide")
 	end
 
-	if variant.letter == "l"
+	if variant == "l"
 		return get_mononuclidic_elements(elements_vector)
 	end
 
-	if variant.letter == "m"
+	if variant == "m"
 		return get_stable_elements(elements_vector, false)
 	end
 
-	if variant.letter == "n"
+	if variant == "n"
 		return get_elements_by_blocks(elements_vector, ["s", "p"])
 	end
 
-	if variant.letter == "o"
+	if variant == "o"
 		return get_elements_by_blocks(elements_vector, ["d"])
 	end
 
-	if variant.letter == "p"
+	if variant == "p"
 		return get_elements_with_same_name(elements_vector)
 	end
 
-	if variant.letter == "q"
+	if variant == "q"
 		return get_single_letter_elements(elements_vector)
 	end
 
-	if variant.letter == "r"
+	if variant == "r"
 		return get_Lehrer_elements(elements_vector)
 	end
 end
@@ -390,26 +388,31 @@ function read_players(filename::String)
 	return _player_vector
 end
 
-function append_Player_to_json_vector(filename::String, player::Player)
-    players_data = read(filename, String)
-    players_array = try
-        JSON3.read(players_data, Vector{Player})
-    catch e
-        println("Fehler beim Lesen der JSON-Daten: ", e)
-        return
-    end
+function append_Player_to_json_vector(filename::String, gamePlayer)
+	_player_vector::Vector{Player} = read_players(filename)
+	push!(_player_vector, gamePlayer)
 
-    push!(players_array, player)
-
-    open(filename, "w") do file
-        write(file, JSON3.write(players_array))
-    end
+	open(filename, "w") do file
+		write(file, JSON3.write(_player_vector))
+	end
 end
 
 function add_player_and_cut_top_n!(player_history_vector::Vector{Player}, player::Player, n::Int)
 	push!(player_history_vector, player)
 	sort!(player_history_vector, by = x -> x.total_score, rev = true)
 	resize!(player_history_vector, min(n, length(player_history_vector)))
+end
+
+function input_element()::String
+	print("Gib den Namen eines Elements ein: ")
+	trial_element = readline()
+	return trial_element
+end
+
+function input_player_name()
+	println("Geben Sie ihren Namen ein:")
+	_name::String = readline()
+	return _name
 end
 
 end # module
