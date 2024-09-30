@@ -5,8 +5,7 @@ include("../src/elements.jl")
 using .Elements
 
 
-include("../src/module_IO_func.jl")
-using .IO_func
+
 
 
 
@@ -15,7 +14,7 @@ clear_sreen()
 
 print_title()
 # player section
-player::Player = Player("", "", 0)
+
 player_name = input_player_name()
 
 element_vector::Vector{Element} = read_json_to_element_vector("PeriodicTable.json")
@@ -24,7 +23,7 @@ game_variant_vector::Vector{Variant} = read_json_to_variant_vector("variants.jso
 is_playing = true
 while is_playing
 	game_type::Variant = input_game_type(game_variant_vector)
-	element_to_guess_vector::Vector{Element} = get_elements_to_guess(element_vector::Vector{Element}, game_type::Variant)
+	element_to_guess_vector::Vector{Element} = get_elements_to_guess(element_vector::Vector{Element}, game_type.letter::String)
 	element_symbol_to_guess_vector::Vector{String} = [element.symbol for element in element_to_guess_vector]
 	element_name_to_guess_vector::Vector{String} = [element.name_de for element in element_to_guess_vector]
 	element_not_to_guess_vector::Vector{Element} = setdiff(element_vector, element_to_guess_vector)
@@ -82,19 +81,16 @@ while is_playing
 	
 
 
-	player = Player(player_name, game_type.name, score + time_bonus)
-
-
+	player::Player = Player(player_name, "PSE", game_type.name, "hard", score + time_bonus)
+	
 	every_player_history_vector = read_players("chem_players_history.json")
-	player_history_vector = [person for person in every_player_history_vector if person.name == player.name && person.game == game_type.name]
-
-	if length(player_history_vector) < 4
-		append_Player_to_json_vector("chem_players_history.json", player)
-	end
+	actual_player_history_vector = [person for person in every_player_history_vector if person.name == player.name]
+	add_player_and_cut_top_n!(actual_player_history_vector, player, 3)
+	append_Player_to_json_vector("chem_players_history.json", player)
 
 	empty_space = " "^8
-	for person in player_history_vector
-		println("$(person.name)$empty_space$(person.game)$empty_space$(person.total_score)")
+	for person in actual_player_history_vector
+		println("$(person.name)$empty_space$(person.game)$empty_space$(person.game_variant)$(empty_space)$(person.game_mode)$(empty_space)$(person.total_score)")
 	end
 
 	println("Wollen Sie noch ein Spiel spielen?")
