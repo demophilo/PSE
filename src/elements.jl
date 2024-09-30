@@ -305,15 +305,6 @@ function get_elements_to_guess2(elements::Vector{Element}, variant::Variant)
 	return elements_to_guess
 end
 
-function print_title()
-	title = open("title.txt", "r") do file
-		read(file, String)
-	end
-
-	println("\e[98m$title")
-
-end
-
 function get_color_dict()
 	farben = Dict(
 		"red" => "\e[31m",
@@ -423,6 +414,15 @@ end
 #####################################################
 # printing functions
 #####################################################
+
+function print_title()
+	title = open("title.txt", "r") do file
+		read(file, String)
+	end
+
+	println("\e[98m$title")
+
+end
 
 function print_list_of_variants_to_choose(variant_vector::Vector{Variant})
 	for variant in variant_vector
