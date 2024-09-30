@@ -385,9 +385,7 @@ end
 
 function input_game_type(variant_vector::Vector)
 	print_list_of_variants_to_choose(variant_vector)
-
-	_keys_str = join([variant.letter for variant in variant_vector], ", ")
-	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
+	print_letters_to_input(variant_vector)
 
 	_chosen_game_letter = ""
 	while _chosen_game_letter ∉ [variant.letter for variant in variant_vector]
@@ -430,6 +428,11 @@ function print_list_of_variants_to_choose(variant_vector::Vector)
 	for variant in variant_vector
 		println("$(variant.letter) => $(variant.name)")
 	end
+end
+
+function print_letters_to_input(variant_vector::Vector)
+	_keys_str = join([variant.letter for variant in variant_vector], ", ")
+	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
 end
 
 end # module
