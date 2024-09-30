@@ -217,7 +217,7 @@ end
 
 	# Funktion, die die Eingabe liest
 	function read_input()
-		trial_element = IO_func.input_element()
+		trial_element = input_element()
 		@test trial_element == "Helium"
 	end
 
@@ -303,7 +303,7 @@ end
 	game_variant_vector = read_json_to_variant_vector(variants_path)
 	sort!(game_variant_vector, by = x -> x.letter)
 
-	variant = game_variant_vector[3]
+	variant = game_variant_vector[3].letter
 	elements_to_guess = get_elements_to_guess(elements, variant)
 
 	@test elements_to_guess[1].name_de == "Beryllium"
