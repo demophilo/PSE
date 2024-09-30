@@ -3,8 +3,9 @@ using JSON3
 
 
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
-	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, create_path, read_json_to_variant_vector, get_elements_to_guess, input_game_type, call_function_by_name,
-	get_elements_to_guess2, print_title, get_color_dict, colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector, add_player_and_cut_top_n!, input_element, input_player_name
+	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, read_json_to_variant_vector, get_elements_to_guess, get_elements_to_guess2, print_title, get_color_dict,
+	colorize_string, clear_sreen, display_screen, read_players, append_Player_to_json_vector, add_player_and_cut_top_n!, input_game_type, input_element, input_player_name, print_list_of_variants_to_choose, create_path, call_function_by_name
+
 struct Element
 	name::String # English name of the element
 	name_de::String
@@ -37,6 +38,10 @@ mutable struct Player
 	total_score::Int
 end
 
+#####################################################
+# handlings for the Element struct
+#####################################################
+
 """
 	read_chemical_elements(filename::String)
 
@@ -48,9 +53,6 @@ function read_json_to_element_vector(filename::String)
 	element_vector = [Element([dict["$field_name"] for field_name in fieldnames(Element)]...) for dict in elemente_dict]
 	return element_vector
 end
-
-# functions to get elements::Vector{Element}
-
 
 function get_Lehrer_elements(elements::Vector{Element})
 	Lehrer_element_vector = [_element for _element in elements if !isnothing(_element.Lehrer_number)]
@@ -199,10 +201,6 @@ function remove_synthetic_elements(elements::Vector{Element})
 	return [element for element in elements if !element.synthetic]
 end
 
-function create_path(directories::Vector{String}, filename::String)::String
-	return joinpath(directories..., filename)
-end
-
 function read_json_to_variant_vector(file_path::String)::Vector{Variant}
 	json_data = JSON3.read(file_path)
 	variants = Vector{Variant}()
@@ -219,100 +217,78 @@ function read_json_to_variant_vector(file_path::String)::Vector{Variant}
 	return variants
 end
 
-function get_elements_to_guess(elements_vector::Vector{Element}, variant::String)::Vector{Element}
-	if variant == "a"
+function get_elements_to_guess(elements_vector::Vector{Element}, game_type::String)::Vector{Element}
+	if game_type == "a"
 		return elements_vector
 	end
 
-	if variant == "b"
+	if game_type == "b"
 		return get_group_elements(elements_vector, "1")
 	end
 
-	if variant == "c"
+	if game_type == "c"
 		return get_group_elements(elements_vector, "2")
 	end
 
-	if variant == "d"
+	if game_type == "d"
 		return get_group_elements(elements_vector, "13")
 	end
 
-	if variant == "e"
+	if game_type == "e"
 		return get_group_elements(elements_vector, "14")
 	end
 
-	if variant == "f"
+	if game_type == "f"
 		return get_group_elements(elements_vector, "15")
 	end
 
-	if variant == "g"
+	if game_type == "g"
 		return get_group_elements(elements_vector, "16")
 	end
 
-	if variant == "h"
+	if game_type == "h"
 		return get_group_elements(elements_vector, "17")
 	end
 
-	if variant == "i"
+	if game_type == "i"
 		return get_group_elements(elements_vector, "18")
 	end
 
-	if variant == "j"
+	if game_type == "j"
 		return get_group_elements(elements_vector, "lanthanide")
 	end
 
-	if variant == "k"
+	if game_type == "k"
 		return get_group_elements(elements_vector, "actinide")
 	end
 
-	if variant == "l"
+	if game_type == "l"
 		return get_mononuclidic_elements(elements_vector)
 	end
 
-	if variant == "m"
+	if game_type == "m"
 		return get_stable_elements(elements_vector, false)
 	end
 
-	if variant == "n"
+	if game_type == "n"
 		return get_elements_by_blocks(elements_vector, ["s", "p"])
 	end
 
-	if variant == "o"
+	if game_type == "o"
 		return get_elements_by_blocks(elements_vector, ["d"])
 	end
 
-	if variant == "p"
+	if game_type == "p"
 		return get_elements_with_same_name(elements_vector)
 	end
 
-	if variant == "q"
+	if game_type == "q"
 		return get_single_letter_elements(elements_vector)
 	end
 
-	if variant == "r"
+	if game_type == "r"
 		return get_Lehrer_elements(elements_vector)
 	end
-end
-
-
-function input_game_type(variant_vector::Vector)
-	for variant in variant_vector
-		println("$(variant.letter) => $(variant.name)")
-	end
-
-	_keys_str = join([variant.letter for variant in variant_vector], ", ")
-	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
-
-	_chosen_game_letter = ""
-	while _chosen_game_letter ∉ [variant.letter for variant in variant_vector]
-		_chosen_game_letter = string(readline()[1])
-	end
-
-	for variant in variant_vector
-		if variant.letter == _chosen_game_letter
-			return variant
-		end
-	end
-
 end
 
 function call_function_by_name(mod::Module, func_name::String, param_types::Vector{DataType}, params::AbstractVector)
@@ -403,6 +379,29 @@ function add_player_and_cut_top_n!(player_history_vector::Vector{Player}, player
 	resize!(player_history_vector, min(n, length(player_history_vector)))
 end
 
+#####################################################
+# input functions
+#####################################################
+
+function input_game_type(variant_vector::Vector)
+	print_list_of_variants_to_choose(variant_vector)
+
+	_keys_str = join([variant.letter for variant in variant_vector], ", ")
+	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
+
+	_chosen_game_letter = ""
+	while _chosen_game_letter ∉ [variant.letter for variant in variant_vector]
+		_chosen_game_letter = string(readline()[1])
+	end
+
+	for variant in variant_vector
+		if variant.letter == _chosen_game_letter
+			return variant
+		end
+	end
+
+end
+
 function input_element()::String
 	print("Gib den Namen eines Elements ein: ")
 	trial_element = readline()
@@ -413,6 +412,24 @@ function input_player_name()
 	println("Geben Sie ihren Namen ein:")
 	_name::String = readline()
 	return _name
+end
+
+#####################################################
+# general support functions
+#####################################################
+
+function create_path(directories::Vector{String}, filename::String)::String
+	return joinpath(directories..., filename)
+end
+
+#####################################################
+# printing functions
+#####################################################
+
+function print_list_of_variants_to_choose(variant_vector::Vector)
+	for variant in variant_vector
+		println("$(variant.letter) => $(variant.name)")
+	end
 end
 
 end # module
