@@ -431,7 +431,7 @@ end
 
 shows the gaming screen with title, PSE and score
 """
-function display_screen(show_matrix, score, time_bonus, element::Element)
+function display_screen(show_matrix, score, time_bonus)
 	clear_sreen()
 	print_title()
 	println(element.funfact)

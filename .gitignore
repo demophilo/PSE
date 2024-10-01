@@ -1,4 +1,3 @@
-src/chem_players_history.json
 src/dev.jl
 src/PeriodicTableJSON.json
 test/*.json

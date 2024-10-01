@@ -40,7 +40,7 @@ while is_playing
 
 	# displays the first screen
 	show_matrix::Matrix{String} = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
-	display_screen(show_matrix, score, time_bonus, funfact)
+	display_screen(show_matrix, score, time_bonus)
 
 	# gaming loop
 	while length(element_to_guess_vector) > length(right_element_set)
