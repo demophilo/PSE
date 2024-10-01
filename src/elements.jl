@@ -1,6 +1,6 @@
 module Elements
 using JSON3
-
+using Random
 
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
 	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, read_json_to_variant_vector, get_elements_to_guess, get_elements_to_guess2, print_title, get_color_dict,
@@ -305,47 +305,14 @@ function get_elements_to_guess2(elements::Vector{Element}, variant::Variant)
 	return elements_to_guess
 end
 
-function get_color_dict()
-	farben = Dict(
-		"red" => "\e[31m",
-		"green" => "\e[32m",
-		"yellow" => "\e[33m",
-		"blue" => "\e[34m",
-		"purple" => "\e[35m",
-		"lightblue" => "\e[36m",
-		"white" => "\e[37m",
-		"lightred" => "\e[91m",
-		"green2" => "\e[92m",
-		"lightyellow" => "\e[93m",
-		"lightpurple" => "\e[95m",
-		"cyan" => "\e[96m"
-	)
-	return farben
+function get_funfact(element::Element)::String
+	funfact = rand(element.funfacts)
+	return funfact
 end
 
-function colorize_string(text::String, color_dict, color::String)::String
-	_colored_string = color_dict["$color"] * text * "\e[0m"
-	return _colored_string
-end
-
-function clear_sreen()
-	print("\e[2J")
-end
-
-"""
-	display_screen(show_matrix, score, time_bonus)
-
-shows the gaming screen with title, PSE and score
-"""
-function display_screen(show_matrix, score, time_bonus)
-	clear_sreen()
-	print_title()
-	println("")
-	print_PSE(show_matrix)
-	println("")
-	_total = score + time_bonus
-	println("Score: $score    Timebonus: $time_bonus    Total: $_total")
-end
+#####################################################
+# handlings for the Player struct
+#####################################################
 
 function read_players(filename::String)
 	_players_data = read(filename, String)
@@ -411,6 +378,29 @@ function create_path(directories::Vector{String}, filename::String)::String
 	return joinpath(directories..., filename)
 end
 
+function get_color_dict()
+	farben = Dict(
+		"red" => "\e[31m",
+		"green" => "\e[32m",
+		"yellow" => "\e[33m",
+		"blue" => "\e[34m",
+		"purple" => "\e[35m",
+		"lightblue" => "\e[36m",
+		"white" => "\e[37m",
+		"lightred" => "\e[91m",
+		"green2" => "\e[92m",
+		"lightyellow" => "\e[93m",
+		"lightpurple" => "\e[95m",
+		"cyan" => "\e[96m"
+	)
+	return farben
+end
+
+function colorize_string(text::String, color_dict, color::String)::String
+	_colored_string = color_dict["$color"] * text * "\e[0m"
+	return _colored_string
+end
+
 #####################################################
 # printing functions
 #####################################################
@@ -434,5 +424,27 @@ function print_letters_to_input(variant_vector::Vector{Variant})
 	_keys_str = join([variant.letter for variant in variant_vector], ", ")
 	println("\tWelches Spiel möchten Sie spielen: $_keys_str?")
 end
+
+
+"""
+	display_screen(show_matrix, score, time_bonus)
+
+shows the gaming screen with title, PSE and score
+"""
+function display_screen(show_matrix, score, time_bonus, element::Element)
+	clear_sreen()
+	print_title()
+	println(element.funfact)
+	println("")
+	print_PSE(show_matrix)
+	println("")
+	_total = score + time_bonus
+	println("Score: $score    Timebonus: $time_bonus    Total: $_total")
+end
+
+function clear_sreen()
+	print("\e[2J")
+end
+
 
 end # module

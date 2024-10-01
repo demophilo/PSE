@@ -11,12 +11,12 @@ using .Elements
 
 # sets up the game
 clear_sreen()
-
 print_title()
+println("\n"^15)
 # player section
 
 player_name = input_player_name()
-
+funfact_vector = ["Das Neutron wird von vielen Leuten als Element mit der Ordnungszahl 0 angesehen und Neutronium genannt.", "Das Neutronium geht keine chemsichen Bindungen ein und ist ergo ein Edelgas.", "Die Tochter von Marie Curie, Irene, machte das Experiment zusammen mit ihrem Ehemann, aber interpretierte die Experimente falsch. Sonst hätte sie das Neutron entdeckt.", "Das einzige Atom ohne Neutronen ist das sogenannte Protium - Wasserstoff-1.", "Obwohl es keine Verbindung mit Neutronen gibt, bestehen Neutronensterne nur aus Neutronen.", "Neutronen sabilisieren die Atomkerne. Die einzigen stablien Atomkerne mit mehr Protonen als Neutronen sind H-1 und He-3."]
 element_vector::Vector{Element} = read_json_to_element_vector("PeriodicTable.json")
 game_variant_vector::Vector{Variant} = read_json_to_variant_vector("variants.json")
 
@@ -40,7 +40,7 @@ while is_playing
 
 	# displays the first screen
 	show_matrix::Matrix{String} = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
-	display_screen(show_matrix, score, time_bonus)
+	display_screen(show_matrix, score, time_bonus, funfact)
 
 	# gaming loop
 	while length(element_to_guess_vector) > length(right_element_set)
@@ -60,15 +60,16 @@ while is_playing
 			for element in element_vector
 				if trial == element.name_de
 					push!(right_element_set, element)
+					global chosen_element = element
 					if element in right_element_set
 						push!(right_element_symbols, element.symbol)
 					end
 				end
 			end
 		end
-	clear_sreen()
-	show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
-	display_screen(show_matrix, score, time_bonus)
+		clear_sreen()
+		show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
+		display_screen(show_matrix, score, time_bonus)
 	end # end of gaming loop
 
 	end_time = time()
@@ -78,11 +79,11 @@ while is_playing
 
 	show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
 	display_screen(show_matrix, score, time_bonus)
-	
+
 
 
 	player::Player = Player(player_name, "PSE", game_type.name, "hard", score + time_bonus)
-	
+
 	every_player_history_vector = read_players("chem_players_history.json")
 	actual_player_history_vector = [person for person in every_player_history_vector if person.name == player.name]
 	add_player_and_cut_top_n!(actual_player_history_vector, player, 3)
