@@ -1709,9 +1709,9 @@
         "name": "Iron",
         "funfact": [
             "Siderit ist eines der Eisenerze. Das größte Sideritvorkommen weltweit ist der sterische Erzberg.",
-            "Ein großer Teil des Eisenkerns der Erde stammt wahrscheinlich vom Planeten Theia",
-            "Der Atomkern des Eisenisotops 56Fe weist einen der größten Massendefekte und damit eine der höchsten Bindungsenergien pro Nukleon aller Atomkerne auf. Deshalb wird es als Endstufe bei der Energieerzeugung durch Kernfusion in den Sternen betrachtet.",
-            "Das Atomium – das Wahrzeichen Brüssels,  stellt einen Ausschnitt aus einem Eisen-Kristallgitter dar."
+            "Ein großer Teil des Eisenkerns der Erde stammt wahrscheinlich vom Planeten Theia.\nDieser Planet kollidierte vor 4,5 Milliarden Jahren mit der Erde und bildete den Mond.",
+            "Der Atomkern des Eisenisotops Fe-56 weist einen der größten Massendefekte\nund damit eine der höchsten Bindungsenergien pro Nukleon aller Atomkerne auf.\nDeshalb wird es als Endstufe bei der Energieerzeugung durch Kernfusion in den Sternen betrachtet.",
+            "Das Atomium, das Wahrzeichen Brüssels, stellt einen Ausschnitt aus einem Eisen-Kristallgitter dar."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_026_iron/element_026_iron.glb",
         "wypos": 4,
