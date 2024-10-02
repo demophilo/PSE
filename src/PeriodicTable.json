@@ -2294,8 +2294,8 @@
         "stable": true,
         "name": "Selenium",
         "funfact": [
-            "Das seltenste der stabilen Isotope Se-74 hat eine gewisse Bedeutung als Spekulationsobjekt erlangt. Es wird immer wieder zu sehr hohen Preisen auf dem Markt angeboten. Außer einigen sehr spezialisierten Anwendungen in der Forschung,  wo es zur Markierungszwecken dient,  ist für dieses Material jedoch keine besondere technische Verwendung bekannt.",
-            "Selen ist essentiell für alle Lebewesen,  aber auch giftg."
+            "Das seltenste der stabilen Isotope Se-74 hat eine gewisse Bedeutung als Spekulationsobjekt erlangt.\nEs wird immer wieder zu sehr hohen Preisen auf dem Markt angeboten.\nAußer einigen sehr spezialisierten Anwendungen in der Forschung,\nwo es zur Markierungszwecken dient, ist für dieses Material jedoch keine besondere technische Verwendung bekannt.",
+            "Selen ist essentiell für alle Lebewesen, aber auch giftg."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_034_selenium/element_034_selenium.glb",
         "wypos": 4,
