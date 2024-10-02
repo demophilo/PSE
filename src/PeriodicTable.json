@@ -10,8 +10,9 @@
         "stable": true,
         "name": "Hydrogen",
         "funfact": [
-            "Wasserstoff ist mit ca. 70 % Anteil das häufigste Element des Universums.]",
-            "Manche Chemiker sind der Meinung,  dass das Neutron das Element Null ist und nennen es Neutronium. Es wäre eine Edelgas und hätte das Symbol Nu."
+            "Wasserstoff ist mit ca. 70 % Anteil das häufigste Element des Universums.",
+            "Die natürlichen Isotope des Wasserstoffs sind die einzigen Isotope,\ndie eigene Namen und eigene Symbole haben: H-2: Deuterium, D; H-3: Tritium, T.",
+            "Obwohl Wasserstoff ein Nichtmetall ist, vermutet man, dass Jupiter im Inneren aus metallischem Waserstoff besteht."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_001_hydrogen/element_001_hydrogen.glb",
         "wypos": 1,
@@ -62,18 +63,19 @@
         "stable": true,
         "name": "Helium",
         "funfact": [
-            "Helium ist mit 25 % Anteil das zweithäufigtse Element des Universums. Es hat den niedrigsten Schmelz- und Siedepunkt aller Elemente.",
-            "Es gibt flüssiges Helium und supraflüssiges Helium. Supraflüssig heißt,  dass es weitestgehend von der Quantenmechanic bestimmt wird und Effekte zeigt,  die der klassischen Mechanik wiedersprechen.",
-            "Es ist die einzige Substanz,  die bei Normaldruck selbst am absoluten Nullpunkt (0 K bzw. −273, 15 °C) nicht fest wird.  Erst bei einem Druck oberhalb 2, 5 MPa (circa 25-facher Atmosphärendruck) geht Helium bei hinreichend tiefen Temperaturen in eine feste Phase über.",
-            "Helium ist die Substanz mit der größten bekannten chemischen Reaktionsträgheit. Auch unter Extrembedingungen konnten bis jetzt keine Verbindungen des Heliums nachgewiesen werden,  die nicht sofort nach der Bildung zerfallen.",
-            "Helium kommt,  soweit bekannt,  nur atomar vor. Nur unter Extrembedingungen sind andere Formen denkbar.",
+            "Helium ist mit 25 % Anteil das zweithäufigtse Element des Universums.",
+            "Helium hat den niedrigsten Schmelz- und Siedepunkt aller Elemente.",
+            "Es gibt flüssiges Helium und supraflüssiges Helium.\nSupraflüssig heißt, dass es weitestgehend von der Quantenmechanic bestimmt wird und Effekte zeigt,\ndie der klassischen Mechanik widersprechen.",
+            "Es ist die einzige Substanz, die bei Normaldruck selbst am absoluten Nullpunkt (0 K bzw. −273, 15 °C) nicht fest wird.\nErst bei einem Druck oberhalb des 25-facher Atmosphärendrucks geht Helium bei hinreichend tiefen Temperaturen\nin eine feste Phase über.",
+            "Helium ist die Substanz mit der größten bekannten chemischen Reaktionsträgheit.\nAuch unter Extrembedingungen konnten bis jetzt keine Verbindungen des Heliums nachgewiesen werden.",
+            "Helium kommt nur atomar vor.",
             "Supraflüssiges Helium kriecht Wände hoch.",
-            "Supraflüssiges Helium-4 existiert nur unter 2, 17 K. Für supraflüssiges Helium-3 muss man sogar unter 2, 6 mK.",
-            "Moleküle oder Cluster,  die in suprafluidem 4He gelöst sind,  können de facto frei rotieren,  als ob sie sich im Vakuum befänden.",
-            "Sollte es gelingen Kernfusionsreaktoren für die Deuterium-Tritium-Fusion zu entwickeln,  könnte die Gewinnung von Helium-3 vom Mond wirtschaftlich interessant werden.",
+            "Supraflüssiges Helium-4 existiert nur unter 2,17 K. Für supraflüssiges Helium-3 muss man sogar unter 2,6 mK.",
+            "Moleküle die in suprafluidem He-4 gelöst sind, können frei rotieren, als ob sie sich im Vakuum befänden.",
+            "Sollte es gelingen Kernfusionsreaktoren zu entwickeln, könnte die Gewinnung von Helium-3 vom Mond wirtschaftlich interessant werden.",
             "Erdgas mit einem Heliumanteil bis zu 7 % ist der größte und wirtschaftlich wichtigste Heliumlieferant.",
-            "3He und 4He weisen aufgrund der unterschiedlichen Symmetrieeigenschaften (3He-Atome sind Fermionen,  4He-Atome sind Bosonen) einige unterschiedliche physikalische Eigenschaften auf,  die sich insbesondere bei tiefen Temperaturen zeigen. So trennen sich gleiche Anteile von flüssigem 3He und 4He unter 0, 8 Kelvin aufgrund ihrer unterschiedlichen Quanteneigenschaften in zwei unmischbare Flüssigkeiten,  ähnlich Öl und Wasser.",
-            "Bei Erreichen von nahezu 0 K und gleichzeitigem Zentrifugieren kann ein Zustand erreicht werden,  den man suprafest nennt. Hierbei stoppt ein Teil des Feststoffes die eigene Rotation und durchdringt die restlichen Teile der Materie. Dazu gibt es noch keine bekannten Thesen oder Theorien."
+            "He-3 und He-4 weisen aufgrund der unterschiedlichen Symmetrieeigenschaften\n(He-3-Atome sind Fermionen, He-4-Atome sind Bosonen) einige unterschiedliche physikalische Eigenschaften auf,\ndie sich insbesondere bei tiefen Temperaturen zeigen. So trennen sich gleiche Anteile von flüssigem He-3 und He-4 unter 0,8 K\naufgrund ihrer unterschiedlichen Quanteneigenschaften in zwei unmischbare Flüssigkeiten, ähnlich Öl und Wasser.",
+            "Bei Erreichen von nahezu 0 K und gleichzeitigem Zentrifugieren kann ein Zustand erreicht werden,\nden man suprafest nennt.\nHierbei stoppt ein Teil des Feststoffes die eigene Rotation und durchdringt die restlichen Teile der Materie.\nDazu gibt es noch keine bekannten Thesen oder Theorien."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb",
         "wypos": 1,
