@@ -2569,8 +2569,8 @@
         "stable": true,
         "name": "Strontium",
         "funfact": [
-            "Strontiumranelat ist zur Behandlung von Osteoporose geeignet ist. Das neue Medikament senkt das Risiko,  eine Fraktur zu erleiden.",
-            "Strontium-90 ist ein radioaktives Isotop,  das bei Atombombenversuchen in die Umwelt gelangt ist. Es wird in den Knochen eingelagert und kann zu Knochenkrebs führen. Es ist immer noch nachweisbar."
+            "Strontiumranelat ist zur Behandlung von Osteoporose geeignet.\nDas neue Medikament senkt das Risiko, eine Fraktur zu erleiden.",
+            "Strontium-90 ist ein radioaktives Isotop, das bei Atombombenversuchen in die Umwelt gelangt ist.\nEs wird in den Knochen eingelagert und kann zu Knochenkrebs führen. Es ist immer noch nachweisbar."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_038_strontium/element_038_strontium.glb",
         "wypos": 5,
