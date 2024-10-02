@@ -1096,8 +1096,8 @@
         "stable": true,
         "name": "Argon",
         "funfact": [
-            "Weil Helium und Neon leichter als Luft sind,  verschwinden sie im Weltraum. Neo ist damit das häufigste Edelgas auf der Erde. Die Athmosphäre besteht zu ca. 1% aus Argon.",
-            "Mit der Kalium-Argon-Methode und der 39Ar-40Ar-Methode kann man das Alter von bis zu 4, 6 Milliarden alten Gesteinen bestimmen. Kretionisten hassen Argon.",
+            "Weil Helium und Neon leichter als Luft sind, verschwinden sie im Weltraum.\nArgon ist damit das häufigste Edelgas auf der Erde. Die Athmosphäre besteht zu ca. 1% aus Argon.",
+            "Mit der Kalium-Argon-Methode und der Ar-39-Ar-40-Methode kann man das Alter\nvon bis zu 4,6 Milliarden alten Gesteinen bestimmen. Kretionisten hassen Argon.",
             "In Wasser ist Argon fast so gut löslich wie Sauerstoff."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_018_argon/element_018_argon.glb",
