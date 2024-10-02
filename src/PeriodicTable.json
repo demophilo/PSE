@@ -1954,11 +1954,11 @@
         "stable": true,
         "name": "Copper",
         "funfact": [
-            "The first mirrors were made out uf copper. They were polished and then coated with a thin layer of gold.",
+            "Die ersten Spiegel wurden aus Kupfer hergestellt. Sie waren poliert und hatten eine glänzende Oberfläche.",
             "Für Eisen wird durch Chlorid korrodiert. Was für Eisen das Chloridion ist,  ist für Kupfer das Sulfation.",
-            "Aus der Bronzezeit gibt es mehr Artefakte als aus der Eisenzeit,  weil Bronze weniger korrodiert.",
-            "Der Werkstoff Berylliumkupfer ist in vielen Bereichen besser als Stahl. Er leitet den Strom besser,  ist elastischer,  ist korrosionsbeständig und schlägt keine Funken.",
-            "Die Bingham Kennecott Copper Mine in Utah brüstet sich damit,  eine größere Menge Material bewegt zu haben,  als es beim Bau der chinesischen Mauer getan wurde."
+            "Aus der Bronzezeit gibt es mehr Artefakte als aus der Eisenzeit, weil Bronze weniger korrodiert.",
+            "Der Werkstoff Berylliumkupfer ist in vielen Bereichen besser als Stahl. Er leitet den Strom besser,\nist elastischer, ist korrosionsbeständig und schlägt keine Funken.",
+            "Die Bingham Kennecott Copper Mine in Utah brüstet sich damit, eine größere Menge Material bewegt zu haben, als es beim Bau der chinesischen Mauer getan wurde."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_029_copper/element_029_copper.glb",
         "wypos": 4,
