@@ -2355,11 +2355,10 @@
         "stable": true,
         "name": "Bromine",
         "funfact": [
-            "Um 1950 entdeckte Boris Pawlowitsch Beloussow die Belousov-Zhabotinsky-Reaktion eher zufällig. Er konnte bei der Oxidation von Zitronensäure mit schwefelsaurer Bromatlösung und Cer-Ionen als Katalysator einen periodisch auftretenden Wechsel der Farbe der Lösung zwischen gelb und farblos beobachten. Damals glaubte man,  dass solche Reaktionen nicht existieren und deswegen glaubte,  dass Beloussow einen Fehler gemacht hätte.",
-            "Brom ist außer Quecksilber das einzige Element,  dass bei Raumtemperatur flüssig ist.",
+            "Um 1950 entdeckte Boris Pawlowitsch Beloussow die Belousov-Zhabotinsky-Reaktion eher zufällig.\nEr konnte bei der Oxidation von Zitronensäure mit schwefelsaurer Bromatlösung und Cer-Ionen als Katalysator\neinen periodisch auftretenden Wechsel der Farbe der Lösung zwischen gelb und farblos beobachten.\nDamals glaubte man, dass solche Reaktionen nicht existieren und dass Beloussow einen Fehler gemacht hätte.",
+            "Brom ist neben Quecksilber das einzige Element, dass bei Raumtemperatur flüssig ist.",
             "Brom ist nach seinem Geruch benannt. Es stammt aus dem Griechischen und bedeutet \"stinkend\".",
-            "Brom hat 2 Isotope,  die stabil sind. Das häufigere ist Brom-79,  das andere Brom-81. Die Häufigkeit von Brom-81 ist 49, 3 %,  die von Brom-79 50, 7 %. Bei keinem anderen Element ist das häufigere Isotop so knapp in der Mehrheit.",
-            "Brom-81 ist das einzige stabile Isotop,  das mehr Neutronen als Protonen hat."
+            "Brom hat 2 Isotope, die stabil sind. Das häufigere ist Brom-79, das andere Brom-81.\nDie Häufigkeit von Brom-81 ist 49,3 %, die von Brom-79 50,7 %.\nBei keinem anderen Element ist das häufigere Isotop so knapp in der Mehrheit."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_035_bromine/element_035_bromine.glb",
         "wypos": 4,
