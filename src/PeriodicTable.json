@@ -1026,8 +1026,8 @@
         "stable": true,
         "name": "Chlorine",
         "funfact": [
-            "Als Chlorgas im ersten Weltkrieg eingesetzt wurde,  gab es noch keine Gasmasken. Den Soldaten wurde daher empfohlen,  bei einem Giftgasangriff in die eigene Unterhose zu machen uns sie vor Mund und Nase zu pressen.",
-            "Salzsäure ist die wässrige Lösung des Chlorasserstoffgases. Die maximale Konzentration der Salzsäure ist 37 %. Bei Bränden enstehen aus 58 % des PVCs 100 %-Chlorwasserstoff."
+            "Als Chlorgas im ersten Weltkrieg eingesetzt wurde, gab es noch keine Gasmasken.\nDen Soldaten wurde daher empfohlen, bei einem Giftgasangriff in die eigene Unterhose zu machen,\nund sie vor Mund und Nase zu pressen.",
+            "Salzsäure ist die wässrige Lösung des Chlorasserstoffgases.\nDie maximale Konzentration der Salzsäure ist 37 %.\nBei Bränden enstehen aus 58 % des PVCs 100 %-Chlorwasserstoff."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_017_chlorine/element_017_chlorine.glb",
         "wypos": 3,
