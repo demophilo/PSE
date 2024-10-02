@@ -2419,9 +2419,9 @@
         "stable": true,
         "name": "Krypton",
         "funfact": [
-            "Mit dem stark elektronegativen Fluor konnte ein instabiles Kryptondifluorid KrF2 gebildet werden. Es ist nur bei tiefen Temperaturen stabil. Weil es das einzige Fluorid überhapt ist,  dass endotherm hergestellt wird,  ist es ein stärkeren Fuorierungsmittel als Fluor selbst.",
-            "Das Radioaktive Isotop Kr-78 hat eine Halbwertszeit von 2, 0•10^21 Jahren und zerfällt durch Doppelten Elektroneneinfang.",
-            "Ein Kernkraftwerk produziert jedes Jahr etwa 1, 1•10^13 Becquerel des Isotops Kr-85. Da Krypton chemisch nicht gebunden werden kann,  reichert sich das Radionuklid in der Atmosphäre an."
+            "Mit dem stark elektronegativen Fluor konnte ein instabiles Kryptondifluorid KrF2 gebildet werden.\nEs ist nur bei tiefen Temperaturen stabil.\nWeil es das einzige Fluorid überhaupt ist, dass endotherm hergestellt wird,\nist es ein stärkeren Fuorierungsmittel als Fluor selbst.",
+            "Das Radioaktive Isotop Kr-78 hat eine Halbwertszeit von 2,0•10^21 Jahren und zerfällt durch Doppelten Elektroneneinfang.",
+            "Ein Kernkraftwerk produziert jedes Jahr Kr-85 mit etwa 1,1•10^13 Becquerel.\nDa Krypton chemisch nicht gebunden werden kann, reichert sich das Radionuklid in der Atmosphäre an."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_036_krypton/element_036_krypton.glb",
         "wypos": 4,
