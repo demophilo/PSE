@@ -370,9 +370,9 @@
         "stable": true,
         "name": "Nitrogen",
         "funfact": [
-            "Der deutsche Chemiker Haber hat ermöglicht Stickstoffdünger zu erzeugen. Das brachte billige und große Ernten. Im ersten Weltkrieg erfand er Giftgase. Seine Frau,  eine Pazifistin,  konnte damit nicht leben und brachte sich um.",
-            "Stickstoff wird zur Füllung von Flugzeugreifen großer Flugzeuge verwendet. Der reine Stickstoff verhindert,  dass Flugzeugreifen durch die große Hitzeentwicklung beim Aufsetzen während der Landung,  oder beim Startlauf,  von innen in Brand geraten können.",
-            "Bei der Gewinnung von Stickstoff aus der Luft ist er oft noch durch Sauerstoff verunreinigt. Zur Entfernung des Restsauerstoffs kann man Reiskeimlinge benutzen."
+            "Der deutsche Chemiker Haber hat ermöglicht Stickstoffdünger zu erzeugen. Das brachte billige und große Ernten.\nIm ersten Weltkrieg erfand er Giftgase. Seine Frau, eine Pazifistin, konnte damit nicht leben und beging Siuzid.",
+            "Stickstoff wird zur Füllung von Flugzeugreifen großer Flugzeuge verwendet. Der reine Stickstoff verhindert,\ndass Flugzeugreifen durch die große Hitzeentwicklung während Landung oder Start von innen in Brand geraten können.",
+            "Bei der Gewinnung von Stickstoff aus der Luft ist er oft noch durch Sauerstoff verunreinigt.\nZur Entfernung des Restsauerstoffs kann man Reiskeimlinge benutzen."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_007_nitrogen/element_007_nitrogen.glb",
         "wypos": 2,
