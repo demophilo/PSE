@@ -749,10 +749,10 @@
         "stable": true,
         "name": "Aluminium",
         "funfact": [
-            "Als das Washington Monument erbaut wurde,  wollte man die Spitze aus einem Material vertigen,  dass teuer ist und ausdrückt,  dass die USA ein moderner Staat ist. Sie besteht aus Aluminium.",
+            "Als das Washington Monument erbaut wurde, wollte man die Spitze aus einem Material fertigen,\ndass teuer ist und ausdrückt, dass die USA ein moderner Staat ist. Sie besteht aus Aluminium.",
             "Der erste heute noch bekannte Aluminiumgegenstand ist die Gürtenschnalle des chinesischen Generals Chou-Chou (265-316) um 300.",
-            "Kaiser Tiberius ließ einen Metallarbeiter hinrichten,  der ein leichtes Metall,  möglicherweise Aluminium,  hergestellt hatte. Er befürchtete,  dass das Währungsmetall Silber an Wert verlieren würde,  was die Wirtschaft hätte zusammen brechen lassen.",
-            "Aluminium war im 19. Jahrnundert teilweise teurer als Gold."
+            "Kaiser Tiberius ließ einen Metallarbeiter hinrichten, der ein leichtes Metall,\nmöglicherweise Aluminium, hergestellt hatte. Er befürchtete, dass das Währungsmetall Silber an Wert verlieren würde,\nwas die Wirtschaft hätte zusammen brechen lassen.",
+            "Aluminium war im 19. Jahrhundert teilweise teurer als Gold."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_013_aluminum/element_013_aluminum.glb",
         "wypos": 3,
