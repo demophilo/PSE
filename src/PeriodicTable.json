@@ -130,8 +130,9 @@
         "funfact": [
             "Lithium ist das leichteste Metall und schwimmt sogar auf Benzin.",
             "Viele gesättigte Lösungen von Lithiumsalzen haben einen besonders niedrigen Wasserdampfpartialdruck\nund werden deshalb in Klimakammern zum Einstellen und konstant halten der Luftfeuchte auf diesen niederen Niveaus eingesetzt.",
-            "Li-6 zeigt wie He-4 und He-3 Suprafluidität, aber erst im nK-Bereich.",
-            "Li-6 ist nur eines von 4 stabilen Nukliden, die sowohl ungerade Protonenzahl als auch ungerade Neutronenzahl haben."
+            "Li-6 zeigt Suprafluidität, aber erst im nK-Bereich.",
+            "Li-6 ist nur eines von 4 stabilen Nukliden, die sowohl ungerade Protonenzahl als auch ungerade Neutronenzahl haben.",
+            "Lithium wird nicht, wie die meisten höheren Elemente, in der Sonne erzeugt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_003_lithium/element_003_lithium.glb",
         "wypos": 2,
