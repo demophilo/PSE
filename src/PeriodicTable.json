@@ -886,9 +886,9 @@
         "stable": true,
         "name": "Phosphorus",
         "funfact": [
-            "Phosphor wurde von Henning Brand entdeckt,  indem er Urin zuerst eindampfte und den Rückstand unter Luftabschluss glühte. Der Phosphor leuchtete im Dunklen.",
-            "Phosphor gilt als Nichtmetall,  aber die stabilste Form,  schwarzer Phosphor,  zeigt Halbleitereigenschaften",
-            "Wenn weißer Phosphor brennt,  lässt er sich nicht mehr löschen. Selbst durch entfernen von Sauerstoff durch abdecken des Brandes hilft nicht,  da selbst nach Stunden sich der Phosphor wieder entzündet,  wenn Sauerstoff zu tritt."
+            "Phosphor wurde von Henning Brand entdeckt, indem er Urin zuerst eindampfte und den Rückstand unter Luftabschluss glühte.\nDer Phosphor leuchtete im Dunklen.",
+            "Phosphor gilt als Nichtmetall, aber die stabilste Form,  schwarzer Phosphor, zeigt Halbleitereigenschaften",
+            "Wenn weißer Phosphor brennt, lässt er sich nicht mehr löschen. Selbst durch entfernen von Sauerstoff\ndurch abdecken des Brandes hilft nicht, da selbst nach Stunden sich der Phosphor wieder entzündet,\nwenn Sauerstoff zu tritt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_015_phosphorus/element_015_phosphorus.glb",
         "wypos": 3,
