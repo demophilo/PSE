@@ -817,10 +817,10 @@
         "stable": true,
         "name": "Silicon",
         "funfact": [
-            "Wenn Magma reich an Silicaten und damit reich an Silicium ist,  ist es zähflüssig und neigt dazu,  zu explodieren,  wenn es zu Tage tritt.",
+            "Wenn Magma reich an Silicaten und damit reich an Silicium ist, ist es zähflüssig und neigt dazu,\nzu explodieren, wenn es zu Tage tritt.",
             "Der englische Name Silicon wird oft falsch als Silikon übersetzt. Es ist ein typischer Fall für einen Falschen Freund.",
-            "Früher besagte die Doppelbindungsregel,  dass Elemente der 3. Periode keine Doppelbindungen eingehen könne. Mittlerweile gibt es einige Siliciumverbindungen mit Doppelbindungen,  sodass diese Regel Geschichte ist.",
-            "Silicium ist ein wichtiger Bestandteil des Betons. Nur die römische Kultur hat Beton als Baumaterial eingesetzt,  da Zement auf den phlegräischen Feldern natürlich vorkommt."
+            "Früher besagte die Doppelbindungsregel, dass Elemente der 3. Periode keine Doppelbindungen eingehen könne.\nMittlerweile gibt es einige Siliciumverbindungen mit Doppelbindungen, sodass diese Regel Geschichte ist.",
+            "Silicium ist ein wichtiger Bestandteil des Betons. Nur die römische Kultur hat Beton als Baumaterial eingesetzt,\nda Zement auf den phlegräischen Feldern natürlich vorkommt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_014_silicon/element_014_silicon.glb",
         "wypos": 3,
