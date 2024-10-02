@@ -1241,7 +1241,9 @@
         "stable": true,
         "name": "Calcium",
         "funfact": [
-            "Die Wikinger haben möglicherweise das Calciummineral Calcit verwendet, um bei bewölktem Himmel und bei Nebel zu navigieren. Durch die doppelbrechende Eigenschaft kann man den Sonnenstand ermittleln, auch wenn die Sonne nicht sichtbar ist."
+            "Die Wikinger haben möglicherweise das Calciummineral Calcit verwendet,\num bei bewölktem Himmel und bei Nebel zu navigieren.\nDurch die doppelbrechende Eigenschaft kann man den Sonnenstand ermittleln,\nauch wenn die Sonne nicht sichtbar ist.",
+            "Calciumcarbid wurde lange Zeit in Grubenlampen verwendet.\nMit Wasser entsteht Acetylen, welches mit einer sehr heißen Flamme brennt.",
+            "Der größte Teil der Wasserhärte wird durch Calcium verursacht."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_020_calcium/element_020_calcium.glb",
         "wypos": 4,
