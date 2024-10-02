@@ -1790,8 +1790,8 @@
         "stable": true,
         "name": "Cobalt",
         "funfact": [
-            "Eine Besonderheit stellt die Atommasse des natürlich vorkommenden Cobalts dar. Sie ist mit 58, 93 größer als die mittlere Atommasse von Nickel mit 58, 69,  dem nächsten Element im Periodensystem. Diese Besonderheit gibt es auch bei Argon und Kalium sowie bei Tellur und Iod.",
-            "Cobalterze wurden wurden im Mittelalter häufig für wertvolle Silber- und Kupfererze gehalten. Da sie sich aber nicht verarbeiten ließen und wegen des Arsengehaltes beim Erhitzen schlechte Gerüche abgaben,  wurden sie als verhext angesehen. Angeblich hätten Kobolde das kostbare Silber aufgefressen und an seiner Stelle wertlosere silberfarbene Erze ausgeschieden."
+            "Eine Besonderheit stellt die Atommasse des natürlich vorkommenden Cobalts dar.\nSie ist mit 58,93 größer als die mittlere Atommasse von Nickel mit 58,69,\ndem nächsten Element im Periodensystem.",
+            "Cobalterze wurden wurden im Mittelalter häufig für wertvolle Silber- und Kupfererze gehalten.\nDa sie sich aber nicht verarbeiten ließen und wegen des Arsengehaltes beim Erhitzen schlechte Gerüche abgaben,\nwurden sie als verhext angesehen.\nAngeblich hätten Kobolde das kostbare Silber aufgefressen und an seiner Stelle wertlosere silberfarbene Erze ausgeschieden."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_027_cobalt/element_027_cobalt.glb",
         "wypos": 4,
