@@ -2040,9 +2040,9 @@
         "stable": true,
         "name": "Zinc",
         "funfact": [
-            "Die erste brauchbare koninuierliche Stromquelle war die Voltasche Säule bestehend aus den Elementen Zink und Kupfer. Da sie Elektrotechnik ermöglichte,  war sie einer der wichtigsten Erfindungen der Menschheit.",
-            "Der Name Zink kommt von Zinke,  Zind Zahn,  Zacke,  da Zink zackenförmig erstarrt.",
-            "Bereits im Altertum war Zink als Legierungsbestandteil von Messing in Gebrauch. Als eigenständiges Metall wurde es jedoch erst im 14. Jahrhundert in Indien entdeckt."
+            "Die erste brauchbare koninuierliche Stromquelle war die Voltasche Säule bestehend aus den Elementen Zink und Kupfer.\nDa sie Elektrotechnik ermöglichte, war sie einer der wichtigsten Erfindungen der Menschheit.",
+            "Der Name Zink kommt von Zinke, Zind Zahn, Zacke, da Zink zackenförmig erstarrt.",
+            "Bereits im Altertum war Zink als Legierungsbestandteil von Messing in Gebrauch.\nAls eigenständiges Metall wurde es jedoch erst im 14. Jahrhundert in Indien entdeckt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_030_zinc/element_030_zinc.glb",
         "wypos": 4,
