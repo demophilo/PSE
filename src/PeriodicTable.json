@@ -1168,8 +1168,8 @@
         "stable": true,
         "name": "Potassium",
         "funfact": [
-            "Das radioaktive K-40-Isotop ist primordial und trägt wesentlich zur natürlichen Radioaktivität bei. Rund 10 % der Strahlenbelastung kommt von diesem Isotop.",
-            "Sowohl Natrium als auch Kalium wurden vom Briten Humphry Davy erstmals hergestellt. Er nannte sie Sodium und Potassium. Trotzdem haben sich die Namen Natrium und Kalium international durchgesetzt,  wie man an den Symbolen sieht."
+            "Das radioaktive K-40-Isotop ist primordial und trägt wesentlich zur natürlichen Radioaktivität bei.\nRund 10 % der natürlichen Strahlenbelastung kommt von diesem Isotop.",
+            "Sowohl Natrium als auch Kalium wurden vom Briten Humphry Davy erstmals hergestellt. Er nannte sie Sodium und Potassium.\nTrotzdem haben sich die Namen Natrium und Kalium international durchgesetzt, wie man an den Symbolen sieht."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_019_potassium/element_019_potassium.glb",
         "wypos": 4,
