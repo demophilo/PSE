@@ -186,14 +186,16 @@
         "stable": true,
         "name": "Beryllium",
         "funfact": [
-            "Beryllium ist eines der giftigsten Elemente. Wegen der Giftigkeit wird es jedoch fast ausschließlich im Weltraum verwendet,  weil bei dieser Anwendung der Gewichtsvorteil zählt.",
+            "Beryllium ist eines der giftigsten Elemente. Wegen der Giftigkeit wird es jedoch fast ausschließlich\nim Weltraum verwendet, weil bei dieser Anwendung der Gewichtsvorteil zählt.",
             "Die Edelsteine Smaragt und Aquamarin sind Verbindungen des Berylliums.",
-            "Beryllium kann nicht durch Kernfusion in der Sonne entstehen,  sondern nur durch kosmische Strahlung. Daher ist es seltener als die umgebenden leichten Elemente.",
-            "Im Altertum und Mittelalter dienten durchsichtige Beryllstücke vielfach als Zauberglas,  weil es vergrößernd wirkt. Vom Wort Beryll leitet sich auch die Bezeichnung Brille ab,  ursprünglich für ein Augenglas aus Beryll.",
-            "Die schönsten und wertvollsten beryllhaltigen Mineralien sind die Schmuck- und Edelsteine Aquamarin,  Smaragd,  Roter Beryll,  Euklas,  Gadolinit,  Chrysoberyll,  Phenakit,  und Alexandrit.",
-            "Beryllium ist ein Reinelement,  das heißt es gibt nur ein natürlich vorkommentes Isotop.",
-            "Berylliu wurde erstmals von Friedrich Wöhler synthetisiert. Ihm galang auch die Harnstoffsynthese,  welche wiederum die Theorie des Vitalismus zu Fall brachte,  dass zur Synthese biologischer Substanzen eine Lebenskraft,  Vis Vitalis,  erforderlich wäre.",
-            "Berrylium ist um ein Drittel leichter als Aluminium und hat eine Zugfestigkeit größer als Stahl."
+            "Beryllium kann nicht durch Kernfusion in der Sonne entstehen, sondern nur durch kosmische Strahlung.",
+            "Im Altertum und Mittelalter dienten durchsichtige Beryllstücke vielfach als Zauberglas, weil es vergrößernd wirkt.\nVom Wort Beryll leitet sich auch die Bezeichnung Brille ab, ursprünglich für ein Augenglas aus Beryll.",
+            "Die schönsten und wertvollsten beryllhaltigen Mineralien sind die Schmuck- und Edelsteine\nAquamarin, Smaragd, Roter Beryll, Euklas, Gadolinit, Chrysoberyll, Phenakit und Alexandrit.",
+            "Beryllium ist ein Reinelement, das heißt es gibt nur ein natürlich vorkommentes Isotop.",
+            "Beryllium wurde erstmals von Friedrich Wöhler synthetisiert. Ihm galang auch die Harnstoffsynthese,\nwelche wiederum die Theorie des Vitalismus zu Fall brachte.\n Diese Theori besagte, dass zur Synthese biologischer Substanzen eine Lebenskraft, Vis Vitalis, erforderlich wäre.",
+            "Berrylium ist um ein Drittel leichter als Aluminium und hat aber eine Zugfestigkeit größer als Stahl.",
+            "Beryllium dient zur Herstellung von funkenfreien Werkzeugen, die in der Nähe von Sprengstoffen verwendet werden.",
+            "Beryllium dient zur Herstellung von nichtmagnetischen Werkzeugen, die zu Arbeiten an MRT-Geräte verwendet werden."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_004_beryllium/element_004_beryllium.glb",
         "wypos": 2,
