@@ -309,8 +309,11 @@
         "stable": true,
         "name": "Carbon",
         "funfact": [
-            "Es gibt mehr Verbindungen mit Kohlenstoff als alle Verbindungen zusammen der anderen Elemente.",
-            "Kohlenstoff hat mit 3800 K den höchsten Schmelzpunkt aller Elemente."
+            "Es gibt mehr Verbindungen mit Kohlenstoff als ohne Kohlenstoff.",
+            "Kohlenstoff hat mit 3820 K den höchsten Schmelzpunkt aller Elemente.",
+            "C-12 ist der Bezugsstoff für die Atommasse.",
+            "C-13 kommt nur zu 1,1 % in der Natur vor, aber es ist für die Strukturaufklärung wichtiger als C-12.",
+            "Es gibt Planeten, auf denen es Diamanten regnet."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_006_carbon/element_006_carbon.glb",
         "wypos": 2,
