@@ -75,7 +75,8 @@
             "Sollte es gelingen Kernfusionsreaktoren zu entwickeln, könnte die Gewinnung von Helium-3 vom Mond wirtschaftlich interessant werden.",
             "Erdgas mit einem Heliumanteil bis zu 7 % ist der größte und wirtschaftlich wichtigste Heliumlieferant.",
             "He-3 und He-4 weisen aufgrund der unterschiedlichen Symmetrieeigenschaften\n(He-3-Atome sind Fermionen, He-4-Atome sind Bosonen) einige unterschiedliche physikalische Eigenschaften auf,\ndie sich insbesondere bei tiefen Temperaturen zeigen. So trennen sich gleiche Anteile von flüssigem He-3 und He-4 unter 0,8 K\naufgrund ihrer unterschiedlichen Quanteneigenschaften in zwei unmischbare Flüssigkeiten, ähnlich Öl und Wasser.",
-            "Bei Erreichen von nahezu 0 K und gleichzeitigem Zentrifugieren kann ein Zustand erreicht werden,\nden man suprafest nennt.\nHierbei stoppt ein Teil des Feststoffes die eigene Rotation und durchdringt die restlichen Teile der Materie.\nDazu gibt es noch keine bekannten Thesen oder Theorien."
+            "Bei Erreichen von nahezu 0 K und gleichzeitigem Zentrifugieren kann ein Zustand erreicht werden,\nden man suprafest nennt.\nHierbei stoppt ein Teil des Feststoffes die eigene Rotation und durchdringt die restlichen Teile der Materie.\nDazu gibt es noch keine bekannten Thesen oder Theorien.",
+            "He-3 ist das einzige stabile Isotop, das mehr Neutronen als Protonen hat."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium.glb",
         "wypos": 1,
@@ -128,9 +129,9 @@
         "name": "Lithium",
         "funfact": [
             "Lithium ist das leichteste Metall und schwimmt sogar auf Benzin.",
-            "Viele gesättigte Lösungen von Lithiumsalzen haben einen besonders niedrigen Wasserdampfpartialdruck und werden deshalb in Klimakammern zum Einstellen und konstant halten der Luftfeuchte auf diesen niederen Niveaus eingesetzt.",
-            "Litium-6 zeigt wie Helium-4 und Helium-3 Suprafluidität,  aber erst im nK-Bereich.",
-            "Li-6 ist nur einer von 4 stabilen Nukliden,  die sowohl ungerade Protonenzahl als auch ungerade Neutronenzahl haben."
+            "Viele gesättigte Lösungen von Lithiumsalzen haben einen besonders niedrigen Wasserdampfpartialdruck\nund werden deshalb in Klimakammern zum Einstellen und konstant halten der Luftfeuchte auf diesen niederen Niveaus eingesetzt.",
+            "Li-6 zeigt wie He-4 und He-3 Suprafluidität, aber erst im nK-Bereich.",
+            "Li-6 ist nur eines von 4 stabilen Nukliden, die sowohl ungerade Protonenzahl als auch ungerade Neutronenzahl haben."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_003_lithium/element_003_lithium.glb",
         "wypos": 2,
