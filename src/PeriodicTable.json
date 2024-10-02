@@ -2175,8 +2175,8 @@
         "stable": true,
         "name": "Germanium",
         "funfact": [
-            "Mendelejew hat 1871 drei Elemente mit speziellen Eigenschaften vorher gesagt. 1886 entdeckte Clemens Winkler das erste dieser Elemente und nannte es Germanium.",
-            "Als Halbleiter war es das führende Material in der Elektronik,  bis es vom Silicium verdrängt wurde."
+            "Mendelejew hat 1871 drei Elemente mit speziellen Eigenschaften vorher gesagt.\n1886 entdeckte Clemens Winkler das erste dieser Elemente und nannte es Germanium.",
+            "Als Halbleiter war es das führende Material in der Elektronik, bis es von Silicium verdrängt wurde."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_032_germanium/element_032_germanium.glb",
         "wypos": 4,
