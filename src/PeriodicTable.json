@@ -250,10 +250,10 @@
         "stable": true,
         "name": "Boron",
         "funfact": [
-            "Lithium,  Bor und Beryllium wurden nicht in einer Sonne erzeugt wie Kohlenstoff und die höheren Elemente,  sondern durch Spallation also Kollision schwerer Atome durch kosmische Strahlung.",
+            "Bor wurde nicht in einer Sonne erzeugt wie die meisten höheren Elemente,\nsondern durch Spallation also Kollision schwerer Atome durch kosmische Strahlung.",
             "Die größten Boratminen befinden sich in der Türkei (ca. 72 % des weltweiten Vorkommens).",
-            "Die Umsetzung von B2H6 mit Sauerstoff zu B2O3 ist eine der stärksten exothermen Reaktionen,  die bekannt ist.",
-            "Bor besitzt die höchste Zugfestigkeit aller bekannten Elemente sowie die zweithöchste Härte,  nur übertroffen von der Kohlenstoffmodifikation Diamant."
+            "Die Umsetzung von B2H6 mit Sauerstoff zu B2O3 ist eine der stärksten exothermen Reaktionen, die bekannt ist.",
+            "Bor besitzt die höchste Zugfestigkeit aller bekannten Elemente sowie die zweithöchste Härte,\nnur übertroffen von der Kohlenstoffmodifikation Diamant."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_005_boron/element_005_boron.glb",
         "wypos": 2,
