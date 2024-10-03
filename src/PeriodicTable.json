@@ -4127,8 +4127,8 @@
         "stable": true,
         "name": "Europium",
         "funfact": [
-            "Es ist das erste von zwei Elementen, dass nach einem Kontinent benannt wurde. Americium,  das andere Element,  steht im PSE genau darunter.",
-            "Europium besteht zu 47,8 % aus Eu-151, welches radioaktiv ist. Es hat eine Halbwertszeit von 1,7*10^18 Jahren. Damit ist es quasi stabil."
+            "Es ist das erste von zwei Elementen, dass nach einem Kontinent benannt wurde.\nAmericium, das andere Element, steht im PSE genau darunter.",
+            "Europium besteht zu 47,8 % aus Eu-151, welches radioaktiv ist. Es hat eine Halbwertszeit von 1,7*10^18 Jahren.\nDamit ist es quasi stabil."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_063_europium/element_063_europium.glb",
         "wypos": 6,
