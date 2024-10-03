@@ -5995,7 +5995,7 @@
         "stable": false,
         "name": "Plutonium",
         "funfact": [
-            "Früher wurde Plutonium zu den den synthetischen Elementen gezählt, aber man hat Spuren davon in der NAtur nachweisen können, sodass es heute als das letzte natürliche Element anerkannt ist."
+            "Früher wurde Plutonium zu den den synthetischen Elementen gezählt,\naber man hat Spuren davon in der Natur nachweisen können,\nsodass es heute als das letzte natürliche Element anerkannt ist."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_094_plutonium/element_094_plutonium.glb",
         "wypos": 7,
