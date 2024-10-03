@@ -6962,7 +6962,8 @@
         "stable": false,
         "name": "Roentgenium",
         "funfact": [
-            "Roentgenium ist das einzige Element, das eine Umschreibung von einem Umlaut hat."
+            "Roentgenium ist das einzige Element, das eine Umschreibung von einem Umlaut hat.",
+            "Die offizielle Benennung durch die IUPAC erfolgte am 1. November 2004,\nwurde aber – um an die Entdeckung der Röntgenstrahlen am 8. November 1895 zu erinnern –\nerst am 8. November 2004 der Öffentlichkeit bekannt gegeben."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_111_roentgenium/element_111_roentgenium.glb",
         "wypos": 7,
