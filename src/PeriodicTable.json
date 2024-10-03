@@ -7296,7 +7296,8 @@
         "stable": false,
         "name": "Tennessine",
         "funfact": [
-            "In angelsächsischen Sprachraum wollte man die Regel, dass Halogenide immer auf -ine enden, fortführen. Zuerst nannte man es in deutschen Sprachraum Tennessium. Erste Ausgaben des neuen PSE führten schon diesen Namen. Doch dann überlegte man es sich anders und wollte die Regel fortführen, dass Halogenide wie im Englischen heißen aber ohne -ine. Derher heiß es jetzt Tenness"
+            "In angelsächsischen Sprachraum wollte man die Regel, dass Halogenide immer auf -ine enden, fortführen.\nZuerst nannte man es in deutschen Sprachraum Tennessium.\nErste Ausgaben des neuen PSE führten schon diesen Namen.\nDoch dann überlegte man es sich anders und wollte die Regel fortführen,\ndass Halogenide wie im Englischen heißen aber ohne -ine. Derher heiß es jetzt Tenness",
+            "In Tennessee steht das Oak Ridge National Laboratory,\ndas eine wichtige Rolle bei der Entwicklung der Atombomben inne hatte."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_117_tennessine/element_117_tennessine.glb",
         "wypos": 7,
