@@ -4605,9 +4605,9 @@
         "stable": true,
         "name": "Lutetium",
         "funfact": [
-            "Es ist das seltenste Lanthanoid nach dem instabilen Promethium und Thulium, aber häufiger als Elemente wie Silber, Quecksilber oder Bismut.",
+            "Es ist das seltenste Lanthanoid nach dem instabilen Promethium und Thulium,\naber häufiger als Elemente wie Silber, Quecksilber oder Bismut.",
             "Der langsame Zerfall von Lu-176 zu Hf-176 kann zur Altersbestimmung sehr alter Gesteine verwendet werden.",
-            "Wegen der Lanthanoidenkontraktion besitzen Lutetiumatome den kleinsten Atomradius, außerdem hat das Element die höchste Dichte und den höchsten Schmelz- und Siedepunkt aller Lanthanoide."
+            "Wegen der Lanthanoidenkontraktion hat Lutetium den kleinsten Atomradius,\ndie höchste Dichte und den höchsten Schmelz- und Siedepunkt aller Lanthanoide."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_071_lutetium/element_071_lutetium.glb",
         "wypos": 6,
