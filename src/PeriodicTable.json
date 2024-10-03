@@ -7075,7 +7075,8 @@
         "name": "Nihonium",
         "funfact": [
             "Nihonium ist das erste Element, das in Asien offiziell benannt werden durfte.",
-            "Da man schon einmal das Element Technecium Nipponium nennen wollte, war dieser Name nicht mehr erlaubt."
+            "Da man schon einmal das Element Technetium Nipponium nennen wollte, war dieser Name nicht mehr erlaubt.",
+            "Der Prozess zur synthetischen Erzeugung von Nihoniumatomen hat eine sehr niedrige Effizienz,\nbei dem statistisch über Monate hinweg nur ein einzelnes Atom erzeugt werden kann."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_113_nihonium/element_113_nihonium.glb",
         "wypos": 7,
