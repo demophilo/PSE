@@ -5515,9 +5515,9 @@
         "stable": false,
         "name": "Radon",
         "funfact": [
-            "Von Radon könnte eine reichhaltigere Chemie existieren als von Xenon, aber die Radioaktivität zerstört die Verbindungen sofort wieder.",
+            "Von Radon könnte eine reichhaltigere Chemie existieren als von Xenon,\naber die Radioaktivität zerstört die Verbindungen sofort wieder.",
             "Radonmessungen können vor Erdbeben warnen, da Radon durch Erderschütterungen frei gesetzt wird.",
-            "Radon und Radium heißen das Strahlende. Sie haben daher den gleichen Namen, unterscheiden sich aber durch die Endung.",
+            "Radon und Radium heißen das Strahlende. Sie haben daher den gleichen Namen,\nunterscheiden sich aber durch die Endung.",
             "Unverdünntes Radon leuchtet im Dunklen."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_086_radon/element_086_radon.glb",
