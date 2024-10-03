@@ -7,7 +7,7 @@ using .Elements
 # sets up the game
 clear_sreen()
 print_title()
-println("\n"^15)
+println("\n"^9)
 # player section
 
 player_name = input_player_name()
