@@ -6131,7 +6131,7 @@
             9,
             2
         ],
-        "summary": "Curium is a transuranic radioactive chemical element with symbol Cm and atomic number 96. This element of the actinide series was named after Marie and Pierre Curie – both were known for their research on radioactivity. Curium was first intentionally produced and identified in July 1944 by the group of Glenn T. Seaborg at the University of California,  Berkeley.",
+        "summary": "Curium is a transuranic radioactive chemical element with symbol Cm and atomic number 96.This element of the actinide series was named after Marie and Pierre Curie – both were known for their research on radioactivity. Curium was first intentionally produced and identified in July 1944 by the group of Glenn T. Seaborg at the University of California,  Berkeley.",
         "molar_heat": null,
         "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 5f7 6d1",
         "named_by": null,
@@ -6169,7 +6169,7 @@
         "stable": false,
         "name": "Berkelium",
         "funfact": [
-            "Berkelium ist das scherste Element, das ein Isotop mit einer Halbwerteszeit von über 1000 Jahren hat."
+            "Berkelium ist das schwerste Element, das ein Isotop mit einer Halbwerteszeit von über 1000 Jahren hat."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_097_berkelium/element_097_berkelium.glb",
         "wypos": 7,
