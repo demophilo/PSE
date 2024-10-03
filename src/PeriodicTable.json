@@ -5400,7 +5400,7 @@
         "stable": false,
         "name": "Polonium",
         "funfact": [
-            "Polonium 210 ist ein Mordgift. Es wurde benutzt, um den russischen Ex-Spion Alexander Litvinenko zu töten. Er starb 2006 in London an einer Poloniumvergiftung. Es ist derart schwach radioaktiv, dass es durch Geigerzähler nicht entdeckt wird, aber einmal inkorporiert, tötet die Radioaktivität",
+            "Polonium 210 ist ein Mordgift. Es wurde benutzt, um den russischen Ex-Spion Alexander Litvinenko zu töten.\nEr starb 2006 in London an einer Poloniumvergiftung. Es ist derart schwach radioaktiv,\ndass es durch Geigerzähler nicht entdeckt wird, aber einmal inkorporiert, tötet die Radioaktivität",
             "Polonium und Radium wurden von Marie Curie entdeckt, weil reines Uransalz wengiger radioaktiv war als Uranerz."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_084_polonium/element_084_polonium.glb",
