@@ -6906,7 +6906,8 @@
         "stable": false,
         "name": "Darmstadtium",
         "funfact": [
-            "Darmstadt ist die einzige deutsche Stadt, nach der ein Element benannt wurde."
+            "Darmstadt ist die einzige deutsche Stadt, nach der ein Element benannt wurde.",
+            "Mit Hilfe des UNILAC in Darmstadt wurden die Elemente 107 bis 112 entdeckt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_110_darmstadtium/element_110_darmstadtium.glb",
         "wypos": 7,
