@@ -5153,14 +5153,14 @@
         "stable": true,
         "name": "Mercury",
         "funfact": [
-            "Am Quecksilber wurde vom niederländischen Physiker Heike Kamerlingh Onnes im Jahre 1911\ndas erste Mal das Phänomen der Supraleitung entdeckt.Ab einer Temperatur von 4,2 Kelvin (−268,9 °C) verschwindet dabei der elektrische Widerstand vollständig.",
-            "Von den chinesischen Alchimisten wurden viele quecksilberhaltige Arzneien zur Lebensverlängerung verschrieben und verursachten einen frühzeitigen Tod der Patienten.",
-            "Der erste Kaiser von China Qui Shihuandi hat in seinem riesigen Grabmal einen Quecksilbersee, weswegen man noch immer mit der Freilegung zögert.",
-            "Um das Jahr 1000 gab es in den Palästen der Kalifen von Córdoba (Medina az-Zahra), Kairo und Bagdad mit Quecksilber gefüllte Becken, die für das Spiel mit Lichtwirkungen genutzt wurden, außerdem in großen Porphyrmuscheln angelegte Quecksilberteiche (für Kairo sind 50 Ellen im Quadrat überliefert).",
+            "Am Quecksilber wurde vom niederländischen Physiker Heike Kamerlingh Onnes im Jahre 1911\ndas erste Mal das Phänomen der Supraleitung entdeckt.\nAb einer Temperatur von 4,2 K (−268,9 °C) verschwindet dabei der elektrische Widerstand vollständig.",
+            "Von den chinesischen Alchimisten wurden viele quecksilberhaltige Arzneien\nzur Lebensverlängerung verschrieben und verursachten einen frühzeitigen Tod der Patienten.",
+            "Der erste Kaiser von China Qui Shihuandi hat in seinem riesigen Grabmal einen Quecksilbersee,\nweswegen man noch immer mit der Freilegung zögert.",
+            "Um das Jahr 1000 gab es in den Palästen der Kalifen von Córdoba (Medina az-Zahra),\nKairo und Bagdad mit Quecksilber gefüllte Becken, die für das Spiel mit Lichtwirkungen genutzt wurden,\naußerdem in großen Porphyrmuscheln angelegte Quecksilberteiche (für Kairo sind 50 Ellen im Quadrat überliefert).",
             "Die alchimistischen Ärzte verschrieben viel Quecksilberarzneien, woraus sich der Begriff Quacksalber ableitet.",
             "Der niedere Schmelzpunkt des Quecksilbers ist ein relativistischer Effekt.",
-            "Quecksilber ist das einzige Metall, welches bei Raumtemperatur durch Verdunstung einen einatomigen Metalldampf erzeugen kann.",
-            "Die Alchimisten wollten die Eigenschaften von Quecksilber (metallisch, glänzend) mit den Eigenschaften von Schwefel (fest, gelb) kombinieren. Als bei der Reaktion das blutrote Zinnober entstand, glaubten sie an eine Verbindung mit dem Leben und gleubten ein lebenselixier herstellen zu können."
+            "Quecksilber ist das einzige Metall, welches bei Raumtemperatur durch Verdunstung\neinen einatomigen Metalldampf erzeugen kann.",
+            "Die Alchimisten wollten die Eigenschaften von Quecksilber (metallisch, glänzend)\nmit den Eigenschaften von Schwefel (fest, gelb) kombinieren.\nAls bei der Reaktion das blutrote Zinnober entstand, glaubten sie an eine Verbindung mit dem Leben\nund glaubten ein Lebenselixier herstellen zu können."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_080_mercury/element_080_mercury.glb",
         "wypos": 6,
@@ -5218,7 +5218,7 @@
         "stable": true,
         "name": "Thallium",
         "funfact": [
-            "Thallium hat bevorzugt die Oxidationsstufe +1, obwohl alle anderen Elemente dieser Gruppe +3 haben. Das ist ein relativistischer Effekt.",
+            "Thallium hat bevorzugt die Oxidationsstufe +1, obwohl alle anderen Elemente dieser Gruppe +3 haben.\nDas ist ein relativistischer Effekt.",
             "Erst seit man weiß, dass Bismut radioaktiv ist, ist Thallium als letztes Element der Neptuniumreihe anerkannt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_081_thallium/element_081_thallium.glb",
@@ -5277,9 +5277,9 @@
         "stable": true,
         "name": "Lead",
         "funfact": [
-            "Da die Bleiisotope 206, 207 und 208 die Endprodukte der drei natürlichen Zerfallsreihen radioaktiver Elemente sind, ist relativ viel Blei entstanden; es kommt deshalb in der Erdkruste im Vergleich zu anderen schweren Elementen (Quecksilber, Gold u. a.) häufig vor.",
+            "Da die Bleiisotope 206, 207 und 208 die Endprodukte der drei natürlichen Zerfallsreihen radioaktiver Elemente sind,\nist relativ viel Blei entstanden; es kommt deshalb in der Erdkruste\nim Vergleich zu anderen schweren Elementen (Quecksilber, Gold u. a.) häufig vor.",
             "Blei ist das schwerste stabile Element.",
-            "Bevor man Flachglas herstellen konnte, wurden Fenster aus Bleiglas hergestellt. Die Bleiruten wurden in Form gebogen und die Zwischenräume mit farbigem Glas gefüllt. Die Bleiruten sind heute noch sichtbar."
+            "Bevor man Flachglas herstellen konnte, wurden Fenster aus Bleiglas hergestellt.\nDie Bleiruten wurden in Form gebogen und die Zwischenräume mit farbigem Glas gefüllt.\nDie Bleiruten sind heute noch sichtbar."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_082_lead/element_082_lead.glb",
         "wypos": 6,
@@ -5339,7 +5339,7 @@
         "stable": false,
         "name": "Bismuth",
         "funfact": [
-            "Früher wurde es als letztes stabiles Element angesehen. Aber durch thermometrische Messungen konnte man nachweisen, dass es eine Halbwertszeit von ungefähr 10^19 Jahren hat. Mit gängigen Methoden kann der Nachweis nicht geführt werden."
+            "Früher wurde es als letztes stabiles Element angesehen.\nAber durch thermometrische Messungen konnte man nachweisen,\ndass es eine Halbwertszeit von ungefähr 10^19 Jahren hat.\nMit gängigen Methoden kann der Nachweis nicht geführt werden."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_083_bismuth/element_083_bismuth.glb",
         "wypos": 6,
