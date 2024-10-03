@@ -6570,8 +6570,8 @@
         "stable": false,
         "name": "Rutherfordium",
         "funfact": [
-            "Rutherfordium und die folgenden Elemente waren jahrelang von einer Kontroverse um die Namensgebung begleitet, welche erst 1997 beigelegt wurde.",
-            "Die UDSSR wollte das Element 104 ursprünglich Kurchatovium nennen, nach dem Vater der russischen Atombomber Igor Kurchatov. Die IUPAC entschied sich jedoch nach nach jahrelangem Tauziehen für Rutherfordium."
+            "Rutherfordium und die folgenden Elemente waren jahrelang von einer Kontroverse um die Namensgebung begleitet,\nwelche erst 1997 beigelegt wurde.",
+            "Die UDSSR wollte das Element 104 ursprünglich Kurchatovium nennen,\nnach dem Vater der russischen Atombombe, Igor Kurchatov.\nDie IUPAC entschied sich jedoch nach nach jahrelangem Tauziehen für Rutherfordium."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_104_rutherfordium/element_104_rutherfordium.glb",
         "wypos": 7,
