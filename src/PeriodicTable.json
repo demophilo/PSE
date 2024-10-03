@@ -7018,8 +7018,8 @@
         "stable": false,
         "name": "Copernicium",
         "funfact": [
-            "Copernicium ist das einzige Element, das nach einer Person, Nikolaus Kopernikus, benannt wurde, die nichts mit Chemie zu tun hatte und zu dessen Lebzeiten der Begriff Chemie noch nicht exisierte.",
-            "Nach Pressemitteilungen des Paul Scherrer Instituts und der Universität Bern ergaben Experimente, dass Copernicium sich chemisch ähnlich wie Quecksilber verhalte. Diese Aussage stützt sich auf die Beobachtung von lediglich zwei Atomen Cn-283."
+            "Copernicium ist das einzige Element, das nach einer Person, Nikolaus Kopernikus, benannt wurde,\ndie nichts mit Chemie zu tun hatte und zu dessen Lebzeiten der Begriff Chemie noch nicht exisierte.",
+            "Nach Pressemitteilungen des Paul Scherrer Instituts und der Universität Bern ergaben Experimente,\ndass Copernicium sich chemisch ähnlich wie Quecksilber verhalte.\nDiese Aussage stützt sich auf die Beobachtung von lediglich zwei Atomen Cn-283."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_112_copernicium/element_112_copernicium.glb",
         "wypos": 7,
