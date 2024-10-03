@@ -4729,8 +4729,8 @@
         "name": "Tantalum",
         "funfact": [
             "Tantal ist das seltenste natürliche Element im Universum.",
-            "Tantal ist aufgrund seines negativen Normalpotenzials als unedeles Metall anzusehen. Es passiviert sich jedoch mit einer kompakten Oxidschicht derart, dass es in kompakter Form bei Raumtemperatur beständiger gegen Chemikalien ist als Gold.",
-            "Ähnlich wie bei seinem leichteren Homologen Niob existieren auch von Tantal keine Kationen in wässriger Lösung. Selbst bei kleinsten pH-Werten sind keine Ionen wie etwa Ta3+, TaO2+ oder TaO2+ darstellbar, da diese sofort und vollständig zu Ta2O5 hydrolysieren."
+            "Tantal ist aufgrund seines negativen Normalpotenzials als unedeles Metall anzusehen.\nEs passiviert sich jedoch mit einer kompakten Oxidschicht derart,\ndass es in kompakter Form bei Raumtemperatur beständiger gegen Chemikalien ist als Gold.",
+            "Ähnlich wie bei seinem leichteren Homologen Niob existieren auch von Tantal keine Kationen in wässriger Lösung.\nSelbst bei kleinsten pH-Werten sind keine Ionen wie etwa Ta3+, TaO2+ oder TaO2+ darstellbar,\nda diese sofort und vollständig zu Ta2O5 hydrolysieren."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_073_tantalum/element_073_tantalum.glb",
         "wypos": 6,
