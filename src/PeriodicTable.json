@@ -4486,7 +4486,7 @@
         "stable": true,
         "name": "Thulium",
         "funfact": [
-            "Thulium ist damit abgesehen vom instabilen Promethium das seltenste Lanthanoid. Thulium ist jedoch häufiger als Elemente wie Gold, Platin, Silber oder Iod.",
+            "Thulium ist damit abgesehen vom instabilen Promethium das seltenste Lanthanoid.\nThulium ist jedoch häufiger als Elemente wie Gold, Platin, Silber oder Iod.",
             "Thulium ist ein Reinelement."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_069_thulium/element_069_thulium.glb",
@@ -4546,7 +4546,7 @@
         "stable": true,
         "name": "Ytterbium",
         "funfact": [
-            "Experimentell wurde Ytterbium als Alternative zu Caesium für den Betrieb von Atomuhren untersucht. Dabei konnte eine viermal so hohe Präzision wie bei einer Caesium-Atomuhr gemessen werden."
+            "Experimentell wurde Ytterbium als Alternative zu Caesium für den Betrieb von Atomuhren untersucht.\nDabei konnte eine viermal so hohe Präzision wie bei einer Caesium-Atomuhr gemessen werden."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_070_ytterbium/element_070_ytterbium.glb",
         "wypos": 6,
