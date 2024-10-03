@@ -3157,12 +3157,12 @@
         "stable": true,
         "name": "Silver",
         "funfact": [
-            "Argentinien ist das einzige Land, dass nach einem Element, Silber, benannt wurde. Viele Elemente wurde jedoch nach Ländern benannt.",
+            "Argentinien ist das einzige Land, dass nach einem Element, Silber, benannt wurde.\nViele Elemente wurde jedoch nach Ländern benannt.",
             "Das meiste Silber wird in Mexiko produziert.",
-            "Größter Silberproduzent im Mittelalter war Schwaz.",
-            "Im größten Teil der Geschichte war Silber das Metall aus dem die Münzen gemacht wurden.",
+            "Größter Silberproduzent in Europa im Mittelalter war Schwaz.",
+            "Im größten Teil der Geschichte war Silber das Metall, aus dem die Münzen gemacht wurden.",
             "Silber besitzt die höchste elektrische Leitfähigkeit aller Metalle.",
-            "Kolloidales Silber ist bei Esoterikern ein beliebtes Heilmittel. Es führt jedoch zu einer Blauverfärbung der Haut, die nicht wieder rückgängig gemacht werden kann."
+            "Kolloidales Silber ist bei Esoterikern ein beliebtes Heilmittel.\nEs führt jedoch zu einer Blauverfärbung der Haut, die nicht wieder rückgängig gemacht werden kann."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_047_silver/element_047_silver.glb",
         "wypos": 5,
