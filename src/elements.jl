@@ -5,7 +5,7 @@ using Random
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
 	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, read_json_to_variant_vector, get_elements_to_guess, get_elements_to_guess2, get_funfact, read_players,
 	append_Player_to_json_vector, add_player_and_cut_top_n!, input_game_type, input_element, input_player_name, create_path, get_color_dict, colorize_string, print_title, print_list_of_variants_to_choose, print_letters_to_input, display_screen,
-	clear_sreen, call_function_by_name
+	clear_sreen, call_function_by_name, count_newlines
 
 struct Element
 	name::String # English name of the element
@@ -429,10 +429,13 @@ end
 shows the gaming screen with title, PSE and score
 """
 function display_screen(show_matrix, score, time_bonus, funfact)
+	newlines = count_newlines(funfact)
 	clear_sreen()
 	print_title()
+	println("\n"^3)
 	println(funfact)
-	println("")
+
+	println("\n"^(6 - newlines))
 	print_PSE(show_matrix)
 	println("")
 	_total = score + time_bonus
@@ -443,5 +446,14 @@ function clear_sreen()
 	print("\e[2J")
 end
 
+function count_newlines(s::String)::Int
+	count = 0
+	for char in s
+		if char == '\n'
+			count += 1
+		end
+	end
+	return count
+end
 
 end # module
