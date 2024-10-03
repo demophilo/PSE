@@ -5574,12 +5574,12 @@
         "stable": false,
         "name": "Francium",
         "funfact": [
-            "Francium besitzt von allen Elementen bis zur Ordnungszahl 102 die instabilsten Isotope. Selbst das langlebigste Francium-Isotop 223Fr besitzt eine Halbwertszeit von nur 21, 8 Minuten.",
-            "Francium wurde von der Assistentin von Marie Curie,  Marguerite Perey,  nach deren Tod enddeckt.",
-            "Bevor es seinen entgültigen Namen bekam,  wurde es von vermeintlichen Entdeckern Eka-Caesium,  Russium,  Virginium und Moldavium genannt.",
-            "Noch hat jemand Francium gesehen,  da es schwer herzustellen ist und schneller zerfällt als eine aufarbeitung dauert.",
-            "Selbst wenn man Francium in wägbaren Mengen herstellen könnte,  so wäre es wahrscheinlich nicht handhabbar,  denn 1 g Francium-223 entwickelte an der Luft eine Wärmeleistung von 1, 25 Megawatt. Sichtbare Mengen würden sofort verdampfen.",
-            "Da schon Gallium nach Frankreich benannt worden war,  ist Frankreich das einzige Land,  nach dem zwei Elemente benannt wurden."
+            "Francium besitzt von allen Elementen bis zur Ordnungszahl 102 die instabilsten Isotope.\nSelbst das langlebigste Francium-Isotop Fr-223 besitzt eine Halbwertszeit von nur 21,8 Minuten.",
+            "Francium wurde von der Assistentin von Marie Curie, Marguerite Perey, nach deren Tod enddeckt.",
+            "Bevor es seinen entgültigen Namen bekam, wurde es von vermeintlichen Entdeckern\nEka-Caesium, Russium, Virginium und Moldavium genannt.",
+            "Noch nie hat jemand Francium gesehen, da es schwer herzustellen ist und schneller zerfällt als eine aufarbeitung dauert.",
+            "Selbst wenn man Francium in wägbaren Mengen herstellen könnte,\nso wäre es wahrscheinlich nicht handhabbar, denn 1 g Francium-223 entwickelte\nan der Luft eine Wärmeleistung von 1,25 Megawatt. Sichtbare Mengen würden sofort verdampfen.",
+            "Da schon Gallium nach Frankreich benannt worden war, ist Frankreich das einzige Land,\nnach dem zwei Elemente benannt wurden."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_087_francium/element_087_francium.glb",
         "wypos": 7,
