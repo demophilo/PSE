@@ -3338,9 +3338,9 @@
         "stable": true,
         "name": "Tin",
         "funfact": [
-            "Zinn hat mit 10 Isotopen die meisten stabilen Isotope aller Elemente. Ein Grund für die hohe Zahl stabiler Isotope ist, dass die Ordnungszahl 50 eine „magische Zahl“ ist.",
-            "Erst durch Zinn konnte das moderne Flachglas hergestellt werden. Das flüssige Glas wird auf ein Zinnbad gegossen, wo es schwimmend langsam abkühlt, fest wird und kontinuierlich abgezogen wird.",
-            "Zinn wandelt sich unter 13,2 °C in eine voluminösere Modifikation um. Dadurch wird löst sich die Kristallstruktur auf und Zinn wird zu einem Pulver. Dieser Effekt wird als Zinnpest bezeichnet."
+            "Zinn hat mit 10 Isotopen die meisten stabilen Isotope aller Elemente.\nEin Grund für die hohe Zahl stabiler Isotope ist, dass die Ordnungszahl 50 eine „magische Zahl“ ist.",
+            "Erst durch Zinn konnte das moderne Flachglas hergestellt werden.\nDas flüssige Glas wird auf ein Zinnbad gegossen, wo es schwimmend langsam abkühlt,\nfest wird und kontinuierlich abgezogen wird.",
+            "Zinn wandelt sich unter 13,2 °C in eine voluminösere Modifikation um.\nDadurch wird löst sich die Kristallstruktur auf und Zinn wird zu einem Pulver.\nDieser Effekt wird als Zinnpest bezeichnet."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_050_tin/element_050_tin.glb",
         "wypos": 5,
