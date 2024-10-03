@@ -6399,7 +6399,7 @@
         "stable": false,
         "name": "Mendelevium",
         "funfact": [
-            "Mendelejew war ein Liberaler. In seinen Vorlesungen waren anders als bei seinen Kollegen auch seit den 1860er Jahren Frauen zugelassen."
+            "Mendelejew war ein Liberaler. In seinen Vorlesungen waren, anders als bei seinen Kollegen,\nauch seit den 1860er Jahren Frauen zugelassen."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_101_mendelevium/element_101_mendelevium.glb",
         "wypos": 7,
