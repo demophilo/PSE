@@ -3219,8 +3219,8 @@
         "stable": true,
         "name": "Cadmium",
         "funfact": [
-            "1942 benutzte der Physiker Enrico Fermi Cadmiumstäbe beim Bau des ersten Atomreaktors der Welt. Diese Stäbe konnte man in den Reaktor hinein- und hinausschieben. Auf diese Weise konnte der Reaktor kontrolliert werden.",
-            "Cadmium ist ein sehr seltenes Element. Es gibt keine abbauwürdigen Lagerstätten.  Cadmium wird ausschließlich als Nebenprodukt bei der Zinkverhüttung, in kleinem Umfang auch bei der Blei- und Kupferverhüttung gewonnen.",
+            "1942 benutzte der Physiker Enrico Fermi Cadmiumstäbe beim Bau des ersten Atomreaktors der Welt.\nDiese Stäbe konnte man in den Reaktor hinein- und hinausschieben.\nAuf diese Weise konnte der Reaktor kontrolliert werden.",
+            "Cadmium ist ein sehr seltenes Element. Es gibt keine abbauwürdigen Lagerstätten.\nCadmium wird ausschließlich als Nebenprodukt bei der Zinkverhüttung,\nin kleinem Umfang auch bei der Blei- und Kupferverhüttung gewonnen.",
             "Obwohl Cadmium giftig ist, wurde Cadmiumsulfid früher als Gelb- und Orangepigment in Haushaltsplastikschüsseln verwendet."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_048_cadmium/element_048_cadmium.glb",
