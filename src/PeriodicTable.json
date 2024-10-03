@@ -5026,8 +5026,8 @@
         "stable": true,
         "name": "Platinum",
         "funfact": [
-            "Im 17. Jahrhundert wurde Platin in den spanischen Kolonien als lästiges Begleitmaterial beim Goldsuchen zu einem großen Problem. Man hielt es für „unreifes“ Gold und warf es wieder in die Flüsse Ecuadors zurück",
-            "Der Internationale Kilogrammprototyp, der bis 2019 das Kilogramm definierte, und der Internationale Meterprototyp von 1889, der bis 1960 den Meter definierte, bestehen aus einer Legierung von 90 % Platin und 10 % Iridium.",
+            "Im 17. Jahrhundert wurde Platin in den spanischen Kolonien als lästiges Begleitmaterial\nbeim Goldsuchen zu einem großen Problem. Man hielt es für „unreifes“ Gold\nund warf es wieder in die Flüsse Ecuadors zurück",
+            "Der Internationale Kilogrammprototyp, der bis 2019 das Kilogramm definierte,\nund der Internationale Meterprototyp von 1889, der bis 1960 den Meter definierte,\nbestehen aus einer Legierung von 90 % Platin und 10 % Iridium.",
             "Xenonhexafluoroplatinat war die erste hergestellte Edelgasverbindung überhaupt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_078_platinum/element_078_platinum.glb",
