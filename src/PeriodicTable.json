@@ -3764,7 +3764,7 @@
         "stable": true,
         "name": "Lanthanum",
         "funfact": [
-            "Lanthanhydrid (LaH10) ist ein Supraleiter mit einer Sprungtemperatur von 250 K (−23° C) bei einem Druck von ungefähr 170 Gigapascal."
+            "Lanthanhydrid (LaH10) ist ein Supraleiter mit einer Sprungtemperatur von 250 K (−23 °C)\nbei einem Druck von ungefähr 170 Gigapascal."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_057_lanthanum/element_057_lanthanum.glb",
         "wypos": 6,
