@@ -376,7 +376,7 @@ function create_path(directories::Vector{String}, filename::String)::String
 end
 
 function get_color_dict()
-	farben = Dict(
+	colors = Dict(
 		"red" => "\e[31m",
 		"green" => "\e[32m",
 		"yellow" => "\e[33m",
@@ -390,7 +390,7 @@ function get_color_dict()
 		"lightpurple" => "\e[95m",
 		"cyan" => "\e[96m"
 	)
-	return farben
+	return colors
 end
 
 function colorize_string(text::String, color_dict, color::String)::String
