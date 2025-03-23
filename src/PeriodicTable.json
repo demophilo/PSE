@@ -3278,9 +3278,9 @@
         "stable": true,
         "name": "Indium",
         "funfact": [
-            "Indium besteht zu 95, 71 % aus In-115,  das eine Halbwertszeit von 4, 4*10^14 Jahren hat. Der Rest besteht aus stabilem In-113.",
-            "Neben Rhenium ist Indium das zweite Element,  welches natürlicherweise einen höheren Anteil radioaktiver Isotope als stabile Isotope in seiner Zusammensetzung aufweist.",
-            "Obwohl Indium zu 95, 71 % aus einem radioaktiven Isotop besteht,  ist es weniger radioaktiv als Kalium."
+            "Indium besteht zu 95,71 % aus In-115, das eine Halbwertszeit von 4, 4*10^14 Jahren hat. Der Rest besteht aus stabilem In-113.",
+            "Neben Rhenium ist Indium das zweite Element, welches natürlicherweise einen höheren Anteil radioaktiver Isotope als stabile Isotope in seiner Zusammensetzung aufweist.",
+            "Obwohl Indium zu 95,71 % aus einem radioaktiven Isotop besteht,  ist es weniger radioaktiv als Kalium."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_049_indium/element_049_indium.glb",
         "wypos": 5,
@@ -3886,7 +3886,7 @@
         "stable": true,
         "name": "Praseodymium",
         "funfact": [
-            "Von der Grünfärbung seiner Verbindungen kommt der Name des Praseoymiums:\nDas griechische Wort πράσινος prásinos bedeutet „grün“, δίδυμος didymos „doppelt“ oder „Zwilling“.",
+            "Von der Grünfärbung seiner Verbindungen kommt der Name des Praseodyms:\nDas griechische Wort πράσινος prásinos bedeutet „grün“, δίδυμος didymos „doppelt“ oder „Zwilling“.",
             "Praseodym ist ein Reineelement."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_059_praseodymium/element_059_praseodymium.glb",
@@ -4969,7 +4969,7 @@
         "name": "Iridium",
         "funfact": [
             "Iridium ist nach Rhenium zusammen mit Rhodium und Ruthenium das seltenste nicht-radioaktive Metall.",
-            "Iridium ist das einzige Element, von dem eine verbindung mit der Oxidationsstufe +9 hergestellt wurde."
+            "Iridium ist das einzige Element, von dem eine Verbindung mit der Oxidationsstufe +9 hergestellt wurde."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_077_iridium/element_077_iridium.glb",
         "wypos": 6,
@@ -5027,7 +5027,7 @@
         "name": "Platinum",
         "funfact": [
             "Im 17. Jahrhundert wurde Platin in den spanischen Kolonien als lästiges Begleitmaterial\nbeim Goldsuchen zu einem großen Problem. Man hielt es für „unreifes“ Gold\nund warf es wieder in die Flüsse Ecuadors zurück",
-            "Der Internationale Kilogrammprototyp, der bis 2019 das Kilogramm definierte,\nund der Internationale Meterprototyp von 1889, der bis 1960 den Meter definierte,\nbestehen aus einer Legierung von 90 % Platin und 10 % Iridium.",
+            "Der internationale Kilogrammprototyp, der bis 2019 das Kilogramm definierte,\nund der internationale Meterprototyp von 1889, der bis 1960 den Meter definierte,\nbestehen aus einer Legierung von 90 % Platin und 10 % Iridium.",
             "Xenonhexafluoroplatinat war die erste hergestellte Edelgasverbindung überhaupt."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_078_platinum/element_078_platinum.glb",
@@ -5090,7 +5090,7 @@
             "Die Goldsuche zerstört durch Cyanide und Quecksilber chemisch die Umwelt.\nDurch auswaschen von Waldboden wird auch dieser dauerhaft zerstört.",
             "Gold ist ein Reinmetall.",
             "Die wenigsten Goldsucher werden reich. Es ist viel wahrscheinlicher, dass jene Leute reich werden,\ndie mit den Goldsuchern Handel treiben.",
-            "Die Alchimisten wollten Gold aus Blei herstelle. Mittlerweile geling das tatsächlich,\naber dieses Gold ist radioaktiv.",
+            "Die Alchimisten wollten Gold aus Blei herstelle. Mittlerweile gelingt das tatsächlich,\naber dieses Gold ist radioaktiv.",
             "Gold hat im Mittelalter eine Dauerdeflation ausgelöst,\nwelche erst durch das südamerikanische Beutegold beseitigt wurde.",
             "Der Anzug von Ironman besteht aus einer Titan-Gold-Legierung. Solche Legierungen gibt es tatsächlich.",
             "Gold hat im geschmolzenen Zusand einen grünlichen Farbton.",
@@ -5155,11 +5155,11 @@
         "funfact": [
             "Am Quecksilber wurde vom niederländischen Physiker Heike Kamerlingh Onnes im Jahre 1911\ndas erste Mal das Phänomen der Supraleitung entdeckt.\nAb einer Temperatur von 4,2 K (−268,9 °C) verschwindet dabei der elektrische Widerstand vollständig.",
             "Von den chinesischen Alchimisten wurden viele quecksilberhaltige Arzneien\nzur Lebensverlängerung verschrieben und verursachten einen frühzeitigen Tod der Patienten.",
-            "Der erste Kaiser von China Qui Shihuandi hat in seinem riesigen Grabmal einen Quecksilbersee,\nweswegen man noch immer mit der Freilegung zögert.",
+            "Der erste Kaiser von China Qui Shihuandi hat in seinem riesigen Grabmal einen Quecksilbersee,\nweswegen man noch immer mit dessen Freilegung zögert.",
             "Um das Jahr 1000 gab es in den Palästen der Kalifen von Córdoba (Medina az-Zahra),\nKairo und Bagdad mit Quecksilber gefüllte Becken, die für das Spiel mit Lichtwirkungen genutzt wurden,\naußerdem in großen Porphyrmuscheln angelegte Quecksilberteiche (für Kairo sind 50 Ellen im Quadrat überliefert).",
             "Die alchimistischen Ärzte verschrieben viel Quecksilberarzneien, woraus sich der Begriff Quacksalber ableitet.",
             "Der niedere Schmelzpunkt des Quecksilbers ist ein relativistischer Effekt.",
-            "Quecksilber ist das einzige Metall, welches bei Raumtemperatur durch Verdunstung\neinen einatomigen Metalldampf erzeugen kann.",
+            "Quecksilber ist das einzige Metall, welches bei Raumtemperatur durch Verdunstung\neinen einatomigen Metalldampf erzeugt.",
             "Die Alchimisten wollten die Eigenschaften von Quecksilber (metallisch, glänzend)\nmit den Eigenschaften von Schwefel (fest, gelb) kombinieren.\nAls bei der Reaktion das blutrote Zinnober entstand, glaubten sie an eine Verbindung mit dem Leben\nund glaubten ein Lebenselixier herstellen zu können."
         ],
         "bohr_model_3d": "https://storage.googleapis.com/search-ar-edu/periodic-table/element_080_mercury/element_080_mercury.glb",
@@ -5577,7 +5577,7 @@
             "Francium besitzt von allen Elementen bis zur Ordnungszahl 102 die instabilsten Isotope.\nSelbst das langlebigste Francium-Isotop Fr-223 besitzt eine Halbwertszeit von nur 21,8 Minuten.",
             "Francium wurde von der Assistentin von Marie Curie, Marguerite Perey, nach deren Tod enddeckt.",
             "Bevor es seinen entgültigen Namen bekam, wurde es von vermeintlichen Entdeckern\nEka-Caesium, Russium, Virginium und Moldavium genannt.",
-            "Noch nie hat jemand Francium gesehen, da es schwer herzustellen ist und schneller zerfällt als eine aufarbeitung dauert.",
+            "Noch nie hat jemand Francium gesehen, da es schwer herzustellen ist und schneller zerfällt, als eine Aufarbeitung dauert.",
             "Selbst wenn man Francium in wägbaren Mengen herstellen könnte,\nso wäre es wahrscheinlich nicht handhabbar, denn 1 g Francium-223 entwickelte\nan der Luft eine Wärmeleistung von 1,25 Megawatt. Sichtbare Mengen würden sofort verdampfen.",
             "Da schon Gallium nach Frankreich benannt worden war, ist Frankreich das einzige Land,\nnach dem zwei Elemente benannt wurden."
         ],

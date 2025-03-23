@@ -3,9 +3,9 @@ using JSON3
 using Random
 
 export Element, Variant, Player, read_json_to_element_vector, get_Lehrer_elements, get_group_elements, get_nature_elements, get_elements_by_blocks, get_stable_elements, get_single_letter_elements, get_elements_with_same_name, get_mononuclidic_elements,
-	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, read_json_to_variant_vector, get_elements_to_guess, get_elements_to_guess2, get_funfact, read_players,
+	element_compare, sort_elements_chemically, get_PSE_matrix, print_PSE, get_PSE_ready_to_print, get_elements_not_to_guess, remove_synthetic_elements, read_json_to_variant_vector, get_elements_to_guess, get_elements_to_guess2, read_players,
 	append_Player_to_json_vector, add_player_and_cut_top_n!, input_game_type, input_element, input_player_name, create_path, get_color_dict, colorize_string, print_title, print_list_of_variants_to_choose, print_letters_to_input, display_screen,
-	clear_sreen, call_function_by_name, count_newlines
+	clear_sreen, count_newlines
 
 struct Element
 	name::String # English name of the element
@@ -293,12 +293,6 @@ function get_elements_to_guess(elements_vector::Vector{Element}, game_type::Stri
 	end
 end
 
-function call_function_by_name(mod::Module, func_name::String, param_types::Vector{DataType}, params::AbstractVector)
-	func = getfield(mod, Symbol(func_name))
-	typed_params = [convert(param_types[i], params[i]) for i in eachindex(param_types)]
-	return func(typed_params...)
-end
-
 function get_elements_to_guess2(elements::Vector{Element}, variant::Variant)
 	# Fügen Sie den `elements`-Vektor zu den Parametern hinzu
 	params_with_elements = [elements; variant.parameter]
@@ -403,7 +397,7 @@ end
 #####################################################
 
 function print_title()
-	title = open("title.txt", "r") do file
+	title = open("src/title.txt", "r") do file
 		read(file, String)
 	end
 

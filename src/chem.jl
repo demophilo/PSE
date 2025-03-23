@@ -7,13 +7,13 @@ using .Elements
 # sets up the game
 clear_sreen()
 print_title()
-println("\n"^9)
+println("\n"^18)
 # player section
 
 player_name = input_player_name()
 funfact_neutron_vector = ["Das Neutron wird von vielen Leuten als Element mit der Ordnungszahl 0 angesehen und Neutronium genannt.", "Das Neutronium geht keine chemischen Bindungen ein und ist ergo ein Edelgas.", "Die Tochter von Marie Curie, Irene, machte das Experiment zusammen mit ihrem Ehemann, aber interpretierte die Experimente falsch. Sonst hätte sie das Neutron entdeckt.", "Obwohl es keine Verbindung mit Neutronen gibt, bestehen Neutronensterne nur aus Neutronen.", "Neutronen sabilisieren die Atomkerne. Die einzigen stablien Atomkerne mit mehr Protonen als Neutronen sind H-1 und He-3.", "Neutronium ist ein Reinelement"]
-element_vector = read_json_to_element_vector("PeriodicTable.json")::Vector{Element}
-game_variant_vector = read_json_to_variant_vector("variants.json")::Vector{Variant}
+element_vector = read_json_to_element_vector("src/PeriodicTable.json")::Vector{Element}
+game_variant_vector = read_json_to_variant_vector("src/variants.json")::Vector{Variant}
 funfact::String = ""
 is_wide = false
 is_playing = true
@@ -83,10 +83,10 @@ while is_playing
 	show_matrix = get_PSE_ready_to_print(periodic_table_matrix, right_element_symbols, element_symbol_to_guess_vector, element_symbols_not_to_guess_vector)
 	display_screen(show_matrix, score, time_bonus, funfact)
 	player::Player = Player(player_name, "PSE", game_type.name, "hard", score + time_bonus)
-	every_player_history_vector = read_players("chem_players_history.json")
+	every_player_history_vector = read_players("src/chem_players_history.json")
 	actual_player_history_vector = [person for person in every_player_history_vector if person.name == player.name]
 	add_player_and_cut_top_n!(actual_player_history_vector, player, 3)
-	append_Player_to_json_vector("chem_players_history.json", player)
+	append_Player_to_json_vector("src/chem_players_history.json", player)
 
 	empty_space = " "^8
 	for person in actual_player_history_vector

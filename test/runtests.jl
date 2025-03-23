@@ -4,8 +4,7 @@ using JSON3
 include("../src/elements.jl")
 using .Elements
 
-include("../src/module_IO_func.jl")
-using .IO_func
+
 
 
 
@@ -281,7 +280,7 @@ end
 		read_input()
 	end
 end
-
+#=
 @testset "Test call_function_by_name" begin
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
@@ -290,7 +289,7 @@ end
 
 	@test elements[2].name == "Helium"
 end
-
+=#
 @testset "Test get_elements_to_guess" begin
 	directories_elements = ["..", "src"]
 	filename_elements = "PeriodicTable.json"
